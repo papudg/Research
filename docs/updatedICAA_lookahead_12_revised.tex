@@ -7,17 +7,15 @@
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 \usepackage{xurl}
-\setlength{\textfloatsep}{3pt plus 1pt minus 1pt}
-\setlength{\floatsep}{2pt plus 1pt minus 1pt}
-\setlength{\intextsep}{3pt plus 1pt minus 1pt}
+\setlength{\textfloatsep}{0pt plus 1pt minus 1pt}
+\setlength{\floatsep}{0pt plus 1pt minus 1pt}
+\setlength{\intextsep}{0pt plus 1pt minus 1pt}
 \sloppy
 \emergencystretch=2em
 
 \begin{document}
-\addtolength{\textheight}{1.2cm}
-\linespread{0.72}\selectfont
 
-\title{Policy-Aware CP-SAT Optimization for Sequential Examination Paper Assembly}
+\title{Algorithm Engineering for Policy-Aware CP-SAT Examination Paper Assembly}
 \titlerunning{Policy-Aware CP-SAT for Examination Assembly}
 
 \author{Anonymous Author(s)}
@@ -28,7 +26,7 @@
 \maketitle
 
 \begin{abstract}
-Sequential examination-paper assembly can be formulated as Boolean constraint satisfaction under structural, temporal, chapter-coverage, and non-duplication requirements. We present an applied algorithm-engineering study of policy design for a production-derived metadata-only setting, rather than a new CP-SAT algorithm. Beyond a first-feasible solver, we evaluate an independent constructive--local baseline, weighted and direct-compliance single objectives, sequential lexicographic optimization, and a joint whole-paper lexicographic control on a 475-item CBSE Class X Mathematics corpus. The contribution is a reproducible policy comparison and application benchmark, not a new CP-SAT solving algorithm. Across five independently generated 80-blueprint manifests, sequential $B1$ has seed-level median difficulty deviation 38--40 versus 50--52 for first-feasible $B0$; the direct-compliance control and weighted policy achieve equal difficulty with lower Bloom deviation and solver runtime. The five-manifest clustered paired analysis is treated as the primary robustness evidence, with pooled blueprint counts used only descriptively. On the fixed manifest, joint and sequential lexicographic policies tie on all 70 comparable cases, and four section orders have identical aggregate medians. Results concern structural alignment and solver runtime only, not psychometric validity, end-to-end latency, or universal policy dominance. The complete fixture, manifests, code, environment, and result files are supplied for regeneration.
+Sequential examination-paper assembly can be formulated as Boolean constraint satisfaction under structural, temporal, chapter-coverage, and non-duplication requirements. We study algorithmic policy design for a production-derived, metadata-only setting, comparing first-feasible, constructive--local, weighted, direct-compliance, sequential lexicographic, joint lexicographic, and bounded-lookahead policies on a 475-item CBSE Class X Mathematics corpus. Across five independently generated 80-blueprint manifests, sequential $B1$ has seed-level median difficulty deviation 38--40 versus 50--52 for first-feasible $B0$; direct-compliance and weighted policies attain similar difficulty with lower Bloom deviation and runtime. On the fixed manifest, joint and sequential lexicographic policies tie on all 70 comparable cases, while four section orders have identical aggregate medians. Lookahead also ties $B1$ on quality but increases median runtime from $0.124$ to $0.257$ seconds. Results concern structural alignment and solver runtime, not psychometric validity, end-to-end latency, or universal policy dominance. All reported results are backed by reproducible fixtures, manifests, code, environment, and result files.
 \keywords{Constraint Satisfaction Problem \and Multi-Objective Optimization \and Automated Test Assembly \and CP-SAT \and Lexicographic Optimization \and Educational Assessment.}
 \end{abstract}
 
@@ -42,7 +40,7 @@ Large-scale educational assessment platforms manage repositories containing tens
 \subsection{The Feasibility Gap}
 Most production systems treat generation as a Constraint Satisfaction Problem (CSP) and employ SAT or CP solvers configured to terminate at the \emph{first feasible solution} ($B0$). While computationally efficient, first-feasible solving exhibits a major flaw: \textbf{a feasible paper is not necessarily a high-quality paper}.
 
-Consider a paper requiring $M{=}10$ marks and $K{=}4$ questions with a target difficulty mix of 2 Easy and 2 Medium items. In a compatible item pool, a baseline first-feasible solver ($B0$) can halt at a valid assignment whose difficulty histogram differs from the target, provided it satisfies the marks, time, count, eligibility, and conflict constraints. An optimized solver ($B1$) instead balances the items to match the target difficulty histogram while maximizing chapter coverage. The gap between an unaligned feasible paper and a blueprint-aligned paper is the \emph{feasibility gap} addressed in this paper. In the present manifest, the selected-paper rules make chapter coverage nearly saturated; Pass~2 is therefore retained as a policy component but is not a differentiating empirical outcome.
+Consider a paper requiring $M{=}10$ marks and $K{=}4$ questions with a target difficulty mix of 2 Easy and 2 Medium items. In a compatible item pool, a baseline first-feasible solver ($B0$) can halt at a valid assignment whose difficulty histogram differs from the target, provided it satisfies the marks, time, count, eligibility, and conflict constraints. An optimized solver ($B1$) instead balances the items to match the target difficulty histogram while maximizing chapter coverage. The gap between an unaligned feasible paper and a blueprint-aligned paper is the \emph{feasibility gap} addressed in this paper. In the present manifest, chapter coverage is nearly saturated; Pass~2 is retained as a policy component but is not empirically differentiating.
 
 \subsection{Research Questions and Scope}
 This work investigates four research questions for a sequential generation setting:
@@ -58,13 +56,9 @@ This work investigates four research questions for a sequential generation setti
 %===============================================================================
 \section{Related Work}
 \label{sec:related}
-%===============================================================================
+Automated Test Assembly (ATA) is traditionally formulated as 0--1 integer programming under content and test-information constraints~\cite{theunissen1985,vanderLinden2005,vanderLinden1989,lord1980}; later work considers parallel-form, cognitive-diagnosis, and multiobjective assembly~\cite{ignjatovic2021,li2021,nguyen2021}. Our setting is metadata-only, using marks, time, difficulty, chapter, and Bloom labels rather than IRT parameters. Weighted scalarization and explicit lexicographic priorities are standard multiobjective alternatives~\cite{ehrgott2005,ignizio1976}; we use this distinction to compare policy designs.
 
-\subsection{Automated Test Assembly}
-Automated Test Assembly (ATA) is a mature field in psychometrics and operations research. Foundational work~\cite{theunissen1985,vanderLinden2005,vanderLinden1989,lord1980} formulates assembly as 0--1 integer programming, often maximizing test information subject to content constraints. Recent reviews cover parallel-form and metaheuristic approaches~\cite{ignjatovic2021}, while cognitive-diagnosis and multiobjective formulations extend the setting~\cite{li2021,nguyen2021}. In contrast, this study uses a non-IRT, metadata-only regime with marks, time, ordinal difficulty, chapter, and cognitive labels. Multiobjective CP distinguishes scalarization from explicit priority search~\cite{bennetto2021,ehrgott2005}; we use that distinction to evaluate policies rather than claim a new CP method.
-
-\subsection{Constraint Optimization Primitives}
-Modern CP solvers using SAT and CDCL techniques, such as Google OR-Tools CP-SAT~\cite{perron2023,nieuwenhuis2006}, efficiently handle Boolean selection, linear bounds, and pairwise conflicts. Multi-criteria optimization can use weighted scalarization or multi-pass lexicographic sequences~\cite{ehrgott2005,ignizio1976}.
+Modern CP solvers based on SAT/CDCL techniques, including OR-Tools CP-SAT~\cite{perron2023,nieuwenhuis2006}, support Boolean selection, linear constraints, and pairwise conflicts. Our algorithmic focus is the policy layer: sequential lexicographic decomposition, joint optimization as a control, and bounded lookahead around section transitions.
 
 %===============================================================================
 \section{Problem Formalization}
@@ -91,9 +85,12 @@ y_t \le \sum_{i:\,t\in T_i} x_i \quad \forall t\in R \label{eq:coverage_link}
 For policies that optimize coverage, this upper-bound linking is sufficient because maximizing $y_t$ forces $y_t=1$ whenever chapter $t$ is represented. In the reported manifest, coverage is an objective indicator rather than a separate hard requirement; it is not imposed as a mandatory lower bound. For policies that do not optimize coverage, reported coverage is computed directly from the selected item topics rather than from unconstrained $y_t$ values. The baseline $B0$ has no objective function; it halts at the first assignment satisfying the hard constraints.
 
 \subsection{Algorithmic Properties}
-For one section with $n_s$ eligible tier-matched items, $e_s$ conflict edges, and $h_s$ additional hard blueprint rules, the base selection model has $n_s$ item-selection variables and three aggregate equalities, plus $e_s$ conflict inequalities and the additional rules. Eligibility is a domain pre-filter, not an additional solver constraint. In the seven-band, three-Bloom-group implementation, $B1$ adds seven difficulty-deviation variables, $|R|$ coverage indicators, and three Bloom-deviation variables; the absolute-value linearizations contribute two inequalities per difficulty band and two per Bloom group, while coverage contributes $|R|$ linking inequalities. These counts exclude whole-paper cross-section constraints and should be read as model-size components rather than a complete count for every policy. The explicit conflict-constraint count is therefore linear in $e_s$ after graph construction, although solve time need not be linear and constructing $S$ is outside this solver model. The three-pass policy invokes CP-SAT up to three times per section, each under the 30\,s cap; it is a policy layer on the same selection model, not a new solver algorithm.
+For one section with $n_s$ eligible tier-matched items, $e_s$ conflict edges, and $h_s$ additional hard blueprint rules, the base selection model has $n_s$ item-selection variables and three aggregate equalities, plus $e_s$ conflict inequalities and the additional rules. Eligibility is a domain pre-filter, not an additional solver constraint. In the seven-band, three-Bloom-group implementation, $B1$ adds seven difficulty-deviation variables, $|R|$ coverage indicators, and three Bloom-deviation variables; the absolute-value linearizations contribute two inequalities per difficulty band and two per Bloom group, while coverage contributes $|R|$ linking inequalities. These counts exclude whole-paper cross-section constraints and should be read as model-size components rather than a complete count for every policy. The explicit conflict-constraint count is therefore linear in $e_s$ after graph construction, although solve time need not be linear and constructing $S$ is outside this solver model. The three-pass policy invokes CP-SAT up to three times per section under a 30\,s cap; it is a policy layer over the same selection model.
 
 The feasibility problem is NP-hard because cardinality-constrained subset sum is a special case: assign item marks to the input integers, fix count to the required cardinality, set all times to one with $W=K$, and omit conflicts and optional rules. The exact-marks constraint then asks whether a size-$K$ subset sums to $M$~\cite{garey1979}. The count--time dynamic programme used by $B_{LS}$ is therefore pseudo-polynomial in the integer time bound, not a polynomial-time solution to the general feasibility problem.
+
+\subsection{Sequential Decomposition: Equivalence Conditions}
+Let $X_s$ be the items selected before section $s$. Sequential lexicographic optimization is equivalent to the whole-paper lexicographic model when the problem is separable in the following sense: every lexicographically optimal choice for section $s$ leaves a jointly optimal completion for all later sections, and no objective or constraint couples sections except through the carried exclusions in $X_s$. This condition can fail when an early optimum consumes items needed later or when cross-section feasibility and soft objectives interact. Hence $B1$ is not claimed lossless in general; $B_J$ tests this decomposition empirically. The observed tie on all 70 common-feasible fixed-manifest cases supports equivalence for the tested instance regime, not in general.
 
 %===============================================================================
 \section{Policy Formulations and Optimization Models}
@@ -114,32 +111,9 @@ $B1$ implements a three-pass lexicographic CP-SAT policy. When every pass return
     \item \textbf{Pass 3 (Tertiary Soft Compliance):} Constrain $\sum_k u_k \le D^*$ and $\sum_{t\in R} y_t = C^*$, and minimize Bloom-level deviation $P(x) = \sum_{g\in\mathcal{B}} | \sum_{i:b_i\in g} x_i - T_g |$, where $T_g$ is the target count for cognitive group $g$.
 \end{enumerate}
 
-\begin{algorithm}[t]
-\caption{Three-pass lexicographic CP-SAT solver ($B1$)}
-\label{alg:threepass}
-\begin{algorithmic}[1]
-\Require Item bank $Q$; blueprint parameters; conflict graph $S$
-\Ensure Hard-constraint-valid selection $x^*$, or INFEASIBLE/UNKNOWN
-\State Construct base model $\mathcal{M}$ with constraints \eqref{eq:marks}--\eqref{eq:eligibility}
-\State Add auxiliary variables $u_k$ and linearized constraints \eqref{eq:u_bounds}; set objective $\min \sum_k u_k$
-\State $st_1 \gets \textsc{Solve}(\mathcal{M})$
-\If{$st_1 = \text{INFEASIBLE}$} \Return INFEASIBLE \EndIf
-\If{$st_1 \notin \{\text{OPTIMAL}, \text{FEASIBLE}\}$} \Return UNKNOWN \EndIf
-\State $D^* \gets \text{incumbent Pass-1 objective value}$; add constraint $\sum_k u_k \le D^*$
-\State Add chapter indicators $y_t$ and linking constraints \eqref{eq:coverage_link}; set objective $\max \sum_{t\in R} y_t$
-\State $st_2 \gets \textsc{Solve}(\mathcal{M})$
-\If{$st_2 = \text{INFEASIBLE}$} \Return INFEASIBLE \EndIf
-\If{$st_2 \notin \{\text{OPTIMAL}, \text{FEASIBLE}\}$} \Return UNKNOWN \EndIf
-\State $C^* \gets \text{incumbent Pass-2 objective value}$; add constraint $\sum_{t\in R} y_t = C^*$
-\State Add Bloom deviation linearizations; set objective $\min P(x)$
-\State $st_3 \gets \textsc{Solve}(\mathcal{M})$
-\If{$st_3 \in \{\text{OPTIMAL}, \text{FEASIBLE}\}$} \Return $x^*$ \EndIf
-\If{$st_3 = \text{INFEASIBLE}$} \Return INFEASIBLE \EndIf
-\Return UNKNOWN
-\end{algorithmic}
-\end{algorithm}
+The implementation performs the three passes sequentially. Pass~1 minimizes total difficulty deviation, Pass~2 maximizes required-chapter coverage subject to the optimal difficulty value, and Pass~3 minimizes Bloom deviation subject to both previous optima. Each pass uses a fresh CP-SAT model with the previous objective value fixed as a constraint; selected item IDs are then carried to the next section.
 
-\noindent\textbf{Status handling.} The 30\,s solver budget is a defensive safeguard; all feasible RQ1 and RQ4 runs completed well under 2.0\,s. The budget accepts both \texttt{OPTIMAL} and \texttt{FEASIBLE}: a time-capped feasible result satisfies the hard constraints but does not certify global optimality. Carrying such an incumbent into the next pass makes the bounded-time procedure an approximation to certified lexicographic optimization; all reported RQ1 common-feasible B1 passes were nevertheless recorded as \texttt{OPTIMAL} in the supplied status audit. In the 70 common-feasible RQ1 papers, all 350 sections completed all three B1 passes: 1,050/1,050 statuses were \texttt{OPTIMAL} (artifact: \texttt{results\_b1\_status\_audit.json}).
+\noindent\textbf{Status handling.} The 30\,s budget is a safeguard; all feasible RQ1/RQ4 runs completed below 2.0\,s. A \texttt{FEASIBLE} timeout satisfies hard constraints but does not certify optimality; such an incumbent is carried to the next pass as a bounded-time approximation. All reported RQ1 common-feasible B1 passes were \texttt{OPTIMAL}: 1,050/1,050 pass-level statuses across 70 papers were optimal (artifact: \texttt{results\_b1\_status\_audit.json}).
 
 \subsection{Alternative Baseline and Control Policies}
 \begin{itemize}\setlength{\itemsep}{1pt}\setlength{\parskip}{0pt}
@@ -150,67 +124,22 @@ $B1$ implements a three-pass lexicographic CP-SAT policy. When every pass return
 \end{itemize}
 
 \subsection{Bounded Lookahead-Guided Sequential Diagnostic}
-To test whether sequential lock-in can be reduced without replacing the production decomposition, we add a bounded lookahead policy. At each section, the policy generates up to $k=3$ distinct B1 candidates with $\varepsilon=0$ tolerance on the three lexicographic objectives. For each candidate it removes the selected IDs and scores the remaining sections using a fixed, deliberately coarse relaxed estimator. For a remaining section $s$, let $r_s$ be the number of unfilled item slots and $w_s$ the remaining required time. Define the binary reachability term
+To test whether sequential lock-in can be reduced without changing the production decomposition, we add a bounded-lookahead policy. At each section it generates up to $k=3$ distinct $B1$ candidates with $\\varepsilon=0$ tolerance and scores their downstream states using a coarse relaxed estimator. Let $P_s(x)$ be the eligibility- and mark-tier-filtered pool for a remaining section $s$ after candidate $x$ is excluded, and let $r_s,w_s$ be its required count and time. Define the binary reachability term
 \begin{equation}
-R_s = \mathbf{1}\left\{\begin{array}{l}
-\exists\text{ an eligibility-, exclusion-, and conflict-consistent relaxed}\\[-1mm]
-\text{count--time state reaching }(r_s,w_s)
-\end{array}\right\},
+R_s(x)=\mathbf{1}\left\{\sum_{q\in P_s(x)}1\ge r_s\right\},
 \end{equation}
-and let $E_s$, $D_s$, $B_s$, and $G_s$ denote, respectively, the number of eligible candidates, candidates in target difficulty bands, candidates in target Bloom groups, and candidate conflict incidences after removing the items already committed; $G_s$ is a conflict penalty, not a support term. We normalize each count by the corresponding maximum over the candidate set for that decision point, with a zero denominator mapped to zero:
+and the time-slack term
 \begin{equation}
-\hat E_s=E_s/E_s^{\max},\quad \hat D_s=D_s/D_s^{\max},\quad \hat B_s=B_s/B_s^{\max},\quad \hat G_s=G_s/G_s^{\max}.
+\sigma_s(x)=\left|\sum_{q\in P_s(x)}t_q-w_s\right|.
 \end{equation}
-The section score is
+The candidate score is
 \begin{equation}
-L_s = 100(2R_s-1)+\hat E_s+\hat D_s+\hat B_s-\hat G_s,\qquad L=\sum_{s\in\text{remaining}}L_s.
+S(x)=100\sum_sR_s(x)-\sum_s\sigma_s(x),
 \end{equation}
-Thus the reachability term lies in $\{-100,+100\}$, whereas the three normalized support terms each lie in $[0,1]$ and the normalized conflict penalty lies in $[0,1]$. The aggregate non-reachability contribution therefore lies in $[-1,3]$. The $100$ scale is intentional: it makes the coarse reachability signal dominate small differences in pool support and conflict penalty, while still allowing those terms to rank candidates when the reachability status is tied. The score is a local ranking heuristic, not calibrated as a probability or a comparable quality measure across different section counts; comparisons are therefore made only among candidates at the same decision point, with the same set of remaining sections.
-
-The estimator is not a completion counter and does not certify future feasibility. The $+100/-100$ construction was chosen as a transparent diagnostic scale rather than fitted from outcomes. Because the lookahead policy generates up to three B1 candidates and evaluates downstream states repeatedly, it adds roughly a factor-of-two runtime overhead on this corpus without improving the observed quality metrics. It is therefore retained as a methodological ablation that tests the value of downstream awareness, not as a production recommendation. Each candidate-generation subsolve uses one worker, seed 1, and a 5\,s cap. This diagnostic is evaluated on the same 80-blueprint manifest and is treated as secondary evidence rather than a replacement for the pre-registered B1 policy.
+with the highest-scoring candidate selected. The estimator is not a completion counter and does not certify future feasibility; the $+100/-100$ scale is a transparent diagnostic rather than a fitted parameter. Each candidate-generation subsolve uses one worker, seed 1, and a 5\,s cap. On the fixed manifest, lookahead adds roughly a factor-of-two runtime overhead without improving quality, so it is treated as a secondary ablation rather than a production recommendation.
 
 \subsection{Constructive--Local Baseline Details}
-For a section, $B_{LS}$ first filters the bank by eligibility, mark tier, and previously selected IDs. Its dynamic-programming state $F[c,w]$ stores the highest-priority ID tuple reaching count $c$ and time $w$, initialized as $F[0,0]=(\,0,\emptyset\,)$. The fixed per-item priority combines target difficulty and Bloom-group weights, chapter novelty, and a fixed per-blueprint deterministic jitter; exact score ties use lexicographically smaller ID tuples. Extending a state is allowed only when the count and time bounds hold and the candidate has no edge in $S$ to an item already in the tuple. Thus the seed respects exact count, duration, mark tier (and hence marks for this template), eligibility, cross-section exclusion, and supplied conflict edges. A missing $F[K,W]$ is reported as a heuristic failure, never as a certificate of infeasibility.
-
-\begin{algorithm}[t]
-\caption{Constructive--local baseline ($B_{LS}$) for one section}
-\label{alg:bls}
-\begin{algorithmic}[1]
-\Require Eligible tier-matched pool $P$, excluded IDs $X$, conflict graph $S$, $(K,W)$
-\State Filter $P\gets P\setminus X$; $F[0,0]\gets\emptyset$
-\For{each $q\in P$ in fixture order}
-  \For{each populated $(c,w)$ in descending count/time order}
-    \If{$c<K$, $w+t_q\leq W$, and $q$ conflicts with no ID in $F[c,w]$}
-      \State Update $F[c+1,w+t_q]$ if its priority score is larger; break ties by ID tuple
-    \EndIf
-  \EndFor
-\EndFor
-\If{$F[K,W]$ is absent} \Return HEURISTIC\_FAILURE \EndIf
-\State $x\gets F[K,W]$; repeatedly take the first ID-ordered equal-time swap that strictly improves $(D,P,-C)$ and preserves $S$
-\State Stop after no improving swap or 100 accepted/rejected search rounds; \Return $x$
-\end{algorithmic}
-\end{algorithm}
-
-With $n_s$ candidates, the construction has $O(n_s K W)$ count--time states without conflicts; tuple conflict checks add a factor $O(K)$ in the implementation. The bounded local phase examines at most 100 rounds of $O(K(n_s-K))$ swaps, each checked against at most $K-1$ selected IDs. This comparator is deliberately heuristic: unlike CP-SAT, it offers no optimality certificate.
-
-\begin{table}[t]
-\caption{Core policy behavior. A CP-SAT \texttt{FEASIBLE} result certifies hard-constraint validity but not objective optimality; $B_{LS}$ is non-CP-SAT.}
-\label{tab:policy_behavior}
-\centering
-\scriptsize
-\begin{tabular}{@{}lp{3.5cm}ccc@{}}
-\toprule
-Policy & Selection behavior & Weights & CP-SAT & \texttt{FEASIBLE} certifies \\
-\midrule
-$B0$ & First hard-constraint-valid assignment & No & 1 & Valid assignment only \\
-$B_{LS}$ & Constructive DP + equal-time local search & No & 0 & N/A (checked construction) \\
-$B1$ & Lexicographic $D\to C\to P$ & No & 3 & Valid incumbent; no pass optimum \\
-$B2$ & Raw scalarization $D+U+P$ & Fixed $(1,1,1)$ & 1 & Valid scalarized incumbent; no optimum \\
-$B_C$ & Joint direct compliance $D_{\mathrm{total}}+P_{\mathrm{paper}}$ & No & 1 & Valid direct-objective incumbent \\
-$B_J$ & Joint lexicographic $D\to C\to P$ & No & 3 & Valid incumbent; no pass optimum \\
-\bottomrule
-\end{tabular}
-\end{table}
+The constructive--local baseline uses a count--time dynamic program to build a feasible section, then applies deterministic equal-time swaps that improve $(D,P,-C)$ while preserving conflicts. Its state complexity is $O(n_sKW)$ without conflicts, with an additional implementation factor for conflict checks. Unlike CP-SAT policies, it is heuristic and provides no optimality certificate.
 
 \subsection{Compliance Metrics}
 Blueprint compliance is partitioned into non-negotiable hard rules $\mathcal{H}$ (e.g., exact marks, time, question count) and soft distributional goals $\mathcal{S}$ (difficulty alignment and Bloom fit). For hard compliance, $CR_{\mathrm{hard}}(x) = 1.0$ for any valid output. Soft compliance is scored as:
@@ -225,31 +154,15 @@ For a section, $D=\sum_{k=1}^{7}|\sum_{i:d_i=k}x_i-\Delta_k|$ and $P=\sum_{g\in\
 %===============================================================================
 
 \subsection{Dataset and Benchmark Setup}
-The empirical corpus consists of \textbf{475 CBSE Class X Mathematics items} retrospectively extracted from a production assessment system. Every item contains populated metadata: marks (1--5), completion time, ordinal difficulty (bands 1--7), Bloom cognitive tag, and chapter classifications. The study does not evaluate a live deployment, user adoption, or operational outcomes. The bank is easy-skewed (83\% of items in bands 1--3) and marks-skewed (73\% 1-mark items), providing a production-derived testbed for difficulty alignment. For solver scaling experiments (RQ2), synthetic pools calibrated to the empirical marginal distributions are generated up to $N{=}10{,}000$; conflict density and feature correlations are not claimed to reproduce the production bank.
+The empirical corpus consists of \textbf{475 CBSE Class X Mathematics items} retrospectively extracted from a production assessment system. Every item contains populated metadata: marks (1--5), completion time, ordinal difficulty (bands 1--7), Bloom cognitive tag, and chapter classifications. The study does not evaluate a live deployment, user adoption, or operational outcomes. The bank is easy-skewed (83\% of items in bands 1--3) and marks-skewed (73\% 1-mark items), providing a production-derived test setting for difficulty alignment. For solver scaling experiments (RQ2), synthetic pools calibrated to the empirical marginal distributions are generated up to $N{=}10{,}000$; conflict density and feature correlations are not claimed to reproduce the production bank.
 
 \subsection{Blueprint Manifest Generation}
-For RQ1, 80 blueprints are deterministically generated using a fixed random seed (\texttt{random.Random(42)}). For each ID in ascending order, 5--7 eligible chapters are sampled uniformly from the sorted chapter list; target difficulty counts are normalized draws weighted $(4,5,4,3,2,1,0.3)$ with cyclic remainder assignment, and Bloom targets use the 54/24/22 split. Each blueprint specifies five template sections (A--E), containing 38 questions in total, with section-level question counts, marks, time bounds, and target difficulty distributions. The fixed structural parameters used for every manifest blueprint are shown in Table~\ref{tab:manifest}; the seed-42 target histograms are recorded in the blueprint manifest and regeneration artifacts in the reproducibility package. Sections are solved sequentially in order A$\to$E, carrying selected item IDs forward to enforce cross-section uniqueness.
+For RQ1, 80 blueprints are deterministically generated using a fixed random seed (\texttt{random.Random(42)}). The seven required chapters form the chapter set for each blueprint; chapter labels are represented through the topic-tag metadata, and the eligibility sample is the blueprint-specific subset of those chapters. For each ID in ascending order, 5--7 eligible chapters are sampled uniformly from the sorted chapter list; target difficulty counts are normalized draws weighted $(4,5,4,3,2,1,0.3)$ with cyclic remainder assignment, and Bloom targets use the 54/24/22 split. Each blueprint specifies five template sections (A--E), containing 38 questions in total, with section-level question counts, marks, time bounds, and target difficulty distributions. The fixed structural parameters used for every manifest blueprint are: A/B/C/D/E contain 20/5/6/4/3 questions with 20/10/18/20/12 marks and 40/15/36/40/18 minutes; the seed-42 section-level target histograms and Bloom-group targets are recorded in the blueprint manifest and regeneration artifacts. The paper-level Bloom target is 54/24/22; section-level targets are generated with the manifest rather than assumed constant across sections. Sections are solved sequentially in order A$\to$E, carrying selected item IDs forward to enforce cross-section uniqueness.
 
-\begin{table}[t]
-\caption{Fixed structural parameters for the five-section blueprint template. Difficulty histograms are generated per blueprint from the fixed seed and are not constant across sections.}
-\label{tab:manifest}
-\centering
-\small
-\begin{tabular}{@{}lrrrr@{}}
-\toprule
-Section & Questions $K$ & Total marks $M$ & Marks/item $m$ & Time $W$ (min) \\
-\midrule
-A & 20 & 20 & 1 & 40 \\
-B & 5  & 10 & 2 & 15 \\
-C & 6  & 18 & 3 & 36 \\
-D & 4  & 20 & 5 & 40 \\
-E & 3  & 12 & 4 & 18 \\
-\bottomrule
-\end{tabular}
-\end{table}
+
 
 \subsection{Whole-Paper Control on Excluded Blueprints}
-To resolve whether the 10 blueprints yielding an \texttt{INFEASIBLE} status under sequential section solving were caused by greedy section lock-in or underlying blueprint unsatisfiability, a whole-paper joint CP-SAT model was formulated. The joint model pools constraints \eqref{eq:marks}--\eqref{eq:eligibility} across all sections simultaneously. The supplied joint-model audit reports all 10 excluded blueprints as \texttt{INFEASIBLE} under the same modeled hard constraints. This supports the interpretation that the 10 infeasible runs represent global blueprint infeasibility rather than an artifact of sequential policy continuation; the audit files are required to independently verify this result. The common-feasible baseline count is therefore exactly 70/80.
+A whole-paper joint CP-SAT audit classifies all 10 sequentially excluded blueprints as \texttt{INFEASIBLE} under the same hard constraints, indicating global blueprint infeasibility rather than sequential lock-in; the common-feasible baseline is therefore 70/80.
 
 \subsection{Results}
 
@@ -272,11 +185,15 @@ $B1$ sequential lexicographic & 70/80 & \textbf{40} [36,44] & 6 & 24 [22,26] & 0
 \end{tabular}
 \end{table}
 
-\noindent\textbf{RQ1 (Structural Alignment).} Table~\ref{tab:rq1} replaces a weak first-feasible-only comparison with independent and whole-paper controls. On the fixed manifest, $B1$ improves $D$ over $B0$ in all 70 pairs (median difference 12, 95\% CI $[10,12]$, Holm-adjusted $p=3.6{\times}10^{-12}$, $r=0.87$). These are paired results for the tested manifest, not independent evidence from 70 unrelated experiments. Against $B_{LS}$, $B1$ improves $D$ in 22 pairs and ties in 48 (median difference 0, CI $[0,0]$, adjusted $p=1.4{\times}10^{-5}$, $r=0.56$). This establishes structural-alignment differences only, not psychometric or pedagogical superiority.
+
+
+\noindent\textbf{RQ1 (Structural Alignment).} The fixed manifest provides paired policy comparisons. On the fixed manifest, $B1$ improves $D$ over $B0$ in all 70 pairs (median difference 12, 95\% CI $[10,12]$, Holm-adjusted $p=3.6{\times}10^{-12}$, $r=0.87$). These are paired results for the tested manifest, not independent evidence from 70 unrelated experiments. Against $B_{LS}$, $B1$ improves $D$ in 22 pairs and ties in 48 (median difference 0, CI $[0,0]$, adjusted $p=1.4{\times}10^{-5}$, $r=0.56$). This establishes structural-alignment differences only, not psychometric or pedagogical superiority.
 
 The direct-compliance control $B_C$ and weighted $B2$ match $B1$'s median difficulty while achieving lower median Bloom deviation (22 versus 24) and lower solver runtime (0.04 and 0.07 versus 0.13\,s). Because the theoretical bounds make clipping inactive for every feasible paper, and every complete template paper contains 38 questions, $CR_{\mathrm{soft}}=1-(D_{\mathrm{total}}+P_{\mathrm{paper}})/(4K_{\mathrm{tot}})$ differs from minimizing $D_{\mathrm{total}}+P_{\mathrm{paper}}$ only by a positive affine transformation; this makes $B_C$ affine-equivalent to the reported complete-paper loss, but not equivalent to $B1$, whose lexicographic $D\to C\to P$ preference protects each priority level sequentially rather than trading the components in a single sum. Thus $B1$ is not presented as the raw quality--runtime optimum: its contribution is a deterministic, weight-free specification of priority order. Coverage has limited discriminating power in this template: all paired core-policy comparisons tie in represented-chapter count, despite a per-policy IQR of [6,7] over seven possible chapters. It is therefore not evidence that Pass~2 improves quality.
 
-The bounded lookahead diagnostic ties sequential $B1$ on difficulty, Bloom deviation, and coverage across all 70 comparable fixed-manifest papers, while increasing median solver runtime from $0.127$ to $0.259$\,s (an increase of $0.132$\,s; lower runtime is better). It therefore provides a reproducible test of downstream-aware candidate selection, but no evidence of a quality gain on this corpus; the observed overhead makes it unsuitable as the default production policy here.
+\noindent\textbf{Baseline sensitivity.} These are fixed-policy comparisons, not universal comparisons. $B0$ uses one worker, the documented deterministic search configuration, and the per-blueprint seeds retained in the artifact; this study does not estimate a full solver-seed distribution. $B2$ uses the pre-specified raw $(1,1,1)$ weights in Table~\ref{tab:rq1}. As a secondary sensitivity check, all 27 raw vectors in $\{1,3,10\}^3$ retain median chapter coverage 6 and yield median $D\in\{40,41\}$, median Bloom deviation $\in\{22,23,24\}$, and median solver runtime $0.072$--$0.126$\,s on the same 70 common-feasible rows (artifact: \texttt{results\_weight\_sensitivity.json}). This bounded grid demonstrates policy-scale sensitivity but does not select an optimal weight vector or convert $B2$ into a priority-policy comparison.
+
+The bounded lookahead diagnostic ties sequential $B1$ on difficulty, Bloom deviation, and coverage across all 70 comparable fixed-manifest papers, while increasing median solver runtime from $0.124$ to $0.257$\,s (an increase of $0.132$\,s; lower runtime is better). It therefore provides a reproducible test of downstream-aware candidate selection, but no evidence of a quality gain on this corpus; the observed overhead makes it unsuitable as the default production policy here.
 
 \begin{table}[t]
 \caption{Secondary bounded lookahead diagnostic (Table 4) on the fixed 80-blueprint manifest. All entries are medians with IQRs in brackets; for quality metrics, positive values in the final column favour lookahead, while the runtime difference is defined as Sequential $B1$ minus Lookahead, so the negative runtime value directly indicates that lookahead is slower.}
@@ -290,58 +207,32 @@ Metric & Sequential $B1$ & Lookahead $k{=}3$ & Difference ($B1-$lookahead) \\
 Difficulty $D$ & 40 [36,44] & 40 [36,44] & 0 \\
 Bloom deviation & 24 [22,26] & 24 [22,26] & 0 \\
 Chapter coverage & 6 [6,7] & 6 [6,7] & 0 \\
-Solver runtime (s) & 0.127 [0.108,0.144] & 0.259 [0.230,0.285] & -0.132 \\
+Solver runtime (s) & 0.124 [0.109,0.140] & 0.257 [0.226,0.288] & -0.132 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \noindent\textbf{Robustness, Joint Control, and Ablations.} The primary robustness evidence is the seed-level paired analysis across five independently generated manifests (seeds 42--46), with the manifest treated as the resampling unit. Across these five clusters, $B1$ has seed-level median $D$ values of 38--40 versus 50--52 for $B0$. The corresponding paired effects, cluster-bootstrap 95\% intervals, effect sizes, ties, and Holm-adjusted paired tests are reported at the seed level in \texttt{results\_multiseed\_revision.json}. The 341 pooled common-feasible blueprint rows are retained only as a descriptive aggregation; they are not treated as 341 independent replicates because blueprints within a manifest share generation rules and a random seed. The same reporting convention is used for the $B1$ versus $B_{LS}$ comparison: the pooled 77/264/0 improve/tie/lose counts are descriptive, while inference is based on the clustered seed-level paired effects.
 
-\begin{table}[t]
-\caption{Per-manifest median difficulty deviation and Bloom deviation for the five-seed robustness study. Each row is an independently generated manifest; common cases are the shared feasible rows used for paired comparisons.}
-\label{tab:seedresults}
-\centering\scriptsize
-\begin{tabular}{lrrrrrr}
-\toprule
-Seed & Common & $B0$ $D$ & $B_{LS}$ $D$ & $B1$ $D$ & $B1$ Bloom & $B2$ Bloom\\
-\midrule
-42 & 70 & 52 & 42 & 40 & 24 & 22\\
-43 & 66 & 50 & 40 & 40 & 25 & 24\\
-44 & 65 & 50 & 40 & 40 & 24 & 22\\
-45 & 71 & 50 & 40 & 38 & 24 & 22\\
-46 & 69 & 50 & 40 & 40 & 26 & 24\\
-\bottomrule
-\end{tabular}
-\end{table}
+
 
 On the fixed manifest, $B_J$ and sequential $B1$ tie on difficulty, Bloom deviation, and coverage in all 70 jointly feasible cases; $B_J$ is slower (median 0.17 versus 0.13\,s). Production order A$\to$E, reverse order, and high-/low-count-first orders each retain 70 feasible cases and identical aggregate medians. Hence no ordering loss was observed for the evaluated corpus and template; this is not evidence that sequential assembly is lossless in general. Full-suite objective ablations give median $(D,\mathrm{Bloom})$ of $(40,32)$ for D-only, $(40,38)$ for D$\to$C, $(40,24)$ for D$\to$C$\to$P, and $(48,22)$ for C$\to$P; chapter coverage again has median 6. These are descriptive component effects over the 70 common cases, not independent replicates.
 
-\noindent\textbf{RQ2 (Solver Scaling).} Table~\ref{tab:rq2} details median solver runtime for a Section-A blueprint ($K{=}20$) across calibrated synthetic pools up to $N=10{,}000$. $B0$ executes in under $0.33$\,s at $N=10{,}000$, while $B1$ takes $1.64$\,s (a $2$--$7\times$ overhead across the displayed sizes). Under the stated synthetic calibration, all runs remained within budget; this does not establish end-to-end production latency.
+\noindent\textbf{RQ2 (Solver Scaling).} For a Section-A blueprint ($K{=}20$), median solver runtime rises from $0.003$/$0.021$ s for $B0$/$B1$ at $N=100$ to $0.326$/$1.643$ s at $N=10{,}000$. $B0$ executes in under $0.33$\,s at $N=10{,}000$, while $B1$ takes $1.64$\,s (a $2$--$7\times$ overhead across the displayed sizes). Under the stated synthetic calibration, all runs remained within budget; this does not establish end-to-end production latency. A descriptive log--log fit over the five displayed pool sizes gives slopes of approximately $1.00$ for $B0$ and $0.93$ for $B1$. These are empirical slopes over this calibrated range, not asymptotic complexity claims; conflict-graph construction, embedding, memory, and larger section sizes remain outside this experiment.
 
-\begin{table}[t]
-\caption{RQ2: median solver runtime vs.\ pool size (Section A, $K{=}20$, 3 seeds). Times reflect CP-SAT model construction and solving only.}
-\label{tab:rq2}
-\centering
-\small
-\begin{tabular}{rrrrr}
-\toprule
-$N$ & 1-mark pool & $B0$ solver time (s) & $B1$ solver time (s) & $B1/B0$ ratio \\
-\midrule
-100 & 73 & 0.003 & 0.021 & 7.0 \\
-500 & 355 & 0.019 & 0.069 & 3.6 \\
-1,000 & 718 & 0.059 & 0.125 & 2.1 \\
-5,000 & 3,654 & 0.165 & 0.580 & 3.5 \\
-10,000 & 7,264 & 0.326 & 1.643 & 5.0 \\
-\bottomrule
-\end{tabular}
-\end{table}
 
-\noindent\textbf{RQ3 (Blueprint Tightness).} In a separate tightness sweep of 100 blueprint--tier cases in total (20 cases per tier), restricting eligible chapter counts from 7 down to 3, overall feasibility drops from 100\% (tier 7) to 25\% (tier 3). Conditional on feasible cases, $B1$ maintains a median difficulty-deviation improvement of $6$ to $12$ units over $B0$ across the tested tiers; these cases are treated as a sensitivity analysis rather than as independent replications.
+
+\noindent\textbf{RQ3 (Blueprint Tightness).} In a separate tightness sweep of 100 blueprint--tier cases in total (20 cases per tier), restricting eligible chapter counts from 7 down to 3, common B0/B1 feasibility drops from 20/20 (tier 7) to 5/20 (tier 3) in the sweep. Conditional on common feasibility, $B1$ maintains a median difficulty-deviation improvement of $6$ to $12$ units over $B0$ across the tested tiers; these cases are treated as a sensitivity analysis rather than as independent replications. The runner records common-feasible versus non-common-feasible cases, but not policy-specific \,\texttt{INFEASIBLE}/\texttt{UNKNOWN} categories for this legacy sweep; consequently, the table is an outcome accounting for the paired estimand, not evidence of a policy-specific feasibility advantage.
+
+
 
 \noindent\textbf{RQ4 (Soft Compliance).} Each pair consists of the B0 and B1 outputs for the same generated blueprint and eligibility tier; pairs are retained only when both policies return feasible outputs. Among 66 common-feasible blueprint pairs retained from the tightness sweep, using the complete-paper form of $CR_{\mathrm{soft}}$ rather than an average of section scores, $B1$ increases median soft compliance score from $0.408$ ($B0$) to $0.566$ and outperforms $B0$ in all 66 cases (Wilcoxon $p=1.6{\times}10^{-12}$, $r=0.87$). Because the analysis uses common-feasible pairs, these results should be interpreted together with the tier-wise feasibility counts rather than as a feasibility advantage.
 
 \subsection{Reproducibility}
-The public reproducibility repository (\url{https://github.com/papudg/Research}, branch \texttt{reproducibility-public}) contains the harness in \texttt{experiments/}, library source in \texttt{src/icaa/}, dependency pins in \texttt{requirements.txt}, fixed manifests under \texttt{data/manifests/}, and recorded results. The metadata-only 475-record fixture is at \path{docs/qbank_audit/cbse_class_x_maths_questions_full_updated.json} (no question text in the public release). Core result files retain per-blueprint outcomes, status, runtime, and paired summaries; \texttt{results\_environment.json} records the CPU, RAM, Windows, Python/OR-Tools versions, and fixed one-worker CP-SAT parameters. \texttt{REPRODUCIBILITY.md} lists seeds, artifact-access boundaries, and regeneration commands. Runtime results remain solver/model-construction measurements, not end-to-end preprocessing latency.
+The public reproducibility repository is \url{https://github.com/papudg/Research}, branch \texttt{reproducibility-public}, pinned for this submission at commit \texttt{cd25c2d90c5d48df2817c7bd2fb446355d4179b4}. It contains the harness in \texttt{experiments/}, library source in \texttt{src/icaa/}, dependency pins in \texttt{requirements.txt}, fixed manifests under \texttt{data/manifests/}, and recorded results. The metadata-only 475-record fixture is at \path{docs/qbank_audit/cbse_class_x_maths_questions_full_updated.json} (no question text in the public release). From the repository root, set \texttt{PYTHONHASHSEED=0} and run \texttt{python experiments/revision\_report.py}; the platform-specific exact command list is in \texttt{REPRODUCIBILITY.md}. \texttt{results\_environment.json} records the CPU, RAM, Windows, Python/OR-Tools versions, and fixed one-worker CP-SAT parameters. Runtime results remain solver/model-construction measurements, not end-to-end preprocessing latency.
+
+The public artifact maps each main claim to recorded JSON/text results: RQ1 to \texttt{results\_revision\_suite.json}, lookahead to \texttt{results\_lookahead\_comparison.json}, clustered analysis to \texttt{results\_multiseed\_revision.json}, joint/order controls to \texttt{results\_joint\_policy\_comparison.json}, tightness to \texttt{results\_rq3\_rq5.txt}, weight sensitivity to \texttt{results\_weight\_sensitivity.json}, and environment settings to \texttt{results\_environment.json}.
+
 
 %===============================================================================
 \section{Discussion and Limitations}
@@ -350,14 +241,14 @@ The public reproducibility repository (\url{https://github.com/papudg/Research},
 
 \noindent\textbf{Policy Design Trade-Offs.} First-feasible generation leaves structural alignment uncaptured relative to optimized controls. Multi-pass $B1$ supplies an explicit, weight-free priority hierarchy: difficulty alignment first, chapter coverage second, and Bloom fit third. Its extra passes are therefore a methodological and governance choice rather than a runtime-optimal policy. On this corpus, $B1$ is about twice as slow as the fastest optimized controls and gains no lookahead quality, so a different latency budget may favor $B_C$ or $B2$.
 
-\noindent\textbf{Limitations.} (1) Structural blueprint alignment does not imply psychometric validity; empirical item response curves require post-examination response data. (2) Scaling and policy runtimes cover model construction and CP-SAT solving only; $O(n^2)$ embedding generation and conflict-graph construction were not benchmarked. (3) The evaluation is based on one easy-skewed 475-item CBSE Class X Mathematics corpus and fixed template family; results may not generalize to other subjects, banks, or section designs. (4) Chapter coverage is weakly discriminating here, and the duplicate-detection stress test is constructed rather than human validated; consequently, the experiments do not establish the precision or recall of the upstream near-duplicate detector. (5) Difficulty and Bloom labels are source-system ordinal metadata; label noise, annotator agreement, and consistency of those labels were not evaluated.
+\noindent\textbf{Limitations.} Structural alignment does not imply psychometric validity; runtimes exclude embedding and conflict-graph construction. The evaluation uses one 475-item CBSE Class X Mathematics corpus and fixed template family, so cross-subject, cross-bank, and cross-template generalization is untested. Difficulty and Bloom labels are source-system metadata, the upstream duplicate detector was not human-validated, and fixed solver settings/weights make sequential--joint agreement an instance-regime result rather than a universal guarantee.
 
 %===============================================================================
 \section{Conclusion}
 \label{sec:conclusion}
 %===============================================================================
 
-This paper presented an applied algorithm-engineering study of policy-aware CP-SAT for sequential examination-paper assembly. Its contribution is a reproducible comparison of objective policies and sequential versus joint decomposition on a production-derived, metadata-only benchmark, rather than a new CP-SAT algorithm. Across the five tested manifests, sequential lexicographic $B1$ has manifest-level median difficulty deviations of 38--40 versus 50--52 for first-feasible $B0$; the controls show that its main demonstrated value is explicit priority semantics rather than universal raw dominance. Lookahead ties $B1$ on quality but doubles runtime on this corpus. A joint control and alternative-order study found no ordering loss on the evaluated corpus and template. These results concern structural alignment and solver runtime only; end-to-end latency, psychometric validity, and cross-corpus generalization remain future work.
+We presented an algorithm-engineering framework for policy-aware CP-SAT examination-paper assembly, with explicit comparisons of sequential and joint optimization. Across five manifests, sequential lexicographic $B1$ has median difficulty deviations of 38--40 versus 50--52 for first-feasible $B0$. On the fixed manifest, $B1$ and joint $B_J$ tie on all 70 comparable cases, while alternative section orders retain the same aggregate medians. Bounded lookahead likewise provides no quality gain and increases median runtime from $0.124$ to $0.257$ seconds. These results support sequential optimization as an effective policy for the tested instance regime while leaving end-to-end latency, psychometric validity, and cross-corpus generalization for future work.
 
 \scriptsize
 \begin{thebibliography}{99}

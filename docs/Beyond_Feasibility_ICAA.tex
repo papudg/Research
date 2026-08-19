@@ -1,0 +1,413 @@
+\documentclass[runningheads]{llncs}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{url}
+
+% llncs does not define a proof environment; define a minimal one (guarded so it is
+% only added if not already present, e.g. if amsthm is loaded later).
+\makeatletter
+\@ifundefined{proof}{%
+  \newenvironment{proof}[1][Proof]{\par\noindent\textbf{##1.}\hspace*{1em}\ignorespaces}{\hfill\ensuremath{\square}\par\medskip}%
+}{}
+\makeatother
+
+\begin{document}
+
+\title{Policy-Aware CP-SAT Optimization for Sequential Examination Paper Assembly}
+
+\titlerunning{Policy-Aware CP-SAT for Examination Assembly}
+
+% Anonymized for ICAA double-blind review
+\author{Anonymous Author(s)}
+\authorrunning{Anon. Author(s)}
+\institute{Institute Anonymized for Double-Blind Review\\
+\email{author@domain.org}}
+
+\maketitle
+
+\begin{abstract}
+Sequential examination-paper assembly can be formulated as Boolean constraint satisfaction under structural, temporal, topic-coverage, and non-duplication requirements. We study a deployed metadata-only setting in which a first-feasible solver returns any structurally valid paper, and formulate a policy-aware CP-SAT extension that prioritizes difficulty alignment, required-topic coverage, and Bloom-group fit while retaining hard blueprint constraints. We evaluate the policies on a 475-item CBSE Class X Mathematics corpus and use calibrated synthetic pools only for solver scaling to $N{=}10{,}000$.
+
+Across 70 common-feasible cases from a fixed 80-blueprint manifest, median difficulty deviation is 52 for first-feasible B0, 40 for lexicographic B1, and 40 for weighted B2; median Bloom deviation is 40, 24, and 22, respectively. All 10 excluded sequential cases are also jointly infeasible under the modeled whole-paper hard constraints. B2 has the strongest observed aggregate quality--solver-runtime trade-off, while B1 provides an explicit, weight-free priority policy. The results concern structural blueprint alignment and solver-only runtime, not psychometric validity, end-to-end latency, or universal optimization dominance. The contribution is a reproducible applied-algorithms study of policy design for sequential constrained selection.
+\keywords{Constraint Satisfaction Problem \and Multi-Objective Optimization \and Automated Test Assembly \and CP-SAT \and Lexicographic Optimization \and Near-Duplicate Detection \and Educational Assessment.}
+\end{abstract}
+
+%===============================================================================
+\section{Introduction}
+\label{sec:intro}
+%===============================================================================
+
+Large-scale educational assessment platforms manage repositories containing tens of thousands of test items.
+Assembling an examination paper from these banks is far more complex than executing a database retrieval query.
+Each paper must satisfy a stringent combination of structural, temporal, pedagogical, and blueprint constraints specified by examination boards (e.g., CBSE, ICSE): exact total marks, strict duration limits, section-wise question counts, balance across cognitive levels (Bloom's taxonomy~\cite{bloom1956,anderson2001}), topic coverage, and the strict avoidance of duplicate or near-duplicate questions.
+National policy frameworks such as India's National Education Policy~\cite{moenep2020} further emphasise competency-based assessment, making blueprint compliance a first-class engineering requirement rather than an aesthetic preference.
+
+\subsection{The Feasibility Gap}
+Most production systems treat generation as a Constraint Satisfaction Problem (CSP) and employ SAT or CP solvers configured to terminate at the \emph{first feasible solution} ($B0$).
+While computationally efficient, first-feasible solving exhibits a major flaw: a structurally feasible paper is not necessarily well aligned with its target blueprint. The remainder of the paper evaluates whether explicit objectives close this gap.
+
+\subsection{Research Questions and Contributions}
+This work addresses the problem of transforming a deployed first-feasible engine into a multi-objective optimization platform.
+We investigate four research questions:
+\begin{itemize}
+    \item \textbf{RQ1 (Quality):} How much does lexicographic optimization improve difficulty alignment and topic coverage over first-feasible generation?
+    \item \textbf{RQ2 (Solver runtime):} What solver-runtime overhead does optimization introduce as banks scale to $N=10{,}000$, excluding embedding and conflict-graph construction?
+    \item \textbf{RQ3 (Blueprint tightness):} How does the optimization gain behave as the feasible region contracts?
+    \item \textbf{RQ5 (Compliance):} To what extent does explicit optimization of soft blueprint requirements improve structural blueprint compliance over first-feasible generation?
+\end{itemize}
+
+\noindent\textbf{Contributions.} (1) A selection-CSP model for sequential examination-paper assembly from metadata-only item banks; (2) a deterministic three-pass CP-SAT policy that makes the priority order among structural objectives explicit while preserving hard constraints; (3) a controlled comparison with first-feasible, greedy, weighted, and soft-window policies under a common solver substrate; and (4) a reproducible single-corpus benchmark with calibrated solver-scaling experiments. The contribution is applied policy design and reproducible engineering, not a new general-purpose optimization algorithm or a claim of universal dominance.
+
+%===============================================================================
+\section{Related Work}
+Automated test assembly traditionally uses 0--1 programming and IRT-calibrated item parameters to optimize information subject to content and length constraints~\cite{theunissen1985,vanderLinden2005,lord1980}. Our setting instead assumes metadata-only K--12 item banks, so the contribution is a deployable CP-SAT policy formulation rather than a new psychometric assembly model. CP-SAT is suitable for Boolean selection, linear equalities, and conflict-graph constraints~\cite{nieuwenhuis2006,perron2023}.
+
+Semantic embeddings and lexical similarity are established tools for duplicate detection~\cite{reimers2019,devlin2019,charikar2002}; cognitive taxonomies and testing standards motivate blueprint constraints~\cite{bloom1956,anderson2001,standards2014}. This paper combines these ingredients in a sequential, metadata-driven assembly pipeline and evaluates policy trade-offs in one production-derived corpus.
+
+\section{Problem Formalization}
+\label{sec:formalization}
+%===============================================================================
+
+Let $Q=\{q_1,\dots,q_n\}$ be an item bank of $n$ questions.
+Each item $q_i=(m_i,t_i,T_i,d_i,\tau_i)$, where $m_i\in\mathbb{Z}^+$ is the marks allocation, $t_i\in\mathbb{Z}^+$ is the estimated completion time (minutes), $T_i\subseteq\mathcal{T}$ is the set of topic/subtopic tags, $d_i\in\{1,\dots,|D|\}$ is an ordinal difficulty band, and $\tau_i$ is the textual content.
+We distinguish an \emph{eligibility set} $E\subseteq\mathcal{T}$, which determines which tagged items may be selected, from a \emph{required-coverage set} $R\subseteq\mathcal{T}$, whose topics should be represented in the generated paper.
+A blueprint is therefore $B=(M,W,K,E,R,\Delta,\mathcal{H},\mathcal{S})$, where $M$ is total marks, $W$ duration, $K$ question count, $\Delta=(\Delta_1,\dots,\Delta_{|D|})$ is the target difficulty histogram with $\sum_k\Delta_k=K$, and $\mathcal{H}$ and $\mathcal{S}$ denote hard and soft blueprint requirements.
+
+\subsection{Decision Variables and Baseline $B0$}
+We introduce a binary decision variable $x_i\in\{0,1\}$ per item ($x_i=1$ iff $q_i$ is selected).
+The deployed baseline feasibility problem ($B0$) seeks $x\in\{0,1\}^n$ satisfying:
+
+\begin{align}
+\sum_{i=1}^n m_i x_i &= M \quad &&\text{(Exact total marks)} \label{eq:marks} \\
+\sum_{i=1}^n t_i x_i &= W \quad &&\text{(Exact total duration)} \label{eq:time} \\
+\sum_{i=1}^n x_i &= K \quad &&\text{(Exact question count)} \label{eq:count} \\
+x_i + x_j &\le 1 \quad \forall (i,j)\in S \quad &&\text{(Anti-duplicate)} \label{eq:conflict} \\
+x_i = 1 &\Rightarrow T_i\cap E\neq\emptyset \quad \forall i \quad &&\text{(Topic eligibility)} \label{eq:eligibility}
+\end{align}
+
+\noindent where $S\subseteq Q\times Q$ is the set of near-duplicate pairs (\S\ref{sec:system}).
+Constraints~\eqref{eq:marks}--\eqref{eq:count} are linear \emph{equalities}; \eqref{eq:eligibility} is a set-membership filter realized by fixing $x_i=0$ for items whose tags are disjoint from $E$; and \eqref{eq:mandatory} explicitly enforces mandatory topic inclusion.
+Required topic coverage is a \emph{hard} requirement when the blueprint specifies mandatory topics: for every $t\in R_{\mathrm{hard}}\subseteq R$,
+\begin{equation}
+\sum_{i:\,t\in T_i}x_i \ge 1 \qquad \forall t\in R_{\mathrm{hard}}.
+\label{eq:mandatory}
+\end{equation}
+Thus mandatory coverage is part of $\mathcal{H}$ and is enforced during every feasibility and optimization pass; it is not merely an eligibility filter. The optional/graded coverage component uses indicators $y_t$ for $t\in R$ and is optimized in Pass~2. The baseline has \textbf{no objective}: any solution satisfying the hard constraints is acceptable, and the solver returns the first one found.
+
+\section{System boundary}
+\label{sec:system}
+The deployed pipeline pre-filters eligible items, constructs a conflict graph from hybrid semantic similarity, and assembles sections sequentially with CP-SAT. Section-wise solving reflects the production orchestration boundary: each template section has independent marks, time, and count limits, while selected identifiers are carried forward to prevent cross-section reuse and to emit section-level diagnostics. A later infeasible continuation is initially policy-path-specific, so it is not itself proof of global whole-paper infeasibility. We therefore run a focused joint whole-paper feasibility control for the 10 sequentially excluded RQ1 blueprints: all 10 are CP-SAT \texttt{INFEASIBLE} under the same jointly modeled hard constraints. This rules out section-order lock-in as the source of those exclusions, although it is not a joint-policy quality comparison. Similarity construction and embedding time are outside the solver-runtime measurements.
+
+\section{Proposed Multi-Objective Optimization Model}
+\label{sec:proposed}
+%===============================================================================
+
+We propose $B1$, which transforms first-feasible execution into a three-pass lexicographic optimization.
+Multi-criteria preference is handled lexicographically~\cite{ehrgott2005} rather than by scalarization, to avoid arbitrary weight tuning.
+The priority ordering is (i) difficulty-distribution alignment, (ii) required-topic coverage, and (iii) soft blueprint compliance.
+All hard blueprint rules remain constraints throughout. Question-text generation is outside the scope of this work;
+the optimizer assembles a paper from an existing item bank.
+
+\subsection{Pass 1: Primary Difficulty Alignment}
+Given target histogram $\Delta$, Pass~1 minimizes the $L_1$ deviation
+\begin{equation}
+D(x)=\sum_{k=1}^{|D|}\Bigl|\sum_{i:\,d_i=k} x_i - \Delta_k\Bigr|.
+\end{equation}
+To linearize $D(x)$ we introduce non-negative auxiliary integers $u_k\ge 0$ and the standard absolute-value split:
+\begin{align}
+u_k &\ge \textstyle\sum_{i:\,d_i=k} x_i - \Delta_k &&\forall k \label{eq:u1}\\
+u_k &\ge \Delta_k - \textstyle\sum_{i:\,d_i=k} x_i &&\forall k \label{eq:u2}
+\end{align}
+Pass~1 minimizes $\sum_k u_k$, yielding the optimal section-level deviation $D_s^\ast$.
+Because each band count is itself a linear expression in $x$, \eqref{eq:u1}--\eqref{eq:u2} are linear and CP-SAT handles them directly.
+
+For a complete five-section paper, the reported difficulty metric is the sum of the five section-level deviations:
+\begin{equation}
+D_{\mathrm{paper}}(x)=\sum_{s=1}^{5}D_s(x).
+\label{eq:paperD}
+\end{equation}
+All RQ1 values labelled $D$ in the tables, abstract, and artifact refer to this complete-paper aggregate, not to a single section.
+
+\subsection{Pass 2: Secondary Topic Coverage}
+Pass~2 fixes $D(x)\le D^\ast$ and maximizes coverage.
+For each required topic $t\in R$ we introduce a binary indicator $y_t\in\{0,1\}$ linked to the selection by
+\begin{equation}
+y_t \le \sum_{i:\,t\in T_i} x_i \quad \forall t\in R,\qquad \text{and maximize } \sum_{t\in R} y_t.
+\end{equation}
+The linking constraint forces $y_t=0$ whenever no selected item bears topic $t$, while the maximizer sets $y_t=1$ whenever at least one does.
+The optimal coverage value is denoted $C^*$. A third pass then fixes both the optimal difficulty deviation and coverage and maximizes a normalized soft-compliance score $S(x)$.
+
+\begin{algorithm}[t]
+\caption{Three-pass lexicographic CP-SAT solver ($B1$)}
+\label{alg:threepass}
+\begin{algorithmic}[1]
+\Require Bank $Q$; blueprint $(M,W,K,E,R,\Delta,\mathcal{H},\mathcal{S})$; conflict graph $S$
+\Ensure Hard-constraint-valid selection $x^*$, or INFEASIBLE/UNKNOWN
+\State Build model $\mathcal{M}$ with hard constraints \eqref{eq:marks}--\eqref{eq:eligibility}, mandatory coverage \eqref{eq:mandatory}, and the remaining rules in $\mathcal{H}$
+\State Add $u_k$ and linearized $L_1$ constraints \eqref{eq:u1}--\eqref{eq:u2}; set $\min\sum_k u_k$
+\State $st_1\gets\textsc{Solve}(\mathcal{M})$
+\If{$st_1=\text{INFEASIBLE}$} \State \Return INFEASIBLE \EndIf
+\If{$st_1\notin\{\text{OPTIMAL},\text{FEASIBLE}\}$} \State \Return UNKNOWN \EndIf
+\Comment{FEASIBLE is a valid incumbent; only OPTIMAL certifies $D^*$}
+\State $D^*\gets$ incumbent primary objective value; add $\sum_k u_k\le D^*$
+\State Add topic indicators $y_t$ for $t\in R$; set $\max\sum_{t\in R}y_t$
+\State $st_2\gets\textsc{Solve}(\mathcal{M})$
+\If{$st_2=\text{INFEASIBLE}$} \State \Return INFEASIBLE \EndIf
+\If{$st_2\notin\{\text{OPTIMAL},\text{FEASIBLE}\}$} \State \Return UNKNOWN \EndIf
+\Comment{FEASIBLE is a valid incumbent; only OPTIMAL certifies $C^*$}
+\State $C^*\gets$ incumbent coverage; add $\sum_{t\in R}y_t=C^*$
+\State Add soft-compliance variables/linearizations; set $\max S(x)$
+\State $st_3\gets\textsc{Solve}(\mathcal{M})$
+\If{$st_3=\text{INFEASIBLE}$} \State \Return INFEASIBLE \EndIf
+\If{$st_3\notin\{\text{OPTIMAL},\text{FEASIBLE}\}$} \State \Return UNKNOWN \EndIf
+\Comment{FEASIBLE is a valid incumbent; only OPTIMAL certifies the final objective}
+\State \Return $x^*$
+\end{algorithmic}
+\end{algorithm}
+
+\noindent\textbf{Status handling.} The 30\,s solver budget accepts both \texttt{OPTIMAL} and \texttt{FEASIBLE}: a time-capped \texttt{FEASIBLE} result is a valid production fallback because it satisfies all hard constraints, and its incumbent objective value is carried into the next pass.
+However, \texttt{FEASIBLE} does \emph{not} certify that the pass objective is globally optimal;
+consequently, once a pass proceeds from a \texttt{FEASIBLE} incumbent, the resulting three-pass sequence is reported as a feasible policy output rather than a certified lexicographic optimum.
+Only \texttt{OPTIMAL} certifies the pass optimum. \texttt{INFEASIBLE}, \texttt{UNKNOWN}, and error outcomes remain distinct in the artifact, and the RQ1 shared-suite cases reported as \texttt{INFEASIBLE} had no timeout or \texttt{UNKNOWN} outcome.
+
+\subsection{Blueprint compliance}
+Hard compliance consists of non-negotiable linear constraints, including section counts, question-type quotas, and mandatory topic inclusion. Soft compliance is evaluated after difficulty and coverage using the Bloom grouping $G=\{\mathrm{RU},\mathrm{APP},\mathrm{AEC}\}$ and the target split $54/24/22\%$. Its deviation is $B_{\mathrm{dev}}(x)=\sum_{g\in G}|n_g(x)-T_g|$; the reported compliance score averages normalized difficulty and Bloom fit. This is a structural score, not a psychometric validity measure.
+
+\section{Experimental Evaluation}
+\label{sec:experiments}
+%===============================================================================
+
+\subsection{Benchmark Dataset}
+\label{sec:dataset}
+We use a \textbf{475-item CBSE Class X Mathematics corpus} extracted read-only from the deployed platform.
+We treat this as the primary empirical corpus; synthetic pools are used only for controlled scaling and sensitivity experiments.
+Every item carries populated marks, solving-time, ordinal difficulty (bands 1--7), Bloom's-level, question-type, chapter, and source tags (e.g.\ \texttt{CBSE2025}).
+The bank is easy-skewed (83\% of items in bands 1--3) and marks-skewed toward 1-mark items, the regime in which first-feasible selection can produce poor difficulty balance.
+For the scalability arm (RQ2) we additionally synthesize pools calibrated to the empirical marginal distributions of this corpus up to $N=10{,}000$.
+
+
+
+\noindent The reproducibility package records missingness and cardinality for each metadata field (marks, time, difficulty, Bloom level, question type, chapter, and tags), together with the number of duplicate-conflict edges produced by each detector. These records prevent the synthetic scaling arm from being interpreted as an uncalibrated artificial corpus.
+
+\subsection{Blueprint Suite and Methods}
+\label{sec:methods}
+For RQ1 we generate blueprints in index order 1--80 from \texttt{random.Random(42)}.
+At each index, the generator first samples 5--7 eligible chapters uniformly from the sorted chapter list, then instantiates sections A--E in this exact order: $(K,M,m,W)=(20,20,1,40),(5,10,2,15),(6,18,3,36),(4,20,5,40),(3,12,4,18)$, where $K$ is question count, $M$ marks, $m$ marks per item, and $W$ required time.
+For each section, the difficulty target is constructed by normalizing seven independent uniforms scaled by $(4,5,4,3,2,1,0.3)$, taking integer floors of $K$ times these shares, and assigning the remaining questions cyclically to bands 1--7.
+Bloom targets follow the fixed 54\%/24\%/22\% split (rounded as in the harness).
+This manifest is evaluated unchanged by the five shared-suite policies $B0$, $B_G$, $B1$, $B2$, and $B3$.
+A policy outcome is an infeasible \emph{continuation} when a sequential section returns CP-SAT \texttt{INFEASIBLE}, which certifies that no assignment extends that policy's earlier section choices under the remaining constraints. A separate joint whole-paper control is used to determine whether the corresponding blueprint is infeasible under the modeled whole-paper hard constraints. Thus, the 10 cases are reported as globally infeasible under that joint model, rather than as unresolved claims about sequential lock-in.
+\texttt{UNKNOWN} and any exception are retained as distinct outcomes rather than being skipped.
+$B0$-R is not run over this suite: it is a separate, five-seed ordering-sensitivity diagnostic on the representative blueprint.
+RQ3 and RQ5 use a separately and independently generated 100-blueprint tightness/compliance sweep, where eligible-chapter subset size varies from 7 (loose) to 3 (tight); these blueprints are not additional replicates of, or extensions to, the fixed 80-blueprint RQ1 manifest.
+We study six solver variants overall:
+\begin{itemize}
+    \item \textbf{$B0$ (First-Feasible):} the deployed baseline, no objective.
+    \item \textbf{$B0$-R (Randomized First-Feasible):} the same feasibility model with randomized candidate ordering and multiple independent seeds, testing whether B0's quality depends on item ordering.
+    \item \textbf{$B_G$ (Greedy):} a feasibility-preserving greedy heuristic that prioritizes immediate difficulty/coverage improvement; this tests whether CP-SAT optimization is necessary.
+    \item \textbf{$B1$ (Lexicographic, proposed):} \S\ref{sec:proposed}, optimizing difficulty, then coverage, then soft compliance.
+    \item \textbf{$B2$ (Weighted-Sum):} a single-solve raw-count scalarization $\alpha D+\beta U+\gamma P$, where $D$ is the unnormalised seven-band difficulty $L_1$ deviation, $U$ the unnormalised count of uncovered required chapters, and $P$ the unnormalised three-group Bloom $L_1$ deviation.
+The shared-suite default $(\alpha,\beta,\gamma)=(1,1,1)$ was fixed before execution and held for all 80 blueprints;
+it was not selected from the later 27-setting sensitivity grid.
+    \item \textbf{$B3$ (Soft-Window):} reified tolerance windows $|\sum_{i:d_i=k}x_i-\Delta_k|\le\varepsilon+s_k$ with slack minimized---a goal-programming variant~\cite{ignizio1976}.
+\end{itemize}
+
+Two data regimes are used: (A) the empirical 475-item distribution, and (B) a balanced synthetic regime in which difficulty bands are approximately uniform.
+The latter tests whether the observed optimization gain persists when the bank itself is not strongly easy-skewed.
+
+\subsection{Evaluation Metrics}
+We report difficulty deviation $D(x)$, topic coverage $C(x)=\frac{1}{|R|}\sum_{t\in R} y_t\in[0,1]$, $CR_{\mathrm{hard}}$, $CR_{\mathrm{soft}}$, solver wall-clock time, feasibility rate.
+For RQ1, $D$ is the sum of the five section-level difficulty deviations for one complete paper, and solver runtime is the sum of the five sequential section solves for that same paper.
+The reported scaling runtime covers CP-SAT model construction and solving only; embedding and conflict-graph construction are excluded.
+Significance is assessed with paired Wilcoxon signed-rank tests with effect sizes and confidence intervals; because the blueprints come from fixed manifests rather than a population sample, these statistics are interpreted as descriptive paired comparisons within the benchmark suite.
+
+\subsection{Results}
+\noindent\textbf{RQ1 (Quality).} Table~\ref{tab:rq1} is the central aggregate comparison: all five policies run on the same fixed manifest, and the table summarizes the 70 blueprints feasible for every policy.
+In the other 10 scheduled rows, every sequential policy receives a CP-SAT \texttt{INFEASIBLE} status in a later section after its own preceding choices.
+A focused joint whole-paper feasibility control solves all five sections together under the same item eligibility filters, conflict graph, section constraints, and solver-status handling used by the sequential harness. It returns \texttt{INFEASIBLE} for all 10; they are therefore globally infeasible under the modeled whole-paper hard constraints, not merely sequential lock-in exclusions. The result is documented in the reproducibility package.
+None is skipped, timed out, or returned UNKNOWN. The denominator is therefore 70 for this common-policy comparison.
+$B1$ strongly improves on both first-feasible and greedy feasibility search: versus $B0$, paired differences $D(B0)-D(B1)$ have median 12 (Wilcoxon $p=3.0{\times}10^{-13}$, $r=0.87$, bootstrap 95\% CI $[10,12]$) and Bloom-deviation differences have median 16 ($p=1.8{\times}10^{-13}$, $r=0.88$, CI $[16,17]$).
+The corresponding $B_G$ differences are 10 and 16 (both $p<3{\times}10^{-13}$).
+These comparisons establish the feasibility gap beyond the ``optimizer versus first-feasible'' contrast.
+
+The alternative optimization policies qualify the claim appropriately.
+By the aggregate medians in Table~\ref{tab:rq1}, default weighted-sum $B2$ offers the strongest observed quality--solver-runtime trade-off: it matches $B1$ on difficulty and coverage, improves median Bloom deviation (22 versus 24), and has lower median solver runtime (0.07 versus 0.13\,s).
+The paired distribution is retained in the reproducibility package: $B2$ matches $B1$ on difficulty in 69/70 cases and is worse in one;
+it matches on Bloom deviation in 52/70 cases and is lower in 18. This is not a uniform per-blueprint dominance claim.
+$B3$ matches $B1$ on both quality medians. In paired comparisons with $B1$, the median difficulty difference is zero for $B2$ ($p=0.317$) and $B3$ ($p=9.1{\times}10^{-4}$);
+the median Bloom difference is zero in both cases despite distributional differences ($p=2.2{\times}10^{-5}$ and $3.2{\times}10^{-7}$, respectively).
+$B1$'s demonstrated advantage is therefore deterministic, weight-free expression of the stipulated priority order---not superior aggregate quality--runtime, nor an unmeasured robustness claim.
+
+\begin{table}[t]
+\caption{RQ1: median outcomes across the 70 blueprints feasible for all five shared-suite policies ($B0$, $B_G$, $B1$, $B2$, $B3$) in the fixed 80-blueprint manifest;
+$B0$-R is a separate diagnostic and is not included. $D$: per-section difficulty deviation (sum, lower is better);
+Bloom dev: $L_1$ deviation from the 54/24/22 typology; runtime is the sum of the five sequential section solver runs for one complete paper, excluding embedding and conflict-graph construction.}
+\label{tab:rq1}
+\centering
+\small
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Model} & \textbf{Feasible} & $D\downarrow$ & \textbf{Bloom dev}$\downarrow$ & \textbf{Coverage} & \textbf{Solver time (s; 2 d.p.)} \\
+\midrule
+$B0$ first-feasible        & 70/80 & 52 & 40 & 6 & 0.03 \\
+$B_G$ greedy-hint          & 70/80 & 50 & 40 & 6 & 0.03 \\
+$B2$ weighted-sum          & 70/80 & \textbf{40} & \textbf{22} & 6 & 0.07 \\
+$B3$ soft-window           & 70/80 & \textbf{40} & 24 & 6 & 0.08 \\
+$B1$ lexicographic (ours)  & 70/80 & \textbf{40} & 24 & 6 & 0.13 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent\textbf{Secondary analyses: weight sensitivity and observed frontier.} These analyses reuse the RQ1 common-feasible cases and are descriptive complements to, not independent statistical evidence beyond, the 70-blueprint shared-policy comparison.
+To test whether the weighted-sum result depends on a convenient coefficient choice, we re-ran $B2$ on the same 70 common-feasible blueprints for all $27$ triples $(\alpha,\beta,\gamma)\in\{1,3,10\}^3$ in $\min\alpha D(x)+\beta U(x)+\gamma P(x)$.
+Across this grid, median difficulty deviation ranges from 40 to 41, Bloom deviation from 22 to 24, coverage remains 6, and median solver runtime ranges from 0.07 to 0.09\,s per complete paper.
+The $B1$ reference is $D{=}40$, Bloom 24, coverage 6, and 0.13\,s per complete paper.
+Thus these data show a small but real sensitivity of the scalarized policy, rather than a universal failure of weighting;
+the lexicographic policy avoids selecting coefficients when its priority order is the intended specification.
+For an interpretable Pareto view, we also form the \emph{observed} non-dominated set from $B0$, $B_G$, $B1$, $B3$, and the 27 weighted $B2$ outputs (31 candidates total) for the first 10 fixed common-feasible blueprints, minimizing $D$, Bloom deviation, and solver runtime while maximizing coverage.
+This is not exhaustive Pareto optimization. Across these 10 blueprints, $B_G$ appears on 8 observed frontiers, $B0$ on 7, and different $B2$ weight settings on the remaining trade-off points;
+$B1$ is not observed on these sampled frontiers. The result supports the narrower claim that $B1$ deterministically selects the stipulated lexicographic point, not that it is the sole desirable point in a multi-objective solution space.
+
+\noindent\textbf{RQ2 (Solver Runtime and Scaling).} On calibrated synthetic pools for a fixed Section-A blueprint, B0 remains below $0.5$~s at $N=10{,}000$ items and B1 takes approximately $1.6$~s; these are solver-only measurements excluding embedding and conflict-graph construction, not end-to-end latency.
+
+\noindent\textbf{RQ3 (Blueprint tightness).} In the independent 100-blueprint sweep, restricting eligible chapters from seven to three reduced feasibility from $100\%$ to $25\%$, while the conditional median B0--B1 difficulty gap remained positive; this result is specific to the restriction schedule.
+
+\noindent\textbf{RQ5 (Compliance).} We instantiate $CR_{\mathrm{soft}}$ as the mean of two satisfaction scores---difficulty fit ($1-\min(1,D/2K)$) and Bloom fit ($1-\min(1,B_{\mathrm{dev}}/2K)$)---with $CR_{\mathrm{hard}}=1$ by construction for every feasible paper.
+Of the 100 blueprints scheduled in the separate RQ3/RQ5 tightness sweep, 66 yield feasible B0/B1 pairs;
+this is not the RQ1 denominator. Across those 66 pairs, $B1$ lifts median $CR_{\mathrm{soft}}$ from $0.408$ ($B0$) to $0.566$, winning all 66 instances (paired Wilcoxon $p=1.6{\times}10^{-12}$, effect $r=0.87$).
+
+\noindent\textbf{Ablation.} The single-blueprint ablation is omitted from this conference version; the full results remain in the extended manuscript.
+
+\subsection{Reproducibility}
+The controlled-review artifact contains the harness in \texttt{experiments/}, the full static 475-record fixture (including question text) at \texttt{docs/qbank\_audit/cbse\_class\_x\_maths\_questions\_full\_updated.json}, and the measured artifacts \texttt{results\_baselines.txt}, \texttt{results\_fullpaper.txt}, \texttt{results\_multi\_blueprint.txt}, \texttt{results\_scaling.txt}/\texttt{.json}, \texttt{results\_rq3\_rq5.txt}, \texttt{results\_detector.txt}/\texttt{.json}, \texttt{results\_ablation.txt}, \texttt{results\_weight\_sweep.txt}, \texttt{results\_multi\_policy.txt}/\texttt{.json}, \texttt{results\_weight\_sensitivity.txt}/\texttt{.json}, and \texttt{results\_policy\_frontier.txt}/\texttt{.json}.
+\texttt{experiments/REPRODUCIBILITY.md} specifies dependency versions, fixed seeds, the single-worker CP-SAT setting, the 80-blueprint protocol, and the exact regeneration commands.
+The fixture is static and no runner connects to production. For controlled review, the artifact provides the full 475-record fixture, including question text, together with the harness and recorded result files. For public release, the authors will archive a versioned public repository (including the exact commit hash, environment lock/dependency versions, blueprint generators, metadata/anonymized fixture, fixture hashes/identifiers, and all non-sensitive result files) so the paper's executable claims can be independently checked. Question text and other potentially copyrighted or confidential content will be replaced by anonymized metadata or withheld unless the relevant licensing and confidentiality permissions permit redistribution. Any resulting public-release differences from the controlled-review fixture will be documented explicitly.
+
+%===============================================================================
+\section{Discussion and Limitations}
+\label{sec:discussion}
+%===============================================================================
+
+The experimental results should be interpreted as evidence about structural and blueprint quality, not as a claim that one generated paper is educationally optimal.
+Once difficulty and coverage are modelled as objectives, available item diversity is actively leveraged rather than happening by chance.
+Crucially, this gain is obtained without abandoning the deployed CP-SAT substrate---it is a three-pass extension, not a replacement system.
+
+\noindent\textbf{Structural vs.\ psychometric validity.} Our framework guarantees \emph{structural and blueprint compliance} at generation time.
+It does \emph{not} guarantee psychometric validity (empirical item-response curves), which requires post-exam student-response data and falls under IRT-based ATA~\cite{lord1980,vanderLinden2005}.
+We view the two as complementary: structural compliance is a necessary precondition that psychometric calibration can later refine.
+
+\noindent\textbf{Why lexicographic.} A weighted sum forces the modeller to choose coefficients with potentially incomparable scales, whereas lexicographic ordering~\cite{ehrgott2005} encodes the priority order directly and reproducibly.
+In our formulation, difficulty alignment is optimized first, required-topic coverage second, and soft blueprint compliance third.
+The 27-setting sensitivity sweep shows small but non-zero variation in the weighted result;
+it does not show that weighting is intrinsically invalid. Rather, it makes the modelling choice visible: $B1$ is appropriate when this priority order, rather than a compensatory trade-off selected by weights, is the intended policy.
+The price is additional solver passes, whose solver runtime is reported rather than assumed negligible.
+
+\noindent\textbf{Limitations.} (i) Difficulty labels are treated as static during solving; in reality they could be re-estimated from attempts.
+(ii) Marks and times are integer-truncated in the deployed baseline.
+(iii) Pairwise similarity is $O(n^2)$ without caching, so similarity construction may dominate runtime at large $N$;
+this study does not measure embedding or conflict-graph construction and therefore provides no end-to-end latency claim.
+(iv) External validity: this is a systems case study on one easy-skewed CBSE Class X Mathematics corpus;
+it does not establish general effectiveness for educational assessment, other subjects, other curricula, or essay-heavy items.
+(v) The balanced synthetic regime tests distribution dependence for solver scaling but does not replace a multi-corpus empirical evaluation.
+(vi) Structural blueprint compliance is not psychometric validity. (vii) The focused joint feasibility control establishes that the 10 sequential exclusions are globally infeasible under the modeled hard constraints, but it does not compare joint and sequential \emph{policy quality}; a future control should optimize the same paper-level objectives jointly and compare quality against the sequential paths. (viii) The entity/token gate depends on the configured mathematical tokenization scheme and therefore requires domain-specific validation beyond generic spaCy NER.
+
+%===============================================================================
+\section{Conclusion}
+This paper shows, in a fixed production-derived corpus and fixed sequential manifest, how explicit multi-objective policy design can improve structural blueprint alignment over first-feasible sequential assembly without replacing the CP-SAT substrate. The lexicographic policy is a deterministic, weight-free expression of the intended priority order, while the weighted policy provides a strong observed quality--runtime trade-off. A joint feasibility control establishes that all 10 sequentially excluded blueprints are infeasible under the modeled whole-paper hard constraints. The results do not establish psychometric validity, end-to-end latency, universal optimization dominance, general duplicate-detector performance, or superiority under a joint whole-paper \emph{policy-quality} formulation.
+
+\begin{thebibliography}{99}
+\bibitem{vanderLinden2005}
+van der Linden, W.J.: Linear Models for Optimal Test Assembly.
+Springer, New York (2005)
+
+\bibitem{vanderLinden1989}
+van der Linden, W.J., Boekkooi-Timminga, E.: A maximin model for IRT-based test assembly.
+Psychometrika 54(2), 185--198 (1989)
+
+\bibitem{theunissen1985}
+Theunissen, T.J.J.M.: Binary programming and test design.
+Psychometrika 50(1), 129--141 (1985)
+
+\bibitem{lord1980}
+Lord, F.M.: Applications of Item Response Theory to Practical Testing Problems.
+Lawrence Erlbaum, Hillsdale (1980)
+
+\bibitem{ortools}
+Perron, L., Furnon, V.: OR-Tools User's Manual. Google.
+\url{https://developers.google.com/optimization}
+
+\bibitem{nieuwenhuis2006}
+Nieuwenhuis, R., Oliveras, A., Tinelli, C.: Solving SAT and SAT modulo theories: from an abstract Davis--Putnam--Logemann--Loveland procedure to DPLL(T).
+J.\ ACM 53(6), 937--977 (2006)
+
+\bibitem{biere2009}
+Biere, A., Heule, M., van Maaren, H., Walsh, T. (eds.): Handbook of Satisfiability.
+IOS Press (2009)
+
+\bibitem{reimers2019}
+Reimers, N., Gurevych, I.: Sentence-BERT: sentence embeddings using Siamese BERT-networks.
+In: EMNLP-IJCNLP, pp.\ 3982--3992 (2019)
+
+\bibitem{devlin2019}
+Devlin, J., Chang, M.-W., Lee, K., Toutanova, K.: BERT: pre-training of deep bidirectional transformers for language understanding.
+In: NAACL-HLT, pp.\ 4171--4186 (2019)
+
+\bibitem{charikar2002}
+Charikar, M.S.: Similarity estimation techniques from rounding algorithms.
+In: STOC, pp.\ 380--388 (2002)
+
+\bibitem{spacy2020}
+Honnibal, M., Montani, I., Van Landeghem, S., Boyd, A.: spaCy: industrial-strength natural language processing in Python (2020)
+
+\bibitem{bloom1956}
+Bloom, B.S. (ed.): Taxonomy of Educational Objectives, Handbook I: The Cognitive Domain. David McKay, New York (1956)
+
+\bibitem{anderson2001}
+Anderson, L.W., Krathwohl, D.R. (eds.): A Taxonomy for Learning, Teaching, and Assessing. Longman, New York (2001)
+
+\bibitem{ehrgott2005}
+Ehrgott, M.: Multicriteria Optimization, 2nd edn.
+Springer, Berlin (2005)
+
+\bibitem{ignizio1976}
+Ignizio, J.P.: Goal Programming and Extensions. Lexington Books, Lexington (1976)
+
+\bibitem{kurdi2020}
+Kurdi, G., Leo, J., Parsia, B., Sattler, U., Al-Emari, S.: A systematic review of open educational resources for automated question generation.
+Computers \& Education 145, 103731 (2020)
+
+\bibitem{garey1979}
+Garey, M.R., Johnson, D.S.: Computers and Intractability: A Guide to the Theory of NP-Completeness.
+W.\ H.\ Freeman, San Francisco (1979)
+
+\bibitem{perron2023}
+Perron, L., Didier, F.: The OR-Tools CP-SAT solver. In: Handbook of Constraint Programming, 2nd edn.
+Elsevier (2023)
+
+\bibitem{hwang2006}
+Hwang, G.-J.: An effective approach for test-sheet composition with large-scale item banks.
+Computers \& Education 46(2) (2006)
+
+\bibitem{vanderLinden2010}
+van der Linden, W.J. (ed.): Elements of Adaptive Testing.
+Springer, New York (2010)
+
+\bibitem{standards2014}
+American Educational Research Association, American Psychological Association, National Council on Measurement in Education: Standards for Educational and Psychological Testing.
+AERA, Washington, DC (2014)
+
+\bibitem{agirre2012}
+Agirre, E., Diab, M., Cer, D., Baldwin, B., Gonzalez-Agirre, A., Strapparava, C.: SemEval-2012 task 6: a pilot on semantic textual similarity.
+In: SemEval (2012)
+
+\bibitem{moenep2020}
+Ministry of Education, Government of India: National Education Policy 2020. Government of India (2020)
+\end{thebibliography}
+
+\end{document}

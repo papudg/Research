@@ -1,0 +1,55 @@
+@startuml architecture
+' Beyond Feasibility — Deployed exam-generation architecture (B0) and proposed extension (B1)
+' Source only (render with: plantuml architecture.puml)
+skinparam componentStyle rectangle
+skinparam defaultFontName Helvetica
+skinparam roundCorner 6
+skinparam ArrowColor #444444
+title Beyond Feasibility — Generation Architecture\n(deployed B0 + proposed three-pass B1)
+
+package "Frontend" #E8F0FE {
+  [Exam Builder UI\n(Vite + React)] as UI
+}
+
+package "Backend — Node/Express Orchestrator" #E6F4EA {
+  [Exam Controller\n(generateExam)] as EC
+  [filterQuestionPool\n(examTemplateId + state=READY + tags)] as FILT
+  [Cross-section uniqueness\nusedIds / usedTexts] as XSEC
+}
+
+package "examify-logic — Python/Flask" #FCE8E6 {
+  [Similarity Service\nSentence-BERT (all-MiniLM-L6-v2)\n+ spaCy entity gate\nJ(E_i,E_j) >= 0.5] as SIM
+  [CP-SAT Engine\n(Google OR-Tools)] as CP
+}
+
+database "Firestore\nquestions + metadata\n(state=READY)" as FS
+database "MySQL mirror\nmarks/time/difficulty/tags\n/question_text" as MY
+cloud "Firebase Storage\nexams/object/{id}.json\n+ document-service PDF" as ST
+
+UI --> EC : POST /api/exams/generate\n{examTemplate, sections:[{sectionId, constraints}]}\nblueprint (M,W,K,E,R,Delta,H,S)
+EC --> FILT : scope candidate pool
+FILT --> FS : query
+EC --> XSEC : carry across sections
+EC --> SIM : POST /check-similarity  (theta=0.75, fail-open)
+SIM --> MY : question_text
+EC --> CP : POST /solve  {constraints, variables:[ids], environment}
+CP --> MY : marks/time/tags
+CP --> EC : {solution_ids}  (fail-closed: validation | infeasible)
+EC --> ST : /create + /generate-pdf (out-of-band)
+EC --> UI : {sectionQuestionMap, questions}
+
+note right of CP #FFF8E1
+  **B0 (deployed):** first feasible, NO objective
+  **B1 (proposed):** three-pass lexicographic
+    Pass 1: min  D(x)  = ||difficulty hist - Delta||_1
+    Pass 2: fix D*, max coverage C(x)
+    Pass 3: fix D*,C*, max soft compliance S(x)
+  Hard blueprint rules (H) enforced throughout
+end note
+
+note bottom of SIM #FCE8E6
+  Hybrid gate suppresses SBERT false positives
+  on numeric variants (e.g. "Is 4 even?" vs "Is 6 even?")
+  -> pairwise at-most-one clauses x_i + x_j <= 1
+end note
+@enduml

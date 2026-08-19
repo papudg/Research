@@ -279,6 +279,13 @@ def solve_b1_candidates(bank, question_count, marks, duration, eligible, chapset
 
 def residual_flexibility_score(bank, remaining_sections, eligible, chapset, cover_topics,
                                used=(), conflict=()):
+    """Return a bounded, relaxed downstream-ranking score.
+
+    Each remaining section contributes a reachability term in {-100, +100}
+    plus three support fractions and one within-pool conflict-density penalty.
+    The latter four terms lie in [-1, 3], so reachability dominates the local
+    ranking without making the score a completion count or probability.
+    """
     used = set(used)
     conflict_map = {}
     for left, right in conflict:
@@ -293,15 +300,17 @@ def residual_flexibility_score(bank, remaining_sections, eligible, chapset, cove
             score += 100.0
         else:
             score -= 100.0
-        scale = float(max(1, count))
         target = {int(band): int(value) for band, value in raw['difficulty_target'].items()}
         bloom_target_values = raw['bloom_target']
-        difficulty_support = sum(target.get(diff(question), 0) > 0 for question in pool) / scale
+        pool_size = len(pool)
+        pool_scale = float(max(1, pool_size))
+        difficulty_support = sum(target.get(diff(question), 0) > 0 for question in pool) / pool_scale
         bloom_support = sum(_group(question) in bloom_target_values and bloom_target_values[_group(question)] > 0
-                            for question in pool) / scale
-        edge_load = sum(len(conflict_map.get(question['id'], set())) for question in pool)
-        edge_load /= float(max(1, len(pool)))
-        score += (len(pool) / float(max(1, len(bank)))) + difficulty_support + bloom_support - edge_load
+                            for question in pool) / pool_scale
+        pool_ids = {question['id'] for question in pool}
+        directed_edges = sum(len(conflict_map.get(question['id'], set()) & pool_ids) for question in pool)
+        edge_density = directed_edges / float(max(1, pool_size * max(0, pool_size - 1)))
+        score += (pool_size / float(max(1, len(bank)))) + difficulty_support + bloom_support - edge_density
     return score
 
 

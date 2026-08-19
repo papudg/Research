@@ -7,6 +7,7 @@ from revision_benchmark import (
     solve_direct_compliance,
     solve_lex_components,
     solve_b1_candidates,
+    residual_flexibility_score,
 )
 from joint_policy_comparison import solve_joint_direct_compliance, solve_joint_lex
 from multipolicy_benchmark import build_manifest
@@ -48,6 +49,13 @@ class RevisionBenchmarkTests(unittest.TestCase):
             )
             self.assertEqual('feasible', status)
             self.assertTrue(section_is_valid(self.bank, ids, 2, 2, 3))
+        for components in (('D',), ('D', 'C'), ('D', 'C', 'P'), ('C', 'P')):
+            ids, status = solve_lex_components(
+                self.bank, 2, 2, 3, {'Algebra'}, self.chapter_set, self.delta,
+                ['Algebra'], self.bloom_target, tier=1, components=components,
+            )
+            self.assertEqual('feasible', status)
+            self.assertTrue(section_is_valid(self.bank, ids, 2, 2, 3))
 
     def test_b1_candidate_generation_returns_distinct_hard_valid_candidates(self):
         candidates, status = solve_b1_candidates(
@@ -61,13 +69,21 @@ class RevisionBenchmarkTests(unittest.TestCase):
         self.assertEqual(len(ids), len(set(ids)))
         for candidate in candidates:
             self.assertTrue(section_is_valid(self.bank, candidate['ids'], 1, 1, 1))
-        for components in (('D',), ('D', 'C'), ('D', 'C', 'P'), ('C', 'P')):
-            ids, status = solve_lex_components(
-                self.bank, 2, 2, 3, {'Algebra'}, self.chapter_set, self.delta,
-                ['Algebra'], self.bloom_target, tier=1, components=components,
-            )
-            self.assertEqual('feasible', status)
-            self.assertTrue(section_is_valid(self.bank, ids, 2, 2, 3))
+
+    def test_residual_flexibility_support_and_conflict_terms_are_bounded(self):
+        section = {
+            'question_count': 1, 'time': 1, 'tier': 1,
+            'difficulty_target': {1: 1, 2: 0, 3: 0},
+            'bloom_target': {'RU': 1, 'APP': 0, 'AEC': 0},
+        }
+        score = residual_flexibility_score(
+            self.bank, [section], {'Algebra'}, self.chapter_set, ['Algebra'],
+            conflict=[('a', 'b'), ('a', 'c'), ('a', 'd')],
+        )
+        # Exact reachability contributes +100; the four normalized terms lie
+        # in [-1, 3], so the complete one-section score is in [99, 103].
+        self.assertGreaterEqual(score, 99.0)
+        self.assertLessEqual(score, 103.0)
 
     def test_holm_adjustment_is_monotone_and_bounded(self):
         adjusted = holm_adjust([0.001, 0.02, 0.04, 0.8])
