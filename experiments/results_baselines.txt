@@ -1,0 +1,8 @@
+=== RQ1: full 80-mark paper, 5 methods (475-item bank) ===
+method      D  bloom_dev  coverage    bloom(RU/APP/AEC)  time(s)
+B0         48         40    7/7     {'RU': 1, 'APP': 27, 'AEC': 10}     0.03
+B0-R       48         40    7/7     {'RU': 1, 'APP': 27, 'AEC': 10}     0.15
+B2         34         22    7/7     {'RU': 10, 'APP': 15, 'AEC': 13}     0.07
+B3         34         24    7/7     {'RU': 9, 'APP': 14, 'AEC': 15}     0.08
+B1         34         22    7/7     {'RU': 10, 'APP': 15, 'AEC': 13}     0.13
+  target bloom (54/24/22 of 38): {'RU': 21, 'APP': 9, 'AEC': 8}

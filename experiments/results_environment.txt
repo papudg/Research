@@ -1,0 +1,17 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "machine": "",
+  "processor": "",
+  "processor_identifier": null,
+  "cpu_model": "Intel(R) Core(TM) i3-10100F CPU @ 3.60GHz",
+  "logical_cpu_count": 8,
+  "physical_memory_bytes": 17101684736,
+  "python_version": "3.12.13 (main, Aug  7 2026, 02:26:41) [MSC v.1944 64 bit (AMD64)]",
+  "ortools_version": "9.15.6755",
+  "solver_parameters": {
+    "max_time_in_seconds": 30,
+    "random_seed": 1,
+    "num_search_workers": 1
+  },
+  "pythonhashseed_required": "0"
+}

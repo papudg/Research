@@ -1,0 +1,6 @@
+lookahead comparison: 70/80 comparable blueprints
+metric | sequential median [IQR] | lookahead median [IQR] | guided-favourable difference | guided wins/ties/sequential wins
+difficulty | 40.0 [36, 44] | 40.0 [36, 44] | 0.0 | 0/70/0
+bloom_deviation | 24.0 [22, 26] | 24.0 [22, 26] | 0.0 | 1/69/0
+coverage | 6.0 [6, 7] | 6.0 [6, 7] | 0.0 | 0/70/0
+runtime_s | 0.12663850000535604 [0.10800889999518404, 0.1439092000000528] | 0.2586755499978608 [0.23012569999991683, 0.285152200020093] | -0.13078554999447078 | 0/0/70

@@ -1,0 +1,14 @@
+bank: 475 | chapters: ['ALGEBRA', 'COORDINATE_GEOMETRY', 'GEOMETRY', 'MENSURATION', 'NUMBER_SYSTEMS', 'STATISTICS_PROBABILTY', 'TRIGONOMETRY']
+4-mark questions: ['2kpgcmpd', '8bzq7ykv', 'cb5e4aq7', 'lwdj54ra', 'm3f3gqcw', 'sw5n5121', 'z1fctzy9']
+
+=== Full 80-mark paper: B0 vs B1 ===
+
+B0: K=38 marks=80 time=0.03s | D(per-section sum)=48  bloom_dev=40  coverage=7/7
+   per-section D: {'A': 20, 'B': 6, 'C': 10, 'D': 8, 'E': 4}
+   bloom groups: {'RU': 1, 'APP': 27, 'AEC': 10}  target(54/24/22): {'RU': 21, 'APP': 9, 'AEC': 8}
+   difficulty hist: {1: 0, 2: 21, 3: 5, 4: 3, 5: 6, 6: 3, 7: 0}
+
+B1: K=38 marks=80 time=0.13s | D(per-section sum)=34  bloom_dev=22  coverage=7/7
+   per-section D: {'A': 10, 'B': 2, 'C': 10, 'D': 8, 'E': 4}
+   bloom groups: {'RU': 10, 'APP': 15, 'AEC': 13}  target(54/24/22): {'RU': 21, 'APP': 9, 'AEC': 8}
+   difficulty hist: {1: 2, 2: 14, 3: 8, 4: 7, 5: 7, 6: 0, 7: 0}

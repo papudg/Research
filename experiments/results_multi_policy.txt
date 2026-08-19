@@ -1,0 +1,22 @@
+multi-policy: 70/80 common-feasible blueprints
+outcomes by policy:
+  B0: feasible=70, infeasible=10
+  BG: feasible=70, infeasible=10
+  B1: feasible=70, infeasible=10
+  B2: feasible=70, infeasible=10
+  B3: feasible=70, infeasible=10
+exclusion breakdown (one primary policy/outcome per excluded blueprint):
+  b0:infeasible: 10
+
+method  median_D  median_Bloom  median_coverage  median_solver_s
+B0         52.0          40.0              6.0            0.025
+BG         50.0          40.0              6.0            0.026
+B1         40.0          24.0              6.0            0.126
+B2         40.0          22.0              6.0            0.071
+B3         40.0          24.0              6.0            0.076
+
+paired B1 comparisons (positive difference favours B1):
+B0 vs B1 | D median diff=12.0, p=3.03787912855624e-13, r=0.8716452247990206, CI=[10.0, 12.0]; Bloom median diff=16.0, p=1.779324191083612e-13, r=0.8802153190155735, CI=[16.0, 17.0]
+BG vs B1 | D median diff=10.0, p=2.848763363512221e-13, r=0.8726792699397952, CI=[8.0, 10.0]; Bloom median diff=16.0, p=1.8005754130190376e-13, r=0.8800259809391293, CI=[16.0, 16.0]
+B2 vs B1 | D median diff=0.0, p=0.31731050786291415, r=0.11952286093343936, CI=[0.0, 0.0]; Bloom median diff=0.0, p=2.209049699858536e-05, r=0.50709255283711, CI=[0.0, 0.0]
+B3 vs B1 | D median diff=0.0, p=0.0009111188771537128, r=0.3964124835860459, CI=[0.0, 0.0]; Bloom median diff=0.0, p=3.186355462846895e-07, r=0.6110100926607788, CI=[0.0, 2.0]

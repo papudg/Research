@@ -1,0 +1,14 @@
+B2 weight sweep (wc=1 fixed).  B1 (no tuning): D=22, bloom_dev=16
+   wd    wb |   D bloom_dev      bloom(RU/APP/AEC)
+    1     1 |  34        22 {'RU': 10, 'APP': 15, 'AEC': 13}
+    1     3 |  34        22 {'RU': 10, 'APP': 16, 'AEC': 12}
+    1    10 |  34        22 {'RU': 10, 'APP': 16, 'AEC': 12}
+    3     1 |  34        22 {'RU': 10, 'APP': 14, 'AEC': 14}
+    3     3 |  34        22 {'RU': 10, 'APP': 15, 'AEC': 13}
+    3    10 |  34        22 {'RU': 10, 'APP': 16, 'AEC': 12}
+   10     1 |  34        22 {'RU': 10, 'APP': 14, 'AEC': 14}
+   10     3 |  34        22 {'RU': 10, 'APP': 13, 'AEC': 15}
+   10    10 |  34        22 {'RU': 10, 'APP': 15, 'AEC': 13}
+
+B2 across weights: D in [34,34], bloom_dev in [22,22]  (9 weight settings)
+B1 fixed:          D=22, bloom_dev=16  (single run, no weight selection)

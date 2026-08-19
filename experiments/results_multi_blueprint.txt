@@ -1,0 +1,3 @@
+multi-blueprint: 67 feasible B0/B1 pairs (13 infeasible/skipped) of 80; avg time/pair=0.14s
+difficulty D: B0 med=52 -> B1 med=42 | diff median=10.0 mean=10.8 | B1 wins 67/67 (ties 0) | Wilcoxon p=9.24e-13 effect r=0.87 | 95% CI med-diff [10.0,12.0]
+bloom_dev  : B0 med=40 -> B1 med=24 | diff median=16.0 mean=15.6 | B1 wins 67/67 (ties 0) | Wilcoxon p=5.96e-13 effect r=0.88 | 95% CI med-diff [14.0,18.0]

@@ -1,0 +1,13 @@
+joint whole-paper diagnostic: 10 sequential continuation failures
+outcomes: infeasible=10
+blueprint | outcome | CP-SAT status | solver runtime (s)
+blueprint-08 | infeasible | CpSolverStatus.INFEASIBLE | 0.011
+blueprint-15 | infeasible | CpSolverStatus.INFEASIBLE | 0.010
+blueprint-25 | infeasible | CpSolverStatus.INFEASIBLE | 0.008
+blueprint-28 | infeasible | CpSolverStatus.INFEASIBLE | 0.010
+blueprint-49 | infeasible | CpSolverStatus.INFEASIBLE | 0.007
+blueprint-59 | infeasible | CpSolverStatus.INFEASIBLE | 0.022
+blueprint-63 | infeasible | CpSolverStatus.INFEASIBLE | 0.010
+blueprint-69 | infeasible | CpSolverStatus.INFEASIBLE | 0.008
+blueprint-76 | infeasible | CpSolverStatus.INFEASIBLE | 0.009
+blueprint-77 | infeasible | CpSolverStatus.INFEASIBLE | 0.009

@@ -1,0 +1,15 @@
+# Pinned versions recorded in results_environment.json (Aug 2026 rerun).
+ortools==9.15.6755
+numpy==2.5.2
+scipy==1.18.0
+scikit-learn>=1.5
+sentence-transformers==5.7.0
+transformers==5.15.0
+torch==2.13.0
+spacy==3.8.15
+
+# After installing requirements, download the spaCy model:
+#   python -m spacy download en_core_web_sm
+
+# Install this package in editable mode from the repository root:
+#   pip install -e .

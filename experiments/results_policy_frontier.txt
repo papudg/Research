@@ -1,0 +1,22 @@
+observed policy frontier: 10 fixed common-feasible blueprints
+observed policy/weight frontier; not exhaustive Pareto optimization
+blueprint | candidates | non-dominated labels
+blueprint-01 | 31 | BG, B2(1,1,3), B2(3,1,1)
+blueprint-02 | 31 | BG, B2(1,1,3)
+blueprint-03 | 31 | BG, B2(1,1,3), B2(3,1,1)
+blueprint-04 | 31 | B0, BG, B2(1,1,10)
+blueprint-05 | 31 | BG, B2(1,1,10)
+blueprint-06 | 31 | B0, B2(1,1,3)
+blueprint-07 | 31 | B0, BG, B2(1,1,3)
+blueprint-09 | 31 | BG, B2(1,1,10)
+blueprint-10 | 31 | BG, B3, B2(1,1,1), B2(1,3,3)
+blueprint-11 | 31 | B0, B2(1,3,3)
+frontier membership counts:
+  B0: 4
+  B2(1,1,1): 1
+  B2(1,1,10): 3
+  B2(1,1,3): 5
+  B2(1,3,3): 2
+  B2(3,1,1): 2
+  B3: 1
+  BG: 8

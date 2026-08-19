@@ -1,0 +1,11 @@
+=== RQ3: tightness tiers (eligible-chapter subset size; 20 blueprints/tier) ===
+ size  feas%  med D_B0  med D_B1  med gap
+    7    100        50        36       12
+    6     90        50        40       10
+    5     65        52        42        8
+    4     50        49        44        6
+    3     25        48        40        6
+
+=== RQ5: CR_soft (mean of difficulty-fit and Bloom-fit satisfaction), B0 vs B1 ===
+feasible pairs: 66 | CR_soft median: B0=0.408  B1=0.566
+paired Wilcoxon p=1.62e-12  effect r=0.87  B1 wins 66/66

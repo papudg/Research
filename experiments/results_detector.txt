@@ -1,0 +1,17 @@
+encoded: 475 | entity-count dist buckets: {(0, 3): 0, (3, 6): 10, (6, 100): 465}
+pairs: 80 pos, 0 hard-short, 80 hard-long, 80 easy
+
+median SBERT-cos / entity-Jaccard by pair type:
+  pos        : SBERT=1.00  Jaccard=1.00
+  hard-short : SBERT=nan  Jaccard=nan
+  hard-long  : SBERT=0.98  Jaccard=0.91
+  easy       : SBERT=0.20  Jaccard=0.05
+
+detector             P     R    F1  FP-short  FP-long
+SBERT@0.75        0.50  1.00  0.67      0.00     1.00
+SBERT@0.85        0.50  1.00  0.67      0.00     0.99
+SBERT@0.9         0.52  1.00  0.68      0.00     0.94
+gate SB.75^J0.5   0.50  1.00  0.67      0.00     1.00
+gate SB.75^J0.6   0.50  1.00  0.67      0.00     1.00
+gate SB.75^J0.7   0.50  1.00  0.67      0.00     1.00
+gate SB.75^J0.8   0.52  0.99  0.68      0.00     0.90

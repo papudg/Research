@@ -1,0 +1,18 @@
+{
+ "pos": {
+  "sbert": 1.0,
+  "jaccard": 1.0
+ },
+ "hard-long": {
+  "sbert": 0.98,
+  "jaccard": 0.91
+ },
+ "easy": {
+  "sbert": 0.2,
+  "jaccard": 0.05
+ },
+ "hard-short": {
+  "sbert": NaN,
+  "jaccard": NaN
+ }
+}

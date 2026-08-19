@@ -1,0 +1,12 @@
+joint policy comparison: 70/80 comparable blueprints
+feasibility transitions: feasible->feasible=70, infeasible->infeasible=10
+metric | sequential median | joint median | joint-favourable median difference | joint wins/ties/sequential wins
+difficulty | 40.0 | 40.0 | 0.0 | 0/70/0
+bloom_deviation | 24.0 | 24.0 | 0.0 | 0/70/0
+coverage | 6.0 | 6.0 | 0.0 | 0/70/0
+runtime_s | 0.12892249994911253 | 0.17738575002294965 | -0.041775999998208135 | 3/0/67
+section order summaries:
+production_A_B_C_D_E: feasible=70, D=40.0, Bloom=24.0, coverage=6.0, solver_s=0.1300264499441255
+reverse_E_D_C_B_A: feasible=70, D=40.0, Bloom=24.0, coverage=6.0, solver_s=0.13124394993064925
+high_count_A_C_B_D_E: feasible=70, D=40.0, Bloom=24.0, coverage=6.0, solver_s=0.13024114992003888
+low_count_E_D_B_C_A: feasible=70, D=40.0, Bloom=24.0, coverage=6.0, solver_s=0.1272726500465069

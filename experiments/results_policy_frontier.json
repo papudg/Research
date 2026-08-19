@@ -1,0 +1,2180 @@
+{
+  "scope": "observed policy/weight frontier; not exhaustive Pareto optimization",
+  "blueprint_ids": [
+    "blueprint-01",
+    "blueprint-02",
+    "blueprint-03",
+    "blueprint-04",
+    "blueprint-05",
+    "blueprint-06",
+    "blueprint-07",
+    "blueprint-09",
+    "blueprint-10",
+    "blueprint-11"
+  ],
+  "per_blueprint": [
+    {
+      "blueprint_id": "blueprint-01",
+      "candidate_count": 31,
+      "frontier": [
+        {
+          "label": "BG",
+          "outcome": "feasible",
+          "difficulty": 46,
+          "bloom_deviation": 40,
+          "coverage": 7,
+          "runtime_s": 0.02844209998147562,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "e890b140-fee9-40c0-9aa1-6d8116ffc1a3",
+              "e95eff2a-61e1-493d-b91f-33fc1d455953",
+              "ecb4de0e-4c05-4b0e-9138-b7bb4a0d6588",
+              "ee1cb7fc-c469-477a-ad7d-f9b6f630671e",
+              "ef416516-10eb-4520-9794-9f4ed5a38c5a",
+              "ef9b1139-d283-4286-9469-31ea05676126",
+              "f09281e6-6439-4a97-9d48-de5c98bc94fe",
+              "f0fb175b-a5a5-43ff-82e3-1e88318b4a80",
+              "f136d011-1ccb-4840-a134-33d2fc6ba859",
+              "f1d34c4c-a4b8-467f-aafd-29b7b314cdbb",
+              "f55409da-00c7-4cdf-9f4b-6a4a15655a45",
+              "f59811fc-1f54-4662-86b0-c3a10b36e860",
+              "f66d6ca3-6795-45db-a17b-dac27bad0202",
+              "f9c7b109-c0a9-4f60-b66f-2c793a016dbb",
+              "fb43c8ca-9ec7-48ba-a3aa-2220542a5f4c",
+              "fb8ec9d6-2785-4587-954e-4da3902d1653",
+              "fc5ed367-5c68-4efb-9395-31479b0a6640",
+              "fd0eeae7-4d26-45f0-b86c-d4c386b752a1",
+              "ffa78ced-d48e-4ed6-890b-a45abcbb2b1e",
+              "ffcf7a93-31ab-4771-a6da-af0a4339e083"
+            ],
+            "B": [
+              "b4c8f9b9-fdd0-4514-8ee9-4c779e998f7f",
+              "caa48f09-d97b-4792-a73e-6b2edc2819b3",
+              "dd07e09a-fd01-4213-a52f-279b50cfba72",
+              "e4eccbdc-49e1-46d0-94d0-2ba610344b4f",
+              "ebd323a8-577d-4377-83b5-56e07f0c6411"
+            ],
+            "C": [
+              "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+              "d631247b-7467-4caa-aea3-36fb08f72b53",
+              "e9171489-9acc-478b-98e0-3a99f6a8d593",
+              "f90a9f50-c547-4785-ab2c-ce90f1648205",
+              "f9e9f053-9965-4d43-9b1d-f3cddfc2771e",
+              "vkuqknyg"
+            ],
+            "D": [
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "dfe3f8a2-bddf-45a7-b0c6-79c8ffdf46d4",
+              "e8a288b9-8031-4152-bdd5-865e6a0cba0a",
+              "f42e9be5-19ec-4bb5-a00b-1d01ca471023"
+            ],
+            "E": [
+              "cb5e4aq7",
+              "m3f3gqcw",
+              "z1fctzy9"
+            ]
+          }
+        },
+        {
+          "label": "B2(1,1,3)",
+          "blueprint_id": "blueprint-01",
+          "outcome": "feasible",
+          "difficulty": 38,
+          "bloom_deviation": 22,
+          "coverage": 7,
+          "runtime_s": 0.0751352000515908,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "1d80ff07-cc4b-455f-b8b5-1f19ae5e26b2",
+              "290108ff-4b97-4e62-a41c-f2dd3c48044c",
+              "2984d15d-6426-44d7-b536-e1bc1c2a8efa",
+              "4f841105-1068-46f2-a8c3-e69fe50606ce",
+              "5e9612b8-c5d0-4fc1-8e2d-0c215931e948",
+              "5ef049fe-96f8-4a08-bfc0-5c5489639de5",
+              "6d61c299-a5d0-466a-9966-a1b47544adf6",
+              "8aa7445d-2658-4d8d-8940-3bcb0bbbb4b1",
+              "8ce56083-2f49-4daa-908f-e92486dd1935",
+              "9374a442-4302-4c3d-8b39-fc22e58e12cf",
+              "943af3b2-08c1-413e-b4af-beca39c3982d",
+              "9993ad6d-4666-47c4-94a6-2ab94c12c1c0",
+              "a0205ab2-92fe-48cd-8999-d04056c7a415",
+              "a9747532-ec84-47e7-a4cd-7bf3793d63bc",
+              "af47cdad-7ab2-42da-88cb-1013fc16489f",
+              "b4656354-61c2-4dea-b6ed-4cae2094322a",
+              "c3be7e3b-d04f-4fa0-b993-e6ead9176e70",
+              "d4db5388-2622-4706-8d97-6c32c17637de",
+              "e28e5626-5393-491b-9474-8bb4c53f85a7",
+              "ecb4de0e-4c05-4b0e-9138-b7bb4a0d6588"
+            ],
+            "B": [
+              "92676002-ce09-4e7f-8fc5-b062bf051a79",
+              "b722da40-f920-4976-b5a8-b5f1d80edfbe",
+              "bf878aa8-ce47-4fa9-8d02-2061e2e1e9d5",
+              "caa48f09-d97b-4792-a73e-6b2edc2819b3",
+              "ebd323a8-577d-4377-83b5-56e07f0c6411"
+            ],
+            "C": [
+              "16500416-a270-492c-be22-176391068733",
+              "3f75c3ac-eb97-45a0-835a-5bb878557596",
+              "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+              "d631247b-7467-4caa-aea3-36fb08f72b53",
+              "e9171489-9acc-478b-98e0-3a99f6a8d593",
+              "vkuqknyg"
+            ],
+            "D": [
+              "681a8b92-44c7-4da5-928b-2686175df34c",
+              "87f4dd32-dd9b-419f-9edc-9687b7cca1ab",
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "dfe3f8a2-bddf-45a7-b0c6-79c8ffdf46d4"
+            ],
+            "E": [
+              "2kpgcmpd",
+              "cb5e4aq7",
+              "z1fctzy9"
+            ]
+          }
+        },
+        {
+          "label": "B2(3,1,1)",
+          "blueprint_id": "blueprint-01",
+          "outcome": "feasible",
+          "difficulty": 36,
+          "bloom_deviation": 24,
+          "coverage": 7,
+          "runtime_s": 0.08284959994489327,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "1d80ff07-cc4b-455f-b8b5-1f19ae5e26b2",
+              "290108ff-4b97-4e62-a41c-f2dd3c48044c",
+              "2984d15d-6426-44d7-b536-e1bc1c2a8efa",
+              "4c424c90-206b-495b-922c-b02dbe41c48c",
+              "4f841105-1068-46f2-a8c3-e69fe50606ce",
+              "5e9612b8-c5d0-4fc1-8e2d-0c215931e948",
+              "6d61c299-a5d0-466a-9966-a1b47544adf6",
+              "7ca753fc-e6d0-4a36-ad8f-c3bddebdcf65",
+              "8aa7445d-2658-4d8d-8940-3bcb0bbbb4b1",
+              "8ce56083-2f49-4daa-908f-e92486dd1935",
+              "939ab893-9986-4fbd-9ecb-b390cb9b8b39",
+              "943af3b2-08c1-413e-b4af-beca39c3982d",
+              "9993ad6d-4666-47c4-94a6-2ab94c12c1c0",
+              "a9747532-ec84-47e7-a4cd-7bf3793d63bc",
+              "aeb5cd54-0a53-4d7b-8c6c-e46e8189ea94",
+              "af47cdad-7ab2-42da-88cb-1013fc16489f",
+              "b33e27c2-84c4-4b13-a5bc-4f3bcd2c5119",
+              "b4656354-61c2-4dea-b6ed-4cae2094322a",
+              "da2fd797-ecba-4edf-9f47-6c5413255917",
+              "e28e5626-5393-491b-9474-8bb4c53f85a7"
+            ],
+            "B": [
+              "391a025d-2c2f-49b8-b365-38f5059ace4a",
+              "92676002-ce09-4e7f-8fc5-b062bf051a79",
+              "b722da40-f920-4976-b5a8-b5f1d80edfbe",
+              "bf878aa8-ce47-4fa9-8d02-2061e2e1e9d5",
+              "caa48f09-d97b-4792-a73e-6b2edc2819b3"
+            ],
+            "C": [
+              "16500416-a270-492c-be22-176391068733",
+              "3f75c3ac-eb97-45a0-835a-5bb878557596",
+              "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+              "d631247b-7467-4caa-aea3-36fb08f72b53",
+              "e9171489-9acc-478b-98e0-3a99f6a8d593",
+              "f90a9f50-c547-4785-ab2c-ce90f1648205"
+            ],
+            "D": [
+              "681a8b92-44c7-4da5-928b-2686175df34c",
+              "87f4dd32-dd9b-419f-9edc-9687b7cca1ab",
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "dfe3f8a2-bddf-45a7-b0c6-79c8ffdf46d4"
+            ],
+            "E": [
+              "2kpgcmpd",
+              "cb5e4aq7",
+              "z1fctzy9"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "blueprint_id": "blueprint-02",
+      "candidate_count": 31,
+      "frontier": [
+        {
+          "label": "BG",
+          "outcome": "feasible",
+          "difficulty": 54,
+          "bloom_deviation": 40,
+          "coverage": 7,
+          "runtime_s": 0.027359000116121024,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "e890b140-fee9-40c0-9aa1-6d8116ffc1a3",
+              "e95eff2a-61e1-493d-b91f-33fc1d455953",
+              "ecb4de0e-4c05-4b0e-9138-b7bb4a0d6588",
+              "ee1cb7fc-c469-477a-ad7d-f9b6f630671e",
+              "ef416516-10eb-4520-9794-9f4ed5a38c5a",
+              "ef9b1139-d283-4286-9469-31ea05676126",
+              "f09281e6-6439-4a97-9d48-de5c98bc94fe",
+              "f0fb175b-a5a5-43ff-82e3-1e88318b4a80",
+              "f136d011-1ccb-4840-a134-33d2fc6ba859",
+              "f1d34c4c-a4b8-467f-aafd-29b7b314cdbb",
+              "f55409da-00c7-4cdf-9f4b-6a4a15655a45",
+              "f59811fc-1f54-4662-86b0-c3a10b36e860",
+              "f66d6ca3-6795-45db-a17b-dac27bad0202",
+              "f9c7b109-c0a9-4f60-b66f-2c793a016dbb",
+              "fb43c8ca-9ec7-48ba-a3aa-2220542a5f4c",
+              "fb8ec9d6-2785-4587-954e-4da3902d1653",
+              "fc5ed367-5c68-4efb-9395-31479b0a6640",
+              "fd0eeae7-4d26-45f0-b86c-d4c386b752a1",
+              "ffa78ced-d48e-4ed6-890b-a45abcbb2b1e",
+              "ffcf7a93-31ab-4771-a6da-af0a4339e083"
+            ],
+            "B": [
+              "b4c8f9b9-fdd0-4514-8ee9-4c779e998f7f",
+              "caa48f09-d97b-4792-a73e-6b2edc2819b3",
+              "dd07e09a-fd01-4213-a52f-279b50cfba72",
+              "e4eccbdc-49e1-46d0-94d0-2ba610344b4f",
+              "ebd323a8-577d-4377-83b5-56e07f0c6411"
+            ],
+            "C": [
+              "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+              "d631247b-7467-4caa-aea3-36fb08f72b53",
+              "e9171489-9acc-478b-98e0-3a99f6a8d593",
+              "f90a9f50-c547-4785-ab2c-ce90f1648205",
+              "f9e9f053-9965-4d43-9b1d-f3cddfc2771e",
+              "vkuqknyg"
+            ],
+            "D": [
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "dfe3f8a2-bddf-45a7-b0c6-79c8ffdf46d4",
+              "e8a288b9-8031-4152-bdd5-865e6a0cba0a",
+              "f42e9be5-19ec-4bb5-a00b-1d01ca471023"
+            ],
+            "E": [
+              "cb5e4aq7",
+              "m3f3gqcw",
+              "z1fctzy9"
+            ]
+          }
+        },
+        {
+          "label": "B2(1,1,3)",
+          "blueprint_id": "blueprint-02",
+          "outcome": "feasible",
+          "difficulty": 38,
+          "bloom_deviation": 22,
+          "coverage": 7,
+          "runtime_s": 0.07602919999044389,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "290108ff-4b97-4e62-a41c-f2dd3c48044c",
+              "2984d15d-6426-44d7-b536-e1bc1c2a8efa",
+              "4f841105-1068-46f2-a8c3-e69fe50606ce",
+              "5132d71f-7e92-4aab-bc28-a37920d678bc",
+              "5e9612b8-c5d0-4fc1-8e2d-0c215931e948",
+              "69d17f92-ff48-4e38-b3e3-5527cad7cf09",
+              "6d61c299-a5d0-466a-9966-a1b47544adf6",
+              "8aa7445d-2658-4d8d-8940-3bcb0bbbb4b1",
+              "8ce56083-2f49-4daa-908f-e92486dd1935",
+              "943af3b2-08c1-413e-b4af-beca39c3982d",
+              "9993ad6d-4666-47c4-94a6-2ab94c12c1c0",
+              "a9747532-ec84-47e7-a4cd-7bf3793d63bc",
+              "af47cdad-7ab2-42da-88cb-1013fc16489f",
+              "b4656354-61c2-4dea-b6ed-4cae2094322a",
+              "b65ae13c-6b56-466f-9fb1-0f564489975c",
+              "b6616a21-c1ff-4036-a12f-191f279c38fd",
+              "c10ad288-21ff-4bf6-a816-bee63018fa1b",
+              "c3be7e3b-d04f-4fa0-b993-e6ead9176e70",
+              "e28e5626-5393-491b-9474-8bb4c53f85a7",
+              "ffcf7a93-31ab-4771-a6da-af0a4339e083"
+            ],
+            "B": [
+              "1cf95387-5951-4af7-913e-a2c01b7ad952",
+              "7ac596b8-154e-433e-bfd8-3594069b6b7a",
+              "92676002-ce09-4e7f-8fc5-b062bf051a79",
+              "bf878aa8-ce47-4fa9-8d02-2061e2e1e9d5",
+              "ebd323a8-577d-4377-83b5-56e07f0c6411"
+            ],
+            "C": [
+              "16500416-a270-492c-be22-176391068733",
+              "3f75c3ac-eb97-45a0-835a-5bb878557596",
+              "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+              "d631247b-7467-4caa-aea3-36fb08f72b53",
+              "e9171489-9acc-478b-98e0-3a99f6a8d593",
+              "f90a9f50-c547-4785-ab2c-ce90f1648205"
+            ],
+            "D": [
+              "681a8b92-44c7-4da5-928b-2686175df34c",
+              "87f4dd32-dd9b-419f-9edc-9687b7cca1ab",
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "dfe3f8a2-bddf-45a7-b0c6-79c8ffdf46d4"
+            ],
+            "E": [
+              "2kpgcmpd",
+              "cb5e4aq7",
+              "z1fctzy9"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "blueprint_id": "blueprint-03",
+      "candidate_count": 31,
+      "frontier": [
+        {
+          "label": "BG",
+          "outcome": "feasible",
+          "difficulty": 62,
+          "bloom_deviation": 40,
+          "coverage": 7,
+          "runtime_s": 0.03225150000071153,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "e890b140-fee9-40c0-9aa1-6d8116ffc1a3",
+              "e95eff2a-61e1-493d-b91f-33fc1d455953",
+              "ecb4de0e-4c05-4b0e-9138-b7bb4a0d6588",
+              "ee1cb7fc-c469-477a-ad7d-f9b6f630671e",
+              "ef416516-10eb-4520-9794-9f4ed5a38c5a",
+              "ef9b1139-d283-4286-9469-31ea05676126",
+              "f09281e6-6439-4a97-9d48-de5c98bc94fe",
+              "f0fb175b-a5a5-43ff-82e3-1e88318b4a80",
+              "f136d011-1ccb-4840-a134-33d2fc6ba859",
+              "f1d34c4c-a4b8-467f-aafd-29b7b314cdbb",
+              "f55409da-00c7-4cdf-9f4b-6a4a15655a45",
+              "f59811fc-1f54-4662-86b0-c3a10b36e860",
+              "f66d6ca3-6795-45db-a17b-dac27bad0202",
+              "f9c7b109-c0a9-4f60-b66f-2c793a016dbb",
+              "fb43c8ca-9ec7-48ba-a3aa-2220542a5f4c",
+              "fb8ec9d6-2785-4587-954e-4da3902d1653",
+              "fc5ed367-5c68-4efb-9395-31479b0a6640",
+              "fd0eeae7-4d26-45f0-b86c-d4c386b752a1",
+              "ffa78ced-d48e-4ed6-890b-a45abcbb2b1e",
+              "ffcf7a93-31ab-4771-a6da-af0a4339e083"
+            ],
+            "B": [
+              "b4c8f9b9-fdd0-4514-8ee9-4c779e998f7f",
+              "caa48f09-d97b-4792-a73e-6b2edc2819b3",
+              "dd07e09a-fd01-4213-a52f-279b50cfba72",
+              "e4eccbdc-49e1-46d0-94d0-2ba610344b4f",
+              "ebd323a8-577d-4377-83b5-56e07f0c6411"
+            ],
+            "C": [
+              "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+              "d631247b-7467-4caa-aea3-36fb08f72b53",
+              "e9171489-9acc-478b-98e0-3a99f6a8d593",
+              "f90a9f50-c547-4785-ab2c-ce90f1648205",
+              "f9e9f053-9965-4d43-9b1d-f3cddfc2771e",
+              "vkuqknyg"
+            ],
+            "D": [
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "dfe3f8a2-bddf-45a7-b0c6-79c8ffdf46d4",
+              "e8a288b9-8031-4152-bdd5-865e6a0cba0a",
+              "f42e9be5-19ec-4bb5-a00b-1d01ca471023"
+            ],
+            "E": [
+              "cb5e4aq7",
+              "m3f3gqcw",
+              "z1fctzy9"
+            ]
+          }
+        },
+        {
+          "label": "B2(1,1,3)",
+          "blueprint_id": "blueprint-03",
+          "outcome": "feasible",
+          "difficulty": 54,
+          "bloom_deviation": 22,
+          "coverage": 7,
+          "runtime_s": 0.07635819999268278,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "1d80ff07-cc4b-455f-b8b5-1f19ae5e26b2",
+              "290108ff-4b97-4e62-a41c-f2dd3c48044c",
+              "2984d15d-6426-44d7-b536-e1bc1c2a8efa",
+              "447a8bd7-fbf5-4109-b58b-b2cc6df06b4f",
+              "4f841105-1068-46f2-a8c3-e69fe50606ce",
+              "5e9612b8-c5d0-4fc1-8e2d-0c215931e948",
+              "6d61c299-a5d0-466a-9966-a1b47544adf6",
+              "8aa7445d-2658-4d8d-8940-3bcb0bbbb4b1",
+              "8ce56083-2f49-4daa-908f-e92486dd1935",
+              "943af3b2-08c1-413e-b4af-beca39c3982d",
+              "9993ad6d-4666-47c4-94a6-2ab94c12c1c0",
+              "a9747532-ec84-47e7-a4cd-7bf3793d63bc",
+              "af47cdad-7ab2-42da-88cb-1013fc16489f",
+              "b4656354-61c2-4dea-b6ed-4cae2094322a",
+              "b6616a21-c1ff-4036-a12f-191f279c38fd",
+              "c3be7e3b-d04f-4fa0-b993-e6ead9176e70",
+              "c4fccb2b-8c6d-43f3-b55f-3f2a62eb68fb",
+              "e28e5626-5393-491b-9474-8bb4c53f85a7",
+              "e4ee9712-805a-48ef-9663-5e043c692030",
+              "ecb4de0e-4c05-4b0e-9138-b7bb4a0d6588"
+            ],
+            "B": [
+              "92676002-ce09-4e7f-8fc5-b062bf051a79",
+              "b722da40-f920-4976-b5a8-b5f1d80edfbe",
+              "bf878aa8-ce47-4fa9-8d02-2061e2e1e9d5",
+              "caa48f09-d97b-4792-a73e-6b2edc2819b3",
+              "ebd323a8-577d-4377-83b5-56e07f0c6411"
+            ],
+            "C": [
+              "16500416-a270-492c-be22-176391068733",
+              "3f75c3ac-eb97-45a0-835a-5bb878557596",
+              "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+              "d631247b-7467-4caa-aea3-36fb08f72b53",
+              "e9171489-9acc-478b-98e0-3a99f6a8d593",
+              "vkuqknyg"
+            ],
+            "D": [
+              "681a8b92-44c7-4da5-928b-2686175df34c",
+              "87f4dd32-dd9b-419f-9edc-9687b7cca1ab",
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "dfe3f8a2-bddf-45a7-b0c6-79c8ffdf46d4"
+            ],
+            "E": [
+              "2kpgcmpd",
+              "cb5e4aq7",
+              "z1fctzy9"
+            ]
+          }
+        },
+        {
+          "label": "B2(3,1,1)",
+          "blueprint_id": "blueprint-03",
+          "outcome": "feasible",
+          "difficulty": 52,
+          "bloom_deviation": 24,
+          "coverage": 7,
+          "runtime_s": 0.08565840002847835,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "1d80ff07-cc4b-455f-b8b5-1f19ae5e26b2",
+              "290108ff-4b97-4e62-a41c-f2dd3c48044c",
+              "2984d15d-6426-44d7-b536-e1bc1c2a8efa",
+              "447a8bd7-fbf5-4109-b58b-b2cc6df06b4f",
+              "5e9612b8-c5d0-4fc1-8e2d-0c215931e948",
+              "8ce56083-2f49-4daa-908f-e92486dd1935",
+              "943af3b2-08c1-413e-b4af-beca39c3982d",
+              "94e933fe-9d3e-4da2-a0d4-4cd18ab8eef2",
+              "9993ad6d-4666-47c4-94a6-2ab94c12c1c0",
+              "a9747532-ec84-47e7-a4cd-7bf3793d63bc",
+              "af47cdad-7ab2-42da-88cb-1013fc16489f",
+              "b6616a21-c1ff-4036-a12f-191f279c38fd",
+              "b9471868-ccc1-42e2-a052-d1a753c9a9be",
+              "be09cffb-be7a-4955-b95c-087767c8c070",
+              "c05e7886-8368-4500-801a-9282613a3e03",
+              "c3be7e3b-d04f-4fa0-b993-e6ead9176e70",
+              "ceb110a3-8c4e-4c53-87e6-4c15bc1895ff",
+              "e28e5626-5393-491b-9474-8bb4c53f85a7",
+              "ecb4de0e-4c05-4b0e-9138-b7bb4a0d6588",
+              "f59811fc-1f54-4662-86b0-c3a10b36e860"
+            ],
+            "B": [
+              "391a025d-2c2f-49b8-b365-38f5059ace4a",
+              "92676002-ce09-4e7f-8fc5-b062bf051a79",
+              "b722da40-f920-4976-b5a8-b5f1d80edfbe",
+              "bf878aa8-ce47-4fa9-8d02-2061e2e1e9d5",
+              "caa48f09-d97b-4792-a73e-6b2edc2819b3"
+            ],
+            "C": [
+              "16500416-a270-492c-be22-176391068733",
+              "3f75c3ac-eb97-45a0-835a-5bb878557596",
+              "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+              "d631247b-7467-4caa-aea3-36fb08f72b53",
+              "e9171489-9acc-478b-98e0-3a99f6a8d593",
+              "f90a9f50-c547-4785-ab2c-ce90f1648205"
+            ],
+            "D": [
+              "681a8b92-44c7-4da5-928b-2686175df34c",
+              "87f4dd32-dd9b-419f-9edc-9687b7cca1ab",
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "dfe3f8a2-bddf-45a7-b0c6-79c8ffdf46d4"
+            ],
+            "E": [
+              "2kpgcmpd",
+              "cb5e4aq7",
+              "z1fctzy9"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "blueprint_id": "blueprint-04",
+      "candidate_count": 31,
+      "frontier": [
+        {
+          "label": "B0",
+          "outcome": "feasible",
+          "difficulty": 52,
+          "bloom_deviation": 40,
+          "coverage": 7,
+          "runtime_s": 0.037064399977680296,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "e890b140-fee9-40c0-9aa1-6d8116ffc1a3",
+              "e95eff2a-61e1-493d-b91f-33fc1d455953",
+              "ecb4de0e-4c05-4b0e-9138-b7bb4a0d6588",
+              "ee1cb7fc-c469-477a-ad7d-f9b6f630671e",
+              "ef416516-10eb-4520-9794-9f4ed5a38c5a",
+              "ef9b1139-d283-4286-9469-31ea05676126",
+              "f09281e6-6439-4a97-9d48-de5c98bc94fe",
+              "f0fb175b-a5a5-43ff-82e3-1e88318b4a80",
+              "f136d011-1ccb-4840-a134-33d2fc6ba859",
+              "f1d34c4c-a4b8-467f-aafd-29b7b314cdbb",
+              "f55409da-00c7-4cdf-9f4b-6a4a15655a45",
+              "f59811fc-1f54-4662-86b0-c3a10b36e860",
+              "f66d6ca3-6795-45db-a17b-dac27bad0202",
+              "f9c7b109-c0a9-4f60-b66f-2c793a016dbb",
+              "fb43c8ca-9ec7-48ba-a3aa-2220542a5f4c",
+              "fb8ec9d6-2785-4587-954e-4da3902d1653",
+              "fc5ed367-5c68-4efb-9395-31479b0a6640",
+              "fd0eeae7-4d26-45f0-b86c-d4c386b752a1",
+              "ffa78ced-d48e-4ed6-890b-a45abcbb2b1e",
+              "ffcf7a93-31ab-4771-a6da-af0a4339e083"
+            ],
+            "B": [
+              "dd07e09a-fd01-4213-a52f-279b50cfba72",
+              "e07ec112-b97e-4954-af3b-9ab184ef51bb",
+              "e4eccbdc-49e1-46d0-94d0-2ba610344b4f",
+              "ebd323a8-577d-4377-83b5-56e07f0c6411",
+              "f83ad88b-b286-4973-a431-d10761910b13"
+            ],
+            "C": [
+              "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+              "d631247b-7467-4caa-aea3-36fb08f72b53",
+              "e9171489-9acc-478b-98e0-3a99f6a8d593",
+              "f90a9f50-c547-4785-ab2c-ce90f1648205",
+              "f9e9f053-9965-4d43-9b1d-f3cddfc2771e",
+              "vkuqknyg"
+            ],
+            "D": [
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "dfe3f8a2-bddf-45a7-b0c6-79c8ffdf46d4",
+              "e8a288b9-8031-4152-bdd5-865e6a0cba0a",
+              "f42e9be5-19ec-4bb5-a00b-1d01ca471023"
+            ],
+            "E": [
+              "cb5e4aq7",
+              "m3f3gqcw",
+              "z1fctzy9"
+            ]
+          }
+        },
+        {
+          "label": "BG",
+          "outcome": "feasible",
+          "difficulty": 48,
+          "bloom_deviation": 40,
+          "coverage": 7,
+          "runtime_s": 0.03932420018827543,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "e890b140-fee9-40c0-9aa1-6d8116ffc1a3",
+              "e95eff2a-61e1-493d-b91f-33fc1d455953",
+              "ecb4de0e-4c05-4b0e-9138-b7bb4a0d6588",
+              "ee1cb7fc-c469-477a-ad7d-f9b6f630671e",
+              "ef416516-10eb-4520-9794-9f4ed5a38c5a",
+              "ef9b1139-d283-4286-9469-31ea05676126",
+              "f09281e6-6439-4a97-9d48-de5c98bc94fe",
+              "f0fb175b-a5a5-43ff-82e3-1e88318b4a80",
+              "f136d011-1ccb-4840-a134-33d2fc6ba859",
+              "f1d34c4c-a4b8-467f-aafd-29b7b314cdbb",
+              "f55409da-00c7-4cdf-9f4b-6a4a15655a45",
+              "f59811fc-1f54-4662-86b0-c3a10b36e860",
+              "f66d6ca3-6795-45db-a17b-dac27bad0202",
+              "f9c7b109-c0a9-4f60-b66f-2c793a016dbb",
+              "fb43c8ca-9ec7-48ba-a3aa-2220542a5f4c",
+              "fb8ec9d6-2785-4587-954e-4da3902d1653",
+              "fc5ed367-5c68-4efb-9395-31479b0a6640",
+              "fd0eeae7-4d26-45f0-b86c-d4c386b752a1",
+              "ffa78ced-d48e-4ed6-890b-a45abcbb2b1e",
+              "ffcf7a93-31ab-4771-a6da-af0a4339e083"
+            ],
+            "B": [
+              "b4c8f9b9-fdd0-4514-8ee9-4c779e998f7f",
+              "caa48f09-d97b-4792-a73e-6b2edc2819b3",
+              "dd07e09a-fd01-4213-a52f-279b50cfba72",
+              "e4eccbdc-49e1-46d0-94d0-2ba610344b4f",
+              "ebd323a8-577d-4377-83b5-56e07f0c6411"
+            ],
+            "C": [
+              "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+              "d631247b-7467-4caa-aea3-36fb08f72b53",
+              "e9171489-9acc-478b-98e0-3a99f6a8d593",
+              "f90a9f50-c547-4785-ab2c-ce90f1648205",
+              "f9e9f053-9965-4d43-9b1d-f3cddfc2771e",
+              "vkuqknyg"
+            ],
+            "D": [
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "dfe3f8a2-bddf-45a7-b0c6-79c8ffdf46d4",
+              "e8a288b9-8031-4152-bdd5-865e6a0cba0a",
+              "f42e9be5-19ec-4bb5-a00b-1d01ca471023"
+            ],
+            "E": [
+              "cb5e4aq7",
+              "m3f3gqcw",
+              "z1fctzy9"
+            ]
+          }
+        },
+        {
+          "label": "B2(1,1,10)",
+          "blueprint_id": "blueprint-04",
+          "outcome": "feasible",
+          "difficulty": 44,
+          "bloom_deviation": 22,
+          "coverage": 7,
+          "runtime_s": 0.0761890999856405,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "290108ff-4b97-4e62-a41c-f2dd3c48044c",
+              "2984d15d-6426-44d7-b536-e1bc1c2a8efa",
+              "447a8bd7-fbf5-4109-b58b-b2cc6df06b4f",
+              "4f841105-1068-46f2-a8c3-e69fe50606ce",
+              "5e9612b8-c5d0-4fc1-8e2d-0c215931e948",
+              "6d61c299-a5d0-466a-9966-a1b47544adf6",
+              "8aa7445d-2658-4d8d-8940-3bcb0bbbb4b1",
+              "8bcc5273-bd58-4dd0-8ab9-974c00b19cb5",
+              "8ce56083-2f49-4daa-908f-e92486dd1935",
+              "9374a442-4302-4c3d-8b39-fc22e58e12cf",
+              "9993ad6d-4666-47c4-94a6-2ab94c12c1c0",
+              "9a308ea3-2694-433c-bfaf-fdfad64d413f",
+              "a01da1d6-c268-4325-8a3c-29ab044a3419",
+              "a9747532-ec84-47e7-a4cd-7bf3793d63bc",
+              "af47cdad-7ab2-42da-88cb-1013fc16489f",
+              "b0252261-a46d-4ad1-895c-0d67631e76d4",
+              "b4656354-61c2-4dea-b6ed-4cae2094322a",
+              "b6616a21-c1ff-4036-a12f-191f279c38fd",
+              "e28e5626-5393-491b-9474-8bb4c53f85a7",
+              "e95eff2a-61e1-493d-b91f-33fc1d455953"
+            ],
+            "B": [
+              "696964e5-622a-4377-ba79-9bb367162fdc",
+              "92676002-ce09-4e7f-8fc5-b062bf051a79",
+              "b722da40-f920-4976-b5a8-b5f1d80edfbe",
+              "bf878aa8-ce47-4fa9-8d02-2061e2e1e9d5",
+              "ebd323a8-577d-4377-83b5-56e07f0c6411"
+            ],
+            "C": [
+              "16500416-a270-492c-be22-176391068733",
+              "3f75c3ac-eb97-45a0-835a-5bb878557596",
+              "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+              "d631247b-7467-4caa-aea3-36fb08f72b53",
+              "e9171489-9acc-478b-98e0-3a99f6a8d593",
+              "vkuqknyg"
+            ],
+            "D": [
+              "681a8b92-44c7-4da5-928b-2686175df34c",
+              "87f4dd32-dd9b-419f-9edc-9687b7cca1ab",
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "dfe3f8a2-bddf-45a7-b0c6-79c8ffdf46d4"
+            ],
+            "E": [
+              "2kpgcmpd",
+              "cb5e4aq7",
+              "z1fctzy9"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "blueprint_id": "blueprint-05",
+      "candidate_count": 31,
+      "frontier": [
+        {
+          "label": "BG",
+          "outcome": "feasible",
+          "difficulty": 60,
+          "bloom_deviation": 42,
+          "coverage": 5,
+          "runtime_s": 0.023615599959157407,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "da2fd797-ecba-4edf-9f47-6c5413255917",
+              "dd9fb345-b577-43c3-a462-d73be34ff476",
+              "e1203061-a993-4e6c-9281-c0c81703065d",
+              "e4bda850-47a2-43dd-a464-ac56ca1cba96",
+              "e95eff2a-61e1-493d-b91f-33fc1d455953",
+              "ecb4de0e-4c05-4b0e-9138-b7bb4a0d6588",
+              "ee1cb7fc-c469-477a-ad7d-f9b6f630671e",
+              "ef416516-10eb-4520-9794-9f4ed5a38c5a",
+              "f09281e6-6439-4a97-9d48-de5c98bc94fe",
+              "f0fb175b-a5a5-43ff-82e3-1e88318b4a80",
+              "f1d34c4c-a4b8-467f-aafd-29b7b314cdbb",
+              "f59811fc-1f54-4662-86b0-c3a10b36e860",
+              "f66d6ca3-6795-45db-a17b-dac27bad0202",
+              "f9c7b109-c0a9-4f60-b66f-2c793a016dbb",
+              "fb43c8ca-9ec7-48ba-a3aa-2220542a5f4c",
+              "fb8ec9d6-2785-4587-954e-4da3902d1653",
+              "fc5ed367-5c68-4efb-9395-31479b0a6640",
+              "fd0eeae7-4d26-45f0-b86c-d4c386b752a1",
+              "ffa78ced-d48e-4ed6-890b-a45abcbb2b1e",
+              "ffcf7a93-31ab-4771-a6da-af0a4339e083"
+            ],
+            "B": [
+              "b3d77817-c199-498c-9598-c3cc51038102",
+              "c2b50bac-2161-44c8-b1eb-5e16327599dd",
+              "caa48f09-d97b-4792-a73e-6b2edc2819b3",
+              "e07ec112-b97e-4954-af3b-9ab184ef51bb",
+              "e4eccbdc-49e1-46d0-94d0-2ba610344b4f"
+            ],
+            "C": [
+              "cd4d589a-01b3-4fc6-89d7-ff1d01e9dc1a",
+              "d631247b-7467-4caa-aea3-36fb08f72b53",
+              "e9171489-9acc-478b-98e0-3a99f6a8d593",
+              "f90a9f50-c547-4785-ab2c-ce90f1648205",
+              "f9e9f053-9965-4d43-9b1d-f3cddfc2771e",
+              "vkuqknyg"
+            ],
+            "D": [
+              "d6cc4e5b-a061-4870-9316-87adb8daea70",
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "e8a288b9-8031-4152-bdd5-865e6a0cba0a",
+              "f42e9be5-19ec-4bb5-a00b-1d01ca471023"
+            ],
+            "E": [
+              "cb5e4aq7",
+              "m3f3gqcw",
+              "z1fctzy9"
+            ]
+          }
+        },
+        {
+          "label": "B2(1,1,10)",
+          "blueprint_id": "blueprint-05",
+          "outcome": "feasible",
+          "difficulty": 54,
+          "bloom_deviation": 26,
+          "coverage": 5,
+          "runtime_s": 0.0525286000338383,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "1d80ff07-cc4b-455f-b8b5-1f19ae5e26b2",
+              "2694c656-e664-421a-8506-e1e04896efe9",
+              "290108ff-4b97-4e62-a41c-f2dd3c48044c",
+              "37238c63-953d-4027-9fe9-f0c2f87664a0",
+              "4c424c90-206b-495b-922c-b02dbe41c48c",
+              "4f841105-1068-46f2-a8c3-e69fe50606ce",
+              "5132d71f-7e92-4aab-bc28-a37920d678bc",
+              "6d61c299-a5d0-466a-9966-a1b47544adf6",
+              "7d1c7b12-83c4-4d15-ae7d-61c5f50e1226",
+              "85855ffa-443f-4ec1-a9f4-f786dee1fbf4",
+              "8ce56083-2f49-4daa-908f-e92486dd1935",
+              "943af3b2-08c1-413e-b4af-beca39c3982d",
+              "9993ad6d-4666-47c4-94a6-2ab94c12c1c0",
+              "a9747532-ec84-47e7-a4cd-7bf3793d63bc",
+              "af47cdad-7ab2-42da-88cb-1013fc16489f",
+              "b6616a21-c1ff-4036-a12f-191f279c38fd",
+              "ba8d23fd-5e4f-4f9e-9bee-728d40158a11",
+              "bce697a3-a196-4c13-8af4-11e308e2d6f5",
+              "c3be7e3b-d04f-4fa0-b993-e6ead9176e70",
+              "ecb4de0e-4c05-4b0e-9138-b7bb4a0d6588"
+            ],
+            "B": [
+              "696964e5-622a-4377-ba79-9bb367162fdc",
+              "6badaa4b-e940-460c-81cd-cbda3b9424a0",
+              "7ac596b8-154e-433e-bfd8-3594069b6b7a",
+              "92676002-ce09-4e7f-8fc5-b062bf051a79",
+              "bf878aa8-ce47-4fa9-8d02-2061e2e1e9d5"
+            ],
+            "C": [
+              "3f75c3ac-eb97-45a0-835a-5bb878557596",
+              "d631247b-7467-4caa-aea3-36fb08f72b53",
+              "e9171489-9acc-478b-98e0-3a99f6a8d593",
+              "f90a9f50-c547-4785-ab2c-ce90f1648205",
+              "f9e9f053-9965-4d43-9b1d-f3cddfc2771e",
+              "vkuqknyg"
+            ],
+            "D": [
+              "681a8b92-44c7-4da5-928b-2686175df34c",
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "e8a288b9-8031-4152-bdd5-865e6a0cba0a",
+              "f42e9be5-19ec-4bb5-a00b-1d01ca471023"
+            ],
+            "E": [
+              "cb5e4aq7",
+              "m3f3gqcw",
+              "z1fctzy9"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "blueprint_id": "blueprint-06",
+      "candidate_count": 31,
+      "frontier": [
+        {
+          "label": "B0",
+          "outcome": "feasible",
+          "difficulty": 46,
+          "bloom_deviation": 42,
+          "coverage": 5,
+          "runtime_s": 0.01977500005159527,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "da2fd797-ecba-4edf-9f47-6c5413255917",
+              "dc6767ee-823b-44b0-b162-9047e5b65b26",
+              "e1203061-a993-4e6c-9281-c0c81703065d",
+              "e28e5626-5393-491b-9474-8bb4c53f85a7",
+              "e4bda850-47a2-43dd-a464-ac56ca1cba96",
+              "e4ee9712-805a-48ef-9663-5e043c692030",
+              "e890b140-fee9-40c0-9aa1-6d8116ffc1a3",
+              "e95eff2a-61e1-493d-b91f-33fc1d455953",
+              "ecb4de0e-4c05-4b0e-9138-b7bb4a0d6588",
+              "ef9b1139-d283-4286-9469-31ea05676126",
+              "f09281e6-6439-4a97-9d48-de5c98bc94fe",
+              "f0fb175b-a5a5-43ff-82e3-1e88318b4a80",
+              "f136d011-1ccb-4840-a134-33d2fc6ba859",
+              "f1d34c4c-a4b8-467f-aafd-29b7b314cdbb",
+              "f55409da-00c7-4cdf-9f4b-6a4a15655a45",
+              "f9c7b109-c0a9-4f60-b66f-2c793a016dbb",
+              "fb43c8ca-9ec7-48ba-a3aa-2220542a5f4c",
+              "fd0eeae7-4d26-45f0-b86c-d4c386b752a1",
+              "ffa78ced-d48e-4ed6-890b-a45abcbb2b1e",
+              "ffcf7a93-31ab-4771-a6da-af0a4339e083"
+            ],
+            "B": [
+              "6038793e-4dfc-4b30-b419-3705bd439fa6",
+              "bce6cb6b-ede7-4c52-9c23-30288ddc1778",
+              "caa48f09-d97b-4792-a73e-6b2edc2819b3",
+              "dd07e09a-fd01-4213-a52f-279b50cfba72",
+              "e4eccbdc-49e1-46d0-94d0-2ba610344b4f"
+            ],
+            "C": [
+              "2128488e-42c0-457c-a4a2-8c53627365d4",
+              "2f94cea8-ad44-4cca-9e1d-59312cc55c14",
+              "3f75c3ac-eb97-45a0-835a-5bb878557596",
+              "8560665e-e1f8-4447-8373-8ab85fb70e59",
+              "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+              "d631247b-7467-4caa-aea3-36fb08f72b53"
+            ],
+            "D": [
+              "d6cc4e5b-a061-4870-9316-87adb8daea70",
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "dfe3f8a2-bddf-45a7-b0c6-79c8ffdf46d4",
+              "e8a288b9-8031-4152-bdd5-865e6a0cba0a"
+            ],
+            "E": [
+              "cb5e4aq7",
+              "m3f3gqcw",
+              "z1fctzy9"
+            ]
+          }
+        },
+        {
+          "label": "B2(1,1,3)",
+          "blueprint_id": "blueprint-06",
+          "outcome": "feasible",
+          "difficulty": 40,
+          "bloom_deviation": 26,
+          "coverage": 5,
+          "runtime_s": 0.05287409987067804,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "290108ff-4b97-4e62-a41c-f2dd3c48044c",
+              "2984d15d-6426-44d7-b536-e1bc1c2a8efa",
+              "447a8bd7-fbf5-4109-b58b-b2cc6df06b4f",
+              "5e9612b8-c5d0-4fc1-8e2d-0c215931e948",
+              "6d61c299-a5d0-466a-9966-a1b47544adf6",
+              "71965818-7cb5-48d0-9be5-2dd3a5da5a3a",
+              "8aa7445d-2658-4d8d-8940-3bcb0bbbb4b1",
+              "8ce56083-2f49-4daa-908f-e92486dd1935",
+              "97fea4c0-92ef-423f-b894-e86e31a3918b",
+              "98444b63-1ab8-4aa8-ad92-6d1ef06d77f5",
+              "9917c39b-dd98-417e-8be1-a43d99c82612",
+              "9a308ea3-2694-433c-bfaf-fdfad64d413f",
+              "a9747532-ec84-47e7-a4cd-7bf3793d63bc",
+              "af47cdad-7ab2-42da-88cb-1013fc16489f",
+              "b0252261-a46d-4ad1-895c-0d67631e76d4",
+              "b4656354-61c2-4dea-b6ed-4cae2094322a",
+              "b65ae13c-6b56-466f-9fb1-0f564489975c",
+              "d1dbdea8-c924-46af-a0c2-acb8aa17d551",
+              "e28e5626-5393-491b-9474-8bb4c53f85a7",
+              "ecb4de0e-4c05-4b0e-9138-b7bb4a0d6588"
+            ],
+            "B": [
+              "391a025d-2c2f-49b8-b365-38f5059ace4a",
+              "92676002-ce09-4e7f-8fc5-b062bf051a79",
+              "b722da40-f920-4976-b5a8-b5f1d80edfbe",
+              "caa48f09-d97b-4792-a73e-6b2edc2819b3",
+              "ebd323a8-577d-4377-83b5-56e07f0c6411"
+            ],
+            "C": [
+              "16500416-a270-492c-be22-176391068733",
+              "2f94cea8-ad44-4cca-9e1d-59312cc55c14",
+              "3f75c3ac-eb97-45a0-835a-5bb878557596",
+              "8560665e-e1f8-4447-8373-8ab85fb70e59",
+              "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+              "d631247b-7467-4caa-aea3-36fb08f72b53"
+            ],
+            "D": [
+              "d6cc4e5b-a061-4870-9316-87adb8daea70",
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "dfe3f8a2-bddf-45a7-b0c6-79c8ffdf46d4",
+              "e8a288b9-8031-4152-bdd5-865e6a0cba0a"
+            ],
+            "E": [
+              "2kpgcmpd",
+              "cb5e4aq7",
+              "z1fctzy9"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "blueprint_id": "blueprint-07",
+      "candidate_count": 31,
+      "frontier": [
+        {
+          "label": "B0",
+          "outcome": "feasible",
+          "difficulty": 50,
+          "bloom_deviation": 40,
+          "coverage": 7,
+          "runtime_s": 0.028482000052463263,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "e890b140-fee9-40c0-9aa1-6d8116ffc1a3",
+              "e95eff2a-61e1-493d-b91f-33fc1d455953",
+              "ecb4de0e-4c05-4b0e-9138-b7bb4a0d6588",
+              "ee1cb7fc-c469-477a-ad7d-f9b6f630671e",
+              "ef416516-10eb-4520-9794-9f4ed5a38c5a",
+              "ef9b1139-d283-4286-9469-31ea05676126",
+              "f09281e6-6439-4a97-9d48-de5c98bc94fe",
+              "f0fb175b-a5a5-43ff-82e3-1e88318b4a80",
+              "f136d011-1ccb-4840-a134-33d2fc6ba859",
+              "f1d34c4c-a4b8-467f-aafd-29b7b314cdbb",
+              "f55409da-00c7-4cdf-9f4b-6a4a15655a45",
+              "f59811fc-1f54-4662-86b0-c3a10b36e860",
+              "f66d6ca3-6795-45db-a17b-dac27bad0202",
+              "f9c7b109-c0a9-4f60-b66f-2c793a016dbb",
+              "fb43c8ca-9ec7-48ba-a3aa-2220542a5f4c",
+              "fb8ec9d6-2785-4587-954e-4da3902d1653",
+              "fc5ed367-5c68-4efb-9395-31479b0a6640",
+              "fd0eeae7-4d26-45f0-b86c-d4c386b752a1",
+              "ffa78ced-d48e-4ed6-890b-a45abcbb2b1e",
+              "ffcf7a93-31ab-4771-a6da-af0a4339e083"
+            ],
+            "B": [
+              "dd07e09a-fd01-4213-a52f-279b50cfba72",
+              "e07ec112-b97e-4954-af3b-9ab184ef51bb",
+              "e4eccbdc-49e1-46d0-94d0-2ba610344b4f",
+              "ebd323a8-577d-4377-83b5-56e07f0c6411",
+              "f83ad88b-b286-4973-a431-d10761910b13"
+            ],
+            "C": [
+              "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+              "d631247b-7467-4caa-aea3-36fb08f72b53",
+              "e9171489-9acc-478b-98e0-3a99f6a8d593",
+              "f90a9f50-c547-4785-ab2c-ce90f1648205",
+              "f9e9f053-9965-4d43-9b1d-f3cddfc2771e",
+              "vkuqknyg"
+            ],
+            "D": [
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "dfe3f8a2-bddf-45a7-b0c6-79c8ffdf46d4",
+              "e8a288b9-8031-4152-bdd5-865e6a0cba0a",
+              "f42e9be5-19ec-4bb5-a00b-1d01ca471023"
+            ],
+            "E": [
+              "cb5e4aq7",
+              "m3f3gqcw",
+              "z1fctzy9"
+            ]
+          }
+        },
+        {
+          "label": "BG",
+          "outcome": "feasible",
+          "difficulty": 48,
+          "bloom_deviation": 40,
+          "coverage": 7,
+          "runtime_s": 0.029325700015760958,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "e890b140-fee9-40c0-9aa1-6d8116ffc1a3",
+              "e95eff2a-61e1-493d-b91f-33fc1d455953",
+              "ecb4de0e-4c05-4b0e-9138-b7bb4a0d6588",
+              "ee1cb7fc-c469-477a-ad7d-f9b6f630671e",
+              "ef416516-10eb-4520-9794-9f4ed5a38c5a",
+              "ef9b1139-d283-4286-9469-31ea05676126",
+              "f09281e6-6439-4a97-9d48-de5c98bc94fe",
+              "f0fb175b-a5a5-43ff-82e3-1e88318b4a80",
+              "f136d011-1ccb-4840-a134-33d2fc6ba859",
+              "f1d34c4c-a4b8-467f-aafd-29b7b314cdbb",
+              "f55409da-00c7-4cdf-9f4b-6a4a15655a45",
+              "f59811fc-1f54-4662-86b0-c3a10b36e860",
+              "f66d6ca3-6795-45db-a17b-dac27bad0202",
+              "f9c7b109-c0a9-4f60-b66f-2c793a016dbb",
+              "fb43c8ca-9ec7-48ba-a3aa-2220542a5f4c",
+              "fb8ec9d6-2785-4587-954e-4da3902d1653",
+              "fc5ed367-5c68-4efb-9395-31479b0a6640",
+              "fd0eeae7-4d26-45f0-b86c-d4c386b752a1",
+              "ffa78ced-d48e-4ed6-890b-a45abcbb2b1e",
+              "ffcf7a93-31ab-4771-a6da-af0a4339e083"
+            ],
+            "B": [
+              "b4c8f9b9-fdd0-4514-8ee9-4c779e998f7f",
+              "caa48f09-d97b-4792-a73e-6b2edc2819b3",
+              "dd07e09a-fd01-4213-a52f-279b50cfba72",
+              "e4eccbdc-49e1-46d0-94d0-2ba610344b4f",
+              "ebd323a8-577d-4377-83b5-56e07f0c6411"
+            ],
+            "C": [
+              "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+              "d631247b-7467-4caa-aea3-36fb08f72b53",
+              "e9171489-9acc-478b-98e0-3a99f6a8d593",
+              "f90a9f50-c547-4785-ab2c-ce90f1648205",
+              "f9e9f053-9965-4d43-9b1d-f3cddfc2771e",
+              "vkuqknyg"
+            ],
+            "D": [
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "dfe3f8a2-bddf-45a7-b0c6-79c8ffdf46d4",
+              "e8a288b9-8031-4152-bdd5-865e6a0cba0a",
+              "f42e9be5-19ec-4bb5-a00b-1d01ca471023"
+            ],
+            "E": [
+              "cb5e4aq7",
+              "m3f3gqcw",
+              "z1fctzy9"
+            ]
+          }
+        },
+        {
+          "label": "B2(1,1,3)",
+          "blueprint_id": "blueprint-07",
+          "outcome": "feasible",
+          "difficulty": 34,
+          "bloom_deviation": 22,
+          "coverage": 7,
+          "runtime_s": 0.07367319997865707,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "1d80ff07-cc4b-455f-b8b5-1f19ae5e26b2",
+              "290108ff-4b97-4e62-a41c-f2dd3c48044c",
+              "2984d15d-6426-44d7-b536-e1bc1c2a8efa",
+              "3794d3d3-cc83-4a38-95d9-96275b19a44d",
+              "447a8bd7-fbf5-4109-b58b-b2cc6df06b4f",
+              "4f841105-1068-46f2-a8c3-e69fe50606ce",
+              "5e9612b8-c5d0-4fc1-8e2d-0c215931e948",
+              "69d17f92-ff48-4e38-b3e3-5527cad7cf09",
+              "6b7c020c-91ed-410c-a6ae-a1a05e7d0e56",
+              "76931b4e-7a72-404d-a815-88d54bf13136",
+              "7d1c7b12-83c4-4d15-ae7d-61c5f50e1226",
+              "85c2faa3-7432-457c-80b0-c9dad8e5ffa5",
+              "8aa7445d-2658-4d8d-8940-3bcb0bbbb4b1",
+              "8ce56083-2f49-4daa-908f-e92486dd1935",
+              "943af3b2-08c1-413e-b4af-beca39c3982d",
+              "9993ad6d-4666-47c4-94a6-2ab94c12c1c0",
+              "a9747532-ec84-47e7-a4cd-7bf3793d63bc",
+              "af47cdad-7ab2-42da-88cb-1013fc16489f",
+              "b4656354-61c2-4dea-b6ed-4cae2094322a",
+              "e28e5626-5393-491b-9474-8bb4c53f85a7"
+            ],
+            "B": [
+              "696964e5-622a-4377-ba79-9bb367162fdc",
+              "92676002-ce09-4e7f-8fc5-b062bf051a79",
+              "b722da40-f920-4976-b5a8-b5f1d80edfbe",
+              "bf878aa8-ce47-4fa9-8d02-2061e2e1e9d5",
+              "ebd323a8-577d-4377-83b5-56e07f0c6411"
+            ],
+            "C": [
+              "16500416-a270-492c-be22-176391068733",
+              "3f75c3ac-eb97-45a0-835a-5bb878557596",
+              "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+              "d631247b-7467-4caa-aea3-36fb08f72b53",
+              "e9171489-9acc-478b-98e0-3a99f6a8d593",
+              "f90a9f50-c547-4785-ab2c-ce90f1648205"
+            ],
+            "D": [
+              "681a8b92-44c7-4da5-928b-2686175df34c",
+              "87f4dd32-dd9b-419f-9edc-9687b7cca1ab",
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "dfe3f8a2-bddf-45a7-b0c6-79c8ffdf46d4"
+            ],
+            "E": [
+              "2kpgcmpd",
+              "cb5e4aq7",
+              "z1fctzy9"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "blueprint_id": "blueprint-09",
+      "candidate_count": 31,
+      "frontier": [
+        {
+          "label": "BG",
+          "outcome": "feasible",
+          "difficulty": 58,
+          "bloom_deviation": 42,
+          "coverage": 5,
+          "runtime_s": 0.017894399992655963,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "e1203061-a993-4e6c-9281-c0c81703065d",
+              "e28e5626-5393-491b-9474-8bb4c53f85a7",
+              "e4bda850-47a2-43dd-a464-ac56ca1cba96",
+              "e95eff2a-61e1-493d-b91f-33fc1d455953",
+              "ecb4de0e-4c05-4b0e-9138-b7bb4a0d6588",
+              "ee1cb7fc-c469-477a-ad7d-f9b6f630671e",
+              "ef416516-10eb-4520-9794-9f4ed5a38c5a",
+              "ef9b1139-d283-4286-9469-31ea05676126",
+              "f09281e6-6439-4a97-9d48-de5c98bc94fe",
+              "f0fb175b-a5a5-43ff-82e3-1e88318b4a80",
+              "f136d011-1ccb-4840-a134-33d2fc6ba859",
+              "f1d34c4c-a4b8-467f-aafd-29b7b314cdbb",
+              "f59811fc-1f54-4662-86b0-c3a10b36e860",
+              "f9c7b109-c0a9-4f60-b66f-2c793a016dbb",
+              "fb43c8ca-9ec7-48ba-a3aa-2220542a5f4c",
+              "fb8ec9d6-2785-4587-954e-4da3902d1653",
+              "fc5ed367-5c68-4efb-9395-31479b0a6640",
+              "fd0eeae7-4d26-45f0-b86c-d4c386b752a1",
+              "ffa78ced-d48e-4ed6-890b-a45abcbb2b1e",
+              "ffcf7a93-31ab-4771-a6da-af0a4339e083"
+            ],
+            "B": [
+              "6038793e-4dfc-4b30-b419-3705bd439fa6",
+              "c0904486-a984-43b0-b0c8-27980d156dbe",
+              "caa48f09-d97b-4792-a73e-6b2edc2819b3",
+              "e07ec112-b97e-4954-af3b-9ab184ef51bb",
+              "e4eccbdc-49e1-46d0-94d0-2ba610344b4f"
+            ],
+            "C": [
+              "cd4d589a-01b3-4fc6-89d7-ff1d01e9dc1a",
+              "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+              "d631247b-7467-4caa-aea3-36fb08f72b53",
+              "f90a9f50-c547-4785-ab2c-ce90f1648205",
+              "f9e9f053-9965-4d43-9b1d-f3cddfc2771e",
+              "vkuqknyg"
+            ],
+            "D": [
+              "bd5ab2fb-fac5-48be-9d56-6cfadf0ea9ab",
+              "d6cc4e5b-a061-4870-9316-87adb8daea70",
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "e8a288b9-8031-4152-bdd5-865e6a0cba0a"
+            ],
+            "E": [
+              "cb5e4aq7",
+              "m3f3gqcw",
+              "z1fctzy9"
+            ]
+          }
+        },
+        {
+          "label": "B2(1,1,10)",
+          "blueprint_id": "blueprint-09",
+          "outcome": "feasible",
+          "difficulty": 48,
+          "bloom_deviation": 26,
+          "coverage": 5,
+          "runtime_s": 0.051037700090091676,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "2694c656-e664-421a-8506-e1e04896efe9",
+              "290108ff-4b97-4e62-a41c-f2dd3c48044c",
+              "2984d15d-6426-44d7-b536-e1bc1c2a8efa",
+              "2c7800bb-7524-4df0-8139-2777c7c4b8bb",
+              "447a8bd7-fbf5-4109-b58b-b2cc6df06b4f",
+              "4f841105-1068-46f2-a8c3-e69fe50606ce",
+              "5e9612b8-c5d0-4fc1-8e2d-0c215931e948",
+              "6d61c299-a5d0-466a-9966-a1b47544adf6",
+              "8aa7445d-2658-4d8d-8940-3bcb0bbbb4b1",
+              "8ce56083-2f49-4daa-908f-e92486dd1935",
+              "9d04e7a0-067a-40e7-a61a-3c01ddd4e982",
+              "a9747532-ec84-47e7-a4cd-7bf3793d63bc",
+              "af47cdad-7ab2-42da-88cb-1013fc16489f",
+              "b4656354-61c2-4dea-b6ed-4cae2094322a",
+              "c3be7e3b-d04f-4fa0-b993-e6ead9176e70",
+              "c4fccb2b-8c6d-43f3-b55f-3f2a62eb68fb",
+              "d5ab3d0d-b36a-4f18-a072-ffcb76371156",
+              "e28e5626-5393-491b-9474-8bb4c53f85a7",
+              "ecb4de0e-4c05-4b0e-9138-b7bb4a0d6588",
+              "f0fb175b-a5a5-43ff-82e3-1e88318b4a80"
+            ],
+            "B": [
+              "0e282d17-a58c-4547-87f7-3e4cd0384ca9",
+              "696964e5-622a-4377-ba79-9bb367162fdc",
+              "92676002-ce09-4e7f-8fc5-b062bf051a79",
+              "b722da40-f920-4976-b5a8-b5f1d80edfbe",
+              "caa48f09-d97b-4792-a73e-6b2edc2819b3"
+            ],
+            "C": [
+              "3f75c3ac-eb97-45a0-835a-5bb878557596",
+              "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+              "d631247b-7467-4caa-aea3-36fb08f72b53",
+              "f90a9f50-c547-4785-ab2c-ce90f1648205",
+              "f9e9f053-9965-4d43-9b1d-f3cddfc2771e",
+              "vkuqknyg"
+            ],
+            "D": [
+              "681a8b92-44c7-4da5-928b-2686175df34c",
+              "d6cc4e5b-a061-4870-9316-87adb8daea70",
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "e8a288b9-8031-4152-bdd5-865e6a0cba0a"
+            ],
+            "E": [
+              "2kpgcmpd",
+              "cb5e4aq7",
+              "z1fctzy9"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "blueprint_id": "blueprint-10",
+      "candidate_count": 31,
+      "frontier": [
+        {
+          "label": "BG",
+          "outcome": "feasible",
+          "difficulty": 50,
+          "bloom_deviation": 40,
+          "coverage": 7,
+          "runtime_s": 0.026625600003171712,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "e890b140-fee9-40c0-9aa1-6d8116ffc1a3",
+              "e95eff2a-61e1-493d-b91f-33fc1d455953",
+              "ecb4de0e-4c05-4b0e-9138-b7bb4a0d6588",
+              "ee1cb7fc-c469-477a-ad7d-f9b6f630671e",
+              "ef416516-10eb-4520-9794-9f4ed5a38c5a",
+              "ef9b1139-d283-4286-9469-31ea05676126",
+              "f09281e6-6439-4a97-9d48-de5c98bc94fe",
+              "f0fb175b-a5a5-43ff-82e3-1e88318b4a80",
+              "f136d011-1ccb-4840-a134-33d2fc6ba859",
+              "f1d34c4c-a4b8-467f-aafd-29b7b314cdbb",
+              "f55409da-00c7-4cdf-9f4b-6a4a15655a45",
+              "f59811fc-1f54-4662-86b0-c3a10b36e860",
+              "f66d6ca3-6795-45db-a17b-dac27bad0202",
+              "f9c7b109-c0a9-4f60-b66f-2c793a016dbb",
+              "fb43c8ca-9ec7-48ba-a3aa-2220542a5f4c",
+              "fb8ec9d6-2785-4587-954e-4da3902d1653",
+              "fc5ed367-5c68-4efb-9395-31479b0a6640",
+              "fd0eeae7-4d26-45f0-b86c-d4c386b752a1",
+              "ffa78ced-d48e-4ed6-890b-a45abcbb2b1e",
+              "ffcf7a93-31ab-4771-a6da-af0a4339e083"
+            ],
+            "B": [
+              "b4c8f9b9-fdd0-4514-8ee9-4c779e998f7f",
+              "caa48f09-d97b-4792-a73e-6b2edc2819b3",
+              "dd07e09a-fd01-4213-a52f-279b50cfba72",
+              "e4eccbdc-49e1-46d0-94d0-2ba610344b4f",
+              "ebd323a8-577d-4377-83b5-56e07f0c6411"
+            ],
+            "C": [
+              "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+              "d631247b-7467-4caa-aea3-36fb08f72b53",
+              "e9171489-9acc-478b-98e0-3a99f6a8d593",
+              "f90a9f50-c547-4785-ab2c-ce90f1648205",
+              "f9e9f053-9965-4d43-9b1d-f3cddfc2771e",
+              "vkuqknyg"
+            ],
+            "D": [
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "dfe3f8a2-bddf-45a7-b0c6-79c8ffdf46d4",
+              "e8a288b9-8031-4152-bdd5-865e6a0cba0a",
+              "f42e9be5-19ec-4bb5-a00b-1d01ca471023"
+            ],
+            "E": [
+              "cb5e4aq7",
+              "m3f3gqcw",
+              "z1fctzy9"
+            ]
+          }
+        },
+        {
+          "label": "B3",
+          "outcome": "feasible",
+          "difficulty": 42,
+          "bloom_deviation": 24,
+          "coverage": 7,
+          "runtime_s": 0.07897529995534569,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "1d80ff07-cc4b-455f-b8b5-1f19ae5e26b2",
+              "290108ff-4b97-4e62-a41c-f2dd3c48044c",
+              "2984d15d-6426-44d7-b536-e1bc1c2a8efa",
+              "447a8bd7-fbf5-4109-b58b-b2cc6df06b4f",
+              "4f841105-1068-46f2-a8c3-e69fe50606ce",
+              "5e9612b8-c5d0-4fc1-8e2d-0c215931e948",
+              "69d17f92-ff48-4e38-b3e3-5527cad7cf09",
+              "8aa7445d-2658-4d8d-8940-3bcb0bbbb4b1",
+              "8bcc5273-bd58-4dd0-8ab9-974c00b19cb5",
+              "8ce56083-2f49-4daa-908f-e92486dd1935",
+              "943af3b2-08c1-413e-b4af-beca39c3982d",
+              "9993ad6d-4666-47c4-94a6-2ab94c12c1c0",
+              "a2c22ef1-6947-45df-b280-77b6820fdcbf",
+              "a9747532-ec84-47e7-a4cd-7bf3793d63bc",
+              "af47cdad-7ab2-42da-88cb-1013fc16489f",
+              "b4656354-61c2-4dea-b6ed-4cae2094322a",
+              "b6616a21-c1ff-4036-a12f-191f279c38fd",
+              "c0a5be21-5876-4ae7-a218-59b1cf6cac4d",
+              "e28e5626-5393-491b-9474-8bb4c53f85a7",
+              "ecb4de0e-4c05-4b0e-9138-b7bb4a0d6588"
+            ],
+            "B": [
+              "0e282d17-a58c-4547-87f7-3e4cd0384ca9",
+              "54e67965-9ea4-4354-af09-248495f1677e",
+              "696964e5-622a-4377-ba79-9bb367162fdc",
+              "bf878aa8-ce47-4fa9-8d02-2061e2e1e9d5",
+              "caa48f09-d97b-4792-a73e-6b2edc2819b3"
+            ],
+            "C": [
+              "16500416-a270-492c-be22-176391068733",
+              "3f75c3ac-eb97-45a0-835a-5bb878557596",
+              "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+              "d631247b-7467-4caa-aea3-36fb08f72b53",
+              "e9171489-9acc-478b-98e0-3a99f6a8d593",
+              "vkuqknyg"
+            ],
+            "D": [
+              "345acdd4-fbb9-4aa7-92c7-7b3dfc909a6d",
+              "681a8b92-44c7-4da5-928b-2686175df34c",
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "e8a288b9-8031-4152-bdd5-865e6a0cba0a"
+            ],
+            "E": [
+              "2kpgcmpd",
+              "cb5e4aq7",
+              "z1fctzy9"
+            ]
+          }
+        },
+        {
+          "label": "B2(1,1,1)",
+          "blueprint_id": "blueprint-10",
+          "outcome": "feasible",
+          "difficulty": 40,
+          "bloom_deviation": 24,
+          "coverage": 7,
+          "runtime_s": 0.07988289999775589,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "1d80ff07-cc4b-455f-b8b5-1f19ae5e26b2",
+              "290108ff-4b97-4e62-a41c-f2dd3c48044c",
+              "2984d15d-6426-44d7-b536-e1bc1c2a8efa",
+              "447a8bd7-fbf5-4109-b58b-b2cc6df06b4f",
+              "4f841105-1068-46f2-a8c3-e69fe50606ce",
+              "5e9612b8-c5d0-4fc1-8e2d-0c215931e948",
+              "7ca753fc-e6d0-4a36-ad8f-c3bddebdcf65",
+              "8aa7445d-2658-4d8d-8940-3bcb0bbbb4b1",
+              "8ce56083-2f49-4daa-908f-e92486dd1935",
+              "943af3b2-08c1-413e-b4af-beca39c3982d",
+              "9993ad6d-4666-47c4-94a6-2ab94c12c1c0",
+              "9d04e7a0-067a-40e7-a61a-3c01ddd4e982",
+              "a9747532-ec84-47e7-a4cd-7bf3793d63bc",
+              "af47cdad-7ab2-42da-88cb-1013fc16489f",
+              "b33e27c2-84c4-4b13-a5bc-4f3bcd2c5119",
+              "b4656354-61c2-4dea-b6ed-4cae2094322a",
+              "b6616a21-c1ff-4036-a12f-191f279c38fd",
+              "bd5bf225-89a7-440a-836a-572fb86c89ad",
+              "d4722aad-8c86-47e6-a1e8-68754f79a451",
+              "e28e5626-5393-491b-9474-8bb4c53f85a7"
+            ],
+            "B": [
+              "92676002-ce09-4e7f-8fc5-b062bf051a79",
+              "b722da40-f920-4976-b5a8-b5f1d80edfbe",
+              "c2b50bac-2161-44c8-b1eb-5e16327599dd",
+              "caa48f09-d97b-4792-a73e-6b2edc2819b3",
+              "ebd323a8-577d-4377-83b5-56e07f0c6411"
+            ],
+            "C": [
+              "16500416-a270-492c-be22-176391068733",
+              "3f75c3ac-eb97-45a0-835a-5bb878557596",
+              "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+              "d631247b-7467-4caa-aea3-36fb08f72b53",
+              "e9171489-9acc-478b-98e0-3a99f6a8d593",
+              "vkuqknyg"
+            ],
+            "D": [
+              "681a8b92-44c7-4da5-928b-2686175df34c",
+              "87f4dd32-dd9b-419f-9edc-9687b7cca1ab",
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "dfe3f8a2-bddf-45a7-b0c6-79c8ffdf46d4"
+            ],
+            "E": [
+              "2kpgcmpd",
+              "cb5e4aq7",
+              "z1fctzy9"
+            ]
+          }
+        },
+        {
+          "label": "B2(1,3,3)",
+          "blueprint_id": "blueprint-10",
+          "outcome": "feasible",
+          "difficulty": 42,
+          "bloom_deviation": 22,
+          "coverage": 7,
+          "runtime_s": 0.08085230004508048,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "1d80ff07-cc4b-455f-b8b5-1f19ae5e26b2",
+              "290108ff-4b97-4e62-a41c-f2dd3c48044c",
+              "2984d15d-6426-44d7-b536-e1bc1c2a8efa",
+              "3794d3d3-cc83-4a38-95d9-96275b19a44d",
+              "447a8bd7-fbf5-4109-b58b-b2cc6df06b4f",
+              "4c424c90-206b-495b-922c-b02dbe41c48c",
+              "4f841105-1068-46f2-a8c3-e69fe50606ce",
+              "5e9612b8-c5d0-4fc1-8e2d-0c215931e948",
+              "6d61c299-a5d0-466a-9966-a1b47544adf6",
+              "71177a40-e4b2-4879-ab2b-02838508886f",
+              "7d1c7b12-83c4-4d15-ae7d-61c5f50e1226",
+              "8aa7445d-2658-4d8d-8940-3bcb0bbbb4b1",
+              "8ce56083-2f49-4daa-908f-e92486dd1935",
+              "943af3b2-08c1-413e-b4af-beca39c3982d",
+              "9993ad6d-4666-47c4-94a6-2ab94c12c1c0",
+              "9d04e7a0-067a-40e7-a61a-3c01ddd4e982",
+              "a9747532-ec84-47e7-a4cd-7bf3793d63bc",
+              "af47cdad-7ab2-42da-88cb-1013fc16489f",
+              "d1c1f791-87f8-41db-a8b3-d5e54bb68d6d",
+              "e28e5626-5393-491b-9474-8bb4c53f85a7"
+            ],
+            "B": [
+              "0e282d17-a58c-4547-87f7-3e4cd0384ca9",
+              "696964e5-622a-4377-ba79-9bb367162fdc",
+              "92676002-ce09-4e7f-8fc5-b062bf051a79",
+              "bf878aa8-ce47-4fa9-8d02-2061e2e1e9d5",
+              "ebd323a8-577d-4377-83b5-56e07f0c6411"
+            ],
+            "C": [
+              "16500416-a270-492c-be22-176391068733",
+              "3f75c3ac-eb97-45a0-835a-5bb878557596",
+              "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+              "d631247b-7467-4caa-aea3-36fb08f72b53",
+              "e9171489-9acc-478b-98e0-3a99f6a8d593",
+              "vkuqknyg"
+            ],
+            "D": [
+              "681a8b92-44c7-4da5-928b-2686175df34c",
+              "87f4dd32-dd9b-419f-9edc-9687b7cca1ab",
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "dfe3f8a2-bddf-45a7-b0c6-79c8ffdf46d4"
+            ],
+            "E": [
+              "2kpgcmpd",
+              "cb5e4aq7",
+              "z1fctzy9"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "blueprint_id": "blueprint-11",
+      "candidate_count": 31,
+      "frontier": [
+        {
+          "label": "B0",
+          "outcome": "feasible",
+          "difficulty": 44,
+          "bloom_deviation": 40,
+          "coverage": 7,
+          "runtime_s": 0.027367800066713244,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "e890b140-fee9-40c0-9aa1-6d8116ffc1a3",
+              "e95eff2a-61e1-493d-b91f-33fc1d455953",
+              "ecb4de0e-4c05-4b0e-9138-b7bb4a0d6588",
+              "ee1cb7fc-c469-477a-ad7d-f9b6f630671e",
+              "ef416516-10eb-4520-9794-9f4ed5a38c5a",
+              "ef9b1139-d283-4286-9469-31ea05676126",
+              "f09281e6-6439-4a97-9d48-de5c98bc94fe",
+              "f0fb175b-a5a5-43ff-82e3-1e88318b4a80",
+              "f136d011-1ccb-4840-a134-33d2fc6ba859",
+              "f1d34c4c-a4b8-467f-aafd-29b7b314cdbb",
+              "f55409da-00c7-4cdf-9f4b-6a4a15655a45",
+              "f59811fc-1f54-4662-86b0-c3a10b36e860",
+              "f66d6ca3-6795-45db-a17b-dac27bad0202",
+              "f9c7b109-c0a9-4f60-b66f-2c793a016dbb",
+              "fb43c8ca-9ec7-48ba-a3aa-2220542a5f4c",
+              "fb8ec9d6-2785-4587-954e-4da3902d1653",
+              "fc5ed367-5c68-4efb-9395-31479b0a6640",
+              "fd0eeae7-4d26-45f0-b86c-d4c386b752a1",
+              "ffa78ced-d48e-4ed6-890b-a45abcbb2b1e",
+              "ffcf7a93-31ab-4771-a6da-af0a4339e083"
+            ],
+            "B": [
+              "dd07e09a-fd01-4213-a52f-279b50cfba72",
+              "e07ec112-b97e-4954-af3b-9ab184ef51bb",
+              "e4eccbdc-49e1-46d0-94d0-2ba610344b4f",
+              "ebd323a8-577d-4377-83b5-56e07f0c6411",
+              "f83ad88b-b286-4973-a431-d10761910b13"
+            ],
+            "C": [
+              "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+              "d631247b-7467-4caa-aea3-36fb08f72b53",
+              "e9171489-9acc-478b-98e0-3a99f6a8d593",
+              "f90a9f50-c547-4785-ab2c-ce90f1648205",
+              "f9e9f053-9965-4d43-9b1d-f3cddfc2771e",
+              "vkuqknyg"
+            ],
+            "D": [
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "dfe3f8a2-bddf-45a7-b0c6-79c8ffdf46d4",
+              "e8a288b9-8031-4152-bdd5-865e6a0cba0a",
+              "f42e9be5-19ec-4bb5-a00b-1d01ca471023"
+            ],
+            "E": [
+              "cb5e4aq7",
+              "m3f3gqcw",
+              "z1fctzy9"
+            ]
+          }
+        },
+        {
+          "label": "B2(1,3,3)",
+          "blueprint_id": "blueprint-11",
+          "outcome": "feasible",
+          "difficulty": 36,
+          "bloom_deviation": 22,
+          "coverage": 7,
+          "runtime_s": 0.07586849998915568,
+          "section_statuses": [
+            {
+              "section": "A",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "B",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "C",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "D",
+              "status": "CpSolverStatus.OPTIMAL"
+            },
+            {
+              "section": "E",
+              "status": "CpSolverStatus.OPTIMAL"
+            }
+          ],
+          "sections": {
+            "A": [
+              "290108ff-4b97-4e62-a41c-f2dd3c48044c",
+              "2984d15d-6426-44d7-b536-e1bc1c2a8efa",
+              "4f841105-1068-46f2-a8c3-e69fe50606ce",
+              "5132d71f-7e92-4aab-bc28-a37920d678bc",
+              "5e9612b8-c5d0-4fc1-8e2d-0c215931e948",
+              "69d17f92-ff48-4e38-b3e3-5527cad7cf09",
+              "6d61c299-a5d0-466a-9966-a1b47544adf6",
+              "7d1c7b12-83c4-4d15-ae7d-61c5f50e1226",
+              "8aa7445d-2658-4d8d-8940-3bcb0bbbb4b1",
+              "8ce56083-2f49-4daa-908f-e92486dd1935",
+              "943af3b2-08c1-413e-b4af-beca39c3982d",
+              "9917c39b-dd98-417e-8be1-a43d99c82612",
+              "9993ad6d-4666-47c4-94a6-2ab94c12c1c0",
+              "a9747532-ec84-47e7-a4cd-7bf3793d63bc",
+              "af47cdad-7ab2-42da-88cb-1013fc16489f",
+              "b4656354-61c2-4dea-b6ed-4cae2094322a",
+              "b6616a21-c1ff-4036-a12f-191f279c38fd",
+              "c3be7e3b-d04f-4fa0-b993-e6ead9176e70",
+              "d5ab3d0d-b36a-4f18-a072-ffcb76371156",
+              "e28e5626-5393-491b-9474-8bb4c53f85a7"
+            ],
+            "B": [
+              "696964e5-622a-4377-ba79-9bb367162fdc",
+              "92676002-ce09-4e7f-8fc5-b062bf051a79",
+              "b722da40-f920-4976-b5a8-b5f1d80edfbe",
+              "bf878aa8-ce47-4fa9-8d02-2061e2e1e9d5",
+              "ebd323a8-577d-4377-83b5-56e07f0c6411"
+            ],
+            "C": [
+              "16500416-a270-492c-be22-176391068733",
+              "3f75c3ac-eb97-45a0-835a-5bb878557596",
+              "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+              "d631247b-7467-4caa-aea3-36fb08f72b53",
+              "e9171489-9acc-478b-98e0-3a99f6a8d593",
+              "vkuqknyg"
+            ],
+            "D": [
+              "681a8b92-44c7-4da5-928b-2686175df34c",
+              "87f4dd32-dd9b-419f-9edc-9687b7cca1ab",
+              "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+              "dfe3f8a2-bddf-45a7-b0c6-79c8ffdf46d4"
+            ],
+            "E": [
+              "2kpgcmpd",
+              "cb5e4aq7",
+              "z1fctzy9"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "frontier_label_counts": {
+    "B0": 4,
+    "B2(1,1,1)": 1,
+    "B2(1,1,10)": 3,
+    "B2(1,1,3)": 5,
+    "B2(1,3,3)": 2,
+    "B2(3,1,1)": 2,
+    "B3": 1,
+    "BG": 8
+  }
+}

@@ -1,0 +1,6 @@
+variant    D bloom_dev   cov   time
+A1 diff-only               34        26 7/7   0.06
+A2 diff+cov                34        36 7/7   0.11
+A3 full B1                 34        22 7/7   0.13
+A4 cov+bloom, no diff      44        22 7/7   0.11
+B_G greedy-hint            38        28 7/7   0.04

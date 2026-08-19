@@ -1,0 +1,8 @@
+{
+  "blueprint_count": 70,
+  "section_count": 350,
+  "pass_count": 1050,
+  "status_counts": {
+    "CpSolverStatus.OPTIMAL": 1050
+  }
+}

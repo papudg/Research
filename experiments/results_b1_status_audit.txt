@@ -1,0 +1,2 @@
+B1 status audit: 70 common-feasible blueprints, 350 sections, 1050 passes
+CpSolverStatus.OPTIMAL=1050

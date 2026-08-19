@@ -1,0 +1,90 @@
+{
+  "diagnosed_ids": [
+    "blueprint-08",
+    "blueprint-15",
+    "blueprint-25",
+    "blueprint-28",
+    "blueprint-49",
+    "blueprint-59",
+    "blueprint-63",
+    "blueprint-69",
+    "blueprint-76",
+    "blueprint-77"
+  ],
+  "diagnosed_count": 10,
+  "outcome_counts": {
+    "infeasible": 10
+  },
+  "outcomes": [
+    {
+      "blueprint_id": "blueprint-08",
+      "outcome": "infeasible",
+      "status": "CpSolverStatus.INFEASIBLE",
+      "runtime_s": 0.01135360001353547,
+      "sections": null
+    },
+    {
+      "blueprint_id": "blueprint-15",
+      "outcome": "infeasible",
+      "status": "CpSolverStatus.INFEASIBLE",
+      "runtime_s": 0.00963779998710379,
+      "sections": null
+    },
+    {
+      "blueprint_id": "blueprint-25",
+      "outcome": "infeasible",
+      "status": "CpSolverStatus.INFEASIBLE",
+      "runtime_s": 0.007947699981741607,
+      "sections": null
+    },
+    {
+      "blueprint_id": "blueprint-28",
+      "outcome": "infeasible",
+      "status": "CpSolverStatus.INFEASIBLE",
+      "runtime_s": 0.009558500023558736,
+      "sections": null
+    },
+    {
+      "blueprint_id": "blueprint-49",
+      "outcome": "infeasible",
+      "status": "CpSolverStatus.INFEASIBLE",
+      "runtime_s": 0.007159300032071769,
+      "sections": null
+    },
+    {
+      "blueprint_id": "blueprint-59",
+      "outcome": "infeasible",
+      "status": "CpSolverStatus.INFEASIBLE",
+      "runtime_s": 0.02173070004209876,
+      "sections": null
+    },
+    {
+      "blueprint_id": "blueprint-63",
+      "outcome": "infeasible",
+      "status": "CpSolverStatus.INFEASIBLE",
+      "runtime_s": 0.01047039998229593,
+      "sections": null
+    },
+    {
+      "blueprint_id": "blueprint-69",
+      "outcome": "infeasible",
+      "status": "CpSolverStatus.INFEASIBLE",
+      "runtime_s": 0.007739400025457144,
+      "sections": null
+    },
+    {
+      "blueprint_id": "blueprint-76",
+      "outcome": "infeasible",
+      "status": "CpSolverStatus.INFEASIBLE",
+      "runtime_s": 0.009342200006358325,
+      "sections": null
+    },
+    {
+      "blueprint_id": "blueprint-77",
+      "outcome": "infeasible",
+      "status": "CpSolverStatus.INFEASIBLE",
+      "runtime_s": 0.009460799978114665,
+      "sections": null
+    }
+  ]
+}

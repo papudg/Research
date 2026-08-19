@@ -1,0 +1,21 @@
+.venv*/
+__pycache__/
+*.py[cod]
+*.pyc
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+dist/
+build/
+*.err
+*.stderr.txt
+
+# Hugging Face / model caches (detector experiment)
+.cache/
+
+# Rerun logs (not part of the public artifact)
+experiments/multiseed_rerun.out
+experiments/multiseed_rerun2.out
+
+# Full-text fixture — public branch uses metadata-only JSON committed explicitly
+# docs/qbank_audit/cbse_class_x_maths_questions_full_updated.json
