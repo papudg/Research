@@ -11,6 +11,11 @@ from sklearn.metrics.pairwise import cosine_similarity
 from icaa.paths import results_path
 
 nlp=spacy.load('en_core_web_sm'); BANK=load_bank()
+if any(not question.get('text') for question in BANK):
+    raise SystemExit(
+        'Public metadata-only fixture omits question text; cannot regenerate the detector stress test. '
+        'Use experiments/results_detector.json from this repository.'
+    )
 def clean(t):
     t=re.sub(r'<[^>]+>',' ',t or ''); t=re.sub(r'\{\{[^}]*\}\}',' ',t)
     t=re.sub(r'\\[a-zA-Z]+',' ',t); t=re.sub(r'[^A-Za-z0-9 .]',' ',t)

@@ -1,0 +1,5566 @@
+[
+  {
+    "id": "0047fb6d-a4f7-49f0-860b-9d895278439d",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "005e3900-d238-46ec-9c9f-c88bcc6c2180",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "006a6bed-329d-4b6c-bdcf-c63c611e3c5c",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "0095abaa-b703-442b-981e-53c178b1e52f",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "01e04b3d-8b27-4cb4-9f4b-0a0d9a928911",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "02ccfc32-5b48-483d-832b-454713c9ca00",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "03d27fd9-b939-4e9c-855e-8bea1fb5611e",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "040af882-513e-436b-8f07-8d6934799b06",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "045bf5fe-5be2-46ad-b5c8-f68be0775df1",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "062bcab3-d36e-4d33-b85f-94ba7552f89d",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "062be1b1-7164-4ad1-b674-86a1670fd0f0",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "SQP23-24",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "0675b899-a32f-43df-af9b-6ba3acf2657e",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 6,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "081faea0-8702-48ec-bc24-a71c3715c6b9",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 6,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "08ecc723-03ee-4094-9fc3-2a7173fd2622",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "SQP23-24",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "091be8e4-ebf7-459e-a3ff-cb6ff788f5d1",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 5,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "0a7fc7c7-395d-45f2-93a5-78af79bab0a1",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "GEOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "0af3f884-c30c-4108-a55a-c0bc1027d9d2",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "0d67ce01-a083-41b6-9a65-8330bedb7824",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "0e282d17-a58c-4547-87f7-3e4cd0384ca9",
+    "marks": 2,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "MCQ",
+      "Understanding"
+    ]
+  },
+  {
+    "id": "0e386987-db42-4e83-9690-a56928a1da6c",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "0e51c072-9a05-41b3-88b7-08c7fe1cb45b",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 2,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "VSA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "0f1c4ec0-84af-4d41-b487-90ceb887525b",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "1054686d-087d-4caa-a82f-efb0e5de0eec",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "11300659-c975-47ef-9be9-b1fb9593ce09",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "119b6fd2-1f29-46c6-a913-04581c51ab45",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "11a96121-77fd-4c74-8354-3e79a613b98a",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "SQP24-25",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "11f1bbfa-f32f-452c-8a03-a6ab9b0f7a34",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "122f8d47-edce-49fe-8368-862771e11e2f",
+    "marks": 5,
+    "time": 5,
+    "difficulty": 5,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "12d2fdf9-edef-4a2b-b332-9487135696bd",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "SQP23-24",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "13167aa4-fb87-42d4-a639-9cfdbdc49003",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "145d5f3d-de71-49b8-b2c5-64bf012d3ce9",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "VSA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "1476ad95-6dcb-49d7-a150-d0ce62e5267b",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "14e3aefa-6eaa-49e7-a2d0-77e61b47862a",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "152bddcc-f358-4e62-b152-57921555433c",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 5,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "1649b5ae-f2a0-404b-b650-9f2e51338151",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 5,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "164a7edb-7580-4002-9951-64ef14275a21",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "16500416-a270-492c-be22-176391068733",
+    "marks": 3,
+    "time": 6,
+    "difficulty": 4,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "SA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "17108354-41dc-4893-8ea5-2adc2d701523",
+    "marks": 2,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "18e3276a-c8aa-43a2-a02a-d7c8cdf42442",
+    "marks": 3,
+    "time": 6,
+    "difficulty": 5,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "SA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "195963e8-35be-4fb5-9192-493f55fd8c80",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "1970051b-b8b8-4964-9fd0-05e406a73b45",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "1b4b2208-67df-405a-bba5-f9bd8ee4b339",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "1b81b5b2-fa87-417c-9a04-306255a235d1",
+    "marks": 5,
+    "time": 5,
+    "difficulty": 4,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "1be56fd8-8d60-44ef-bd61-3fda34d20078",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "MENSURATION",
+      "SQP23-24",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "1c2cb9b6-1e66-4853-83ab-f3ea566c4509",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "1c42a6aa-9ec4-4d9c-acb9-157a8a10eb73",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "1cd73c62-a4c4-43cf-b377-76a4e4cb4d30",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "TRIGONOMETRY",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "1cf95387-5951-4af7-913e-a2c01b7ad952",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 3,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "VSA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "1d80ff07-cc4b-455f-b8b5-1f19ae5e26b2",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 4,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "1dd03b44-affb-47c4-b30b-8f714c8007c7",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "SQP23-24",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "1e278f52-7329-439b-94cc-28f0d1e7b7c8",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "SQP24-25",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "1e450e4a-dd2c-48c1-b367-1f80bac2226e",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "1f0470a4-c3c6-4e52-8c23-e01ccfd7532f",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "1f4b79d7-2ab7-404f-bf92-183ac9d2b09d",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "1f83aff4-7875-4b42-887e-da45184c82a0",
+    "marks": 2,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "VSA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "1fd659ff-8610-41b2-a8de-56506ac360d5",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "VSA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "2057191b-4848-4a57-baec-db20689149d6",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "20699f20-6690-48e2-947c-5953f5928243",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 5,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "20c05490-a6ff-4f2d-a97a-25f3b56e2bc7",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "2128488e-42c0-457c-a4a2-8c53627365d4",
+    "marks": 3,
+    "time": 6,
+    "difficulty": 5,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "SA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "21378537-6a6b-4e49-9869-ad7417a42ad7",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "2175f27c-3fd5-4a9e-8ce3-d2c417570a1f",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "2196be33-7b70-4684-a0ac-0506cd9bf463",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "21c9d032-e6fc-4df0-987c-10132141ba0d",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "22005ff4-a643-4067-bcb6-a32cdea455c8",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "2234ea10-2fc9-4fdd-8071-ca1d8827f033",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "226a678e-0ed4-4691-bcb1-0d78d4dfe8bc",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "23c79f54-9123-43f8-b67d-c02c146480fc",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "VSA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "23eef1dc-463c-487b-90d8-6860214800db",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "25ccca99-6852-4c78-b34c-369a1db25df1",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "2694c656-e664-421a-8506-e1e04896efe9",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "assertion_reasoning_mcq_23233",
+      "Evaluating"
+    ]
+  },
+  {
+    "id": "277ff195-b3f6-436e-a32a-1937c0867499",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "VSA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "27a4f34b-585d-4eee-84be-b7df14ad1ed6",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "27cca9e2-afd1-41e5-8d70-196b5fbf3268",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "28915b45-4fb9-4df4-8cd3-b7282ef89bab",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "28fe8fbf-6915-4fa5-b1b4-4ca4fa3be0cc",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "290108ff-4b97-4e62-a41c-f2dd3c48044c",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 1,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "MCQ",
+      "SQP24-25",
+      "Understanding"
+    ]
+  },
+  {
+    "id": "2984d15d-6426-44d7-b536-e1bc1c2a8efa",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "2a66400a-e1b2-46f4-a22a-a9b2f8c6695f",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "SQP23-24",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "2ae17db2-40c4-45b4-912d-1ed2ba78e296",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "2b60f5ec-bfcc-4780-8a45-962707b06ca6",
+    "marks": 2,
+    "time": 2,
+    "difficulty": 4,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "VSA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "2c7800bb-7524-4df0-8139-2777c7c4b8bb",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "assertion_reasoning_mcq_23233",
+      "Evaluating"
+    ]
+  },
+  {
+    "id": "2cebe51e-389c-44c6-82a8-03a121e3bf45",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "VSA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "2e753927-34a3-4b69-8ed2-07aba1fb9b3c",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "2f2f9964-1c10-4044-a59d-95abc8f97a83",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 2,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "VSA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "2f77acf8-f4e6-45b0-a099-3c79d69a9899",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "2f94cea8-ad44-4cca-9e1d-59312cc55c14",
+    "marks": 3,
+    "time": 6,
+    "difficulty": 5,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "SA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "2fcbca44-25ba-41cc-8ec0-494d01c59aaa",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "2fdb5263-a312-459f-ae51-ab4562c5107e",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "2kpgcmpd",
+    "marks": 4,
+    "time": 6,
+    "difficulty": 3,
+    "tags": [
+      "case_study_58089",
+      "NUMBER_SYSTEMS",
+      "Applying"
+    ]
+  },
+  {
+    "id": "31c2d7f9-a638-427e-98cd-f00e5a5c52d9",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "31dbc476-5409-423b-8ed4-c73e13bfdc8a",
+    "marks": 3,
+    "time": 6,
+    "difficulty": 5,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "SA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "31e451bd-e252-4934-8a4c-0fc76ba53c53",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "329767da-af0a-45fc-b165-6bd3a8422bfe",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "SQP23-24",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "32ebb16c-e2fe-4a82-babc-25d2a9b2a320",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "33eb1dba-19cd-4ba2-bdd3-b257ee01686c",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "SQP23-24",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "345acdd4-fbb9-4aa7-92c7-7b3dfc909a6d",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 6,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "35329ebe-4943-4b5c-a1ec-4dbf6b1ca32c",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "SQP23-24",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "35532afd-57a3-4c53-a3cf-60bcdaf0c516",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "35b0e603-e385-43ff-bc70-903dc79724ac",
+    "marks": 3,
+    "time": 6,
+    "difficulty": 5,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "SA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "363b9d1e-d8bf-4cf7-8d61-08ff7fbefd71",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "368a06d0-47c0-47dc-95bf-9ff62059f8d6",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "SQP23-24",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "36a6cc84-9ccc-4126-9790-730a11d8e372",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "37238c63-953d-4027-9fe9-f0c2f87664a0",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "3794d3d3-cc83-4a38-95d9-96275b19a44d",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "GEOMETRY",
+      "MCQ",
+      "SQP24-25",
+      "Applying"
+    ]
+  },
+  {
+    "id": "3812664d-8d46-4212-bd81-bd3b0d1c6776",
+    "marks": 2,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "MCQ",
+      "Understanding"
+    ]
+  },
+  {
+    "id": "3871273b-5ee0-4667-9403-5514cf4169ee",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "38e470d6-008d-4e96-a31b-e46847dc0749",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "391a025d-2c2f-49b8-b365-38f5059ace4a",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 3,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "VSA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "39d639bd-283e-4853-b77a-0b6b371a47a8",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "3a7abf80-f465-4278-8128-b12f0d378121",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "VSA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "3ab0ef3c-bbee-4288-b046-2d7b95872e9b",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "3ae7142c-e83f-406b-be9e-045e20a44288",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "3bd6cc37-b289-4a71-8135-28e7df208eea",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "MENSURATION",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "3cd4cd1a-bbb7-44c9-be8b-4f1b116ade80",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "3d30ce7a-62cd-4cda-b257-bbbd4abdfe07",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "3d370ee7-2e9a-4d29-883f-6eb6dd0eb4e0",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "3d61a02c-ae60-4fea-804d-046d107c2366",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "SQP24-25",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "3f75c3ac-eb97-45a0-835a-5bb878557596",
+    "marks": 3,
+    "time": 6,
+    "difficulty": 4,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "SA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "406af814-e2f8-4c3e-b1af-6e50eebd3f91",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "409cb313-5e12-41c2-b570-9f05a1d68e3d",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "SQP23-24",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "4173a53b-deab-4aaa-bbdd-7fc358d0bfff",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "42d220ec-e81b-4971-82a5-ad9a113a6b99",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 5,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "431bc4d1-9b82-4880-8744-cac203a8bd9b",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 6,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "437754f9-80d6-4167-add1-210565bb6083",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "SQP24-25",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "447a8bd7-fbf5-4109-b58b-b2cc6df06b4f",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "assertion_reasoning_mcq_23233",
+      "Evaluating"
+    ]
+  },
+  {
+    "id": "4485be31-8118-4898-a098-a3958384de7d",
+    "marks": 3,
+    "time": 5,
+    "difficulty": 3,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "SA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "44de308e-ec6f-42bd-86cb-5746296a7437",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "47b3da10-81d3-4c5f-a7d0-bac852c2d546",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "4809d7cf-69de-470a-8d05-f0b8f7e2f926",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "484cab40-3ef3-4e80-b556-d97e9c7d29fa",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "49fc0110-ce14-440c-af66-8bd3daabe616",
+    "marks": 5,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "MCQ",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "4a0267db-aee9-4a4a-89c6-519d2ddcc328",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "4adbbb16-119d-428d-951c-e5d16440592a",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "4b27e0fd-c7cc-435c-93f9-9ad167b9205d",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "4c0de667-2063-4bdf-86e6-e1b812aff7e8",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 5,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "4c424c90-206b-495b-922c-b02dbe41c48c",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "4c5e7f14-cc0c-41c8-b55a-9bde96ea7608",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "4d18c1a6-8b2d-41f1-8600-560a9830ff40",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "4f5e87f3-3612-4f91-ab5c-64f3f1fc77ea",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "4f841105-1068-46f2-a8c3-e69fe50606ce",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "TRIGONOMETRY",
+      "assertion_reasoning_mcq_23233",
+      "Evaluating"
+    ]
+  },
+  {
+    "id": "50145d9b-2bed-48ac-8a97-562da04266ab",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "50166981-6c8f-4fa0-a936-9b39b650ca68",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "50c20cfe-2aaf-4dba-bf75-1f133d3a7103",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "50f3e748-bae9-4dbe-bddd-d71ac2bd549a",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "GEOMETRY",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "5132d71f-7e92-4aab-bc28-a37920d678bc",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "51b89f9f-28b4-4583-8f6a-bbfcf2e36409",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "51d0e99d-7629-45a3-94c5-340a4f21541e",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "5202db74-133e-47d1-a61f-c4447497aa89",
+    "marks": 3,
+    "time": 5,
+    "difficulty": 3,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "SA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "5229b0ed-d85a-4794-b7bf-8019bf29d920",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "5297c824-cec6-4288-ab52-ac9f040271b3",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "52a87e38-1be6-40d3-9772-c8e4c17b5422",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 5,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "534a8018-0a43-4304-b126-ab7941e597e4",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "53b050b9-e612-40b0-b371-cb6fd69a4e1f",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "5400af5f-6dec-4cf3-a07c-370f5c73a91a",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "54663d81-03a1-4c22-8a5a-700585730fb9",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "546c999a-6977-4139-a774-8a30443686ef",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "54d83f65-3dd4-47c0-baae-cc22fe77eb86",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "SQP24-25",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "54e5789c-a164-48a1-909d-ee3396d66013",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "54e67965-9ea4-4354-af09-248495f1677e",
+    "marks": 2,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "VSA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "5778f73a-11c7-455f-b391-d41195a763c7",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "57bdeace-6f12-499e-bc38-9b56c5ce4ca4",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "58a12687-4a83-446d-9122-e4df2fa9e5fd",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "58d95cc0-3966-4636-94de-ddabdaf3cea5",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "59284009-5ebf-46a2-8872-64fe8040d88d",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "5a2b225d-c013-443b-a3b3-de6430c97e42",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "5ae99426-f8d3-4974-822d-bd21c5513322",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "5be50bd0-6bfc-4761-ba42-be93a01f2dc8",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "5cfa079c-20a1-4e30-966d-cd98bcd5395d",
+    "marks": 3,
+    "time": 6,
+    "difficulty": 5,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "SA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "5e9612b8-c5d0-4fc1-8e2d-0c215931e948",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "5ecbb0ae-2738-43ba-8784-8f7f06267605",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "SQP24-25",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "5ef049fe-96f8-4a08-bfc0-5c5489639de5",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "GEOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "6014d552-5cd4-49bc-adad-48357c6e7993",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "GEOMETRY",
+      "SQP24-25",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "6038793e-4dfc-4b30-b419-3705bd439fa6",
+    "marks": 2,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "615ba302-134e-45cb-a5ff-8da99506dd9a",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "6173497c-d616-4410-9d90-fb15874e073f",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "61ad914c-53ec-4115-9ecb-c9df4dad64e7",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "61f3f152-b296-402c-b69e-653a4d0f952b",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "621f9670-98a2-44ac-8953-ee5b42a30d65",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "621fd464-9e0a-4d82-a17a-d6ceb48bab42",
+    "marks": 3,
+    "time": 6,
+    "difficulty": 5,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "SA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "63dc8a18-7702-48bc-b666-b730b4703957",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "6560b9f7-753c-41e9-9d87-400dc3c0d8c2",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 5,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "663aeae2-30f4-4cf2-b8be-9daa06192c57",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "667e6c14-26b5-4ba9-99f0-95577ef83bed",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "66f70f86-c303-42cc-b8d9-68811d0daa6b",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "VSA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "67243d0d-097d-4223-a897-1e2deac4a5de",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "ALGEBRA",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "67864730-b2e6-4a11-8bb5-a9982841b14a",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 5,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "67d8b3c8-d6d9-4a83-8c2c-86e4fe0fe94f",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "681a8b92-44c7-4da5-928b-2686175df34c",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 5,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "696964e5-622a-4377-ba79-9bb367162fdc",
+    "marks": 2,
+    "time": 4,
+    "difficulty": 4,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "VSA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "69d17f92-ff48-4e38-b3e3-5527cad7cf09",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "6a87bc4b-2635-4e2b-be78-64c084138877",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "SQP23-24",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "6b206c1e-2d12-4bf9-bd59-8d4de9b7a42a",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "6b7c020c-91ed-410c-a6ae-a1a05e7d0e56",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "6badaa4b-e940-460c-81cd-cbda3b9424a0",
+    "marks": 2,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "MCQ",
+      "Understanding"
+    ]
+  },
+  {
+    "id": "6be1df3f-2bb6-4d44-acf2-46c83727de84",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 5,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "6d61c299-a5d0-466a-9966-a1b47544adf6",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "MENSURATION",
+      "assertion_reasoning_mcq_23233",
+      "Evaluating"
+    ]
+  },
+  {
+    "id": "6e1d69c9-5140-4d63-b3aa-6b262df717ba",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "6ebecb56-a491-4c80-b66e-1de7a17095c8",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 6,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "6ed2128b-e172-42ef-95b3-052e33099784",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "7023a1f8-3343-40bb-a915-d992d93e4b19",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "VSA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "70ecc96b-711b-4dac-9ea6-26b1cfa08bf7",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "70fda6f1-5453-45f3-885a-9e3dfe32ec76",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "GEOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "71177a40-e4b2-4879-ab2b-02838508886f",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "71965818-7cb5-48d0-9be5-2dd3a5da5a3a",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "71becd2e-b374-47ce-87a2-ecab83675872",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "72deeb51-2c4a-428e-953a-4a2e43e8f645",
+    "marks": 3,
+    "time": 5,
+    "difficulty": 3,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "SA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "72ed3070-977f-4fef-867e-9ca27c68f42a",
+    "marks": 3,
+    "time": 6,
+    "difficulty": 5,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "SA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "7396bcd4-20ec-42ce-b6f8-09cee6ee99d2",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "73cb2fc1-a700-45d5-93e1-a4dc96d007d7",
+    "marks": 3,
+    "time": 5,
+    "difficulty": 3,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "SA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "746d7dee-cf3b-4b21-9513-aa2fe7a6970e",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "753008fd-9d04-4bde-85b9-0d46025cb145",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "7547bbe8-b704-40de-911f-e4b9ab07e0ab",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "75eb79ea-873c-4a36-89a4-61c2b5bbf45d",
+    "marks": 3,
+    "time": 3,
+    "difficulty": 4,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "SA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "76931b4e-7a72-404d-a815-88d54bf13136",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "GEOMETRY",
+      "SQP23-24",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "7714f5aa-a678-494f-95de-0c897c6dfefe",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 6,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "77d96270-9e2c-45f7-b6d7-fed966115f22",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "788c4e16-9302-433f-aa4f-86f5d7e79b4e",
+    "marks": 3,
+    "time": 6,
+    "difficulty": 5,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "SA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "792d2a6d-0027-4ca4-9ef8-b2e490bf8cf7",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "7a4dabdb-ac3d-47a3-9443-8016f79c2eb1",
+    "marks": 2,
+    "time": 2,
+    "difficulty": 4,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "VSA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "7a5ce017-1c01-43ff-9399-09b552587466",
+    "marks": 3,
+    "time": 5,
+    "difficulty": 3,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "SA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "7ac596b8-154e-433e-bfd8-3594069b6b7a",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 2,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "VSA",
+      "Understanding"
+    ]
+  },
+  {
+    "id": "7bfcd195-2209-4b1a-91a7-a18ce10fb95b",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "7ca753fc-e6d0-4a36-ad8f-c3bddebdcf65",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "7d1c7b12-83c4-4d15-ae7d-61c5f50e1226",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "7e207ef7-61c7-404d-8851-2cde56a6ae70",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "7gj654ha",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 5,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "80be945e-721e-4dd8-a593-f9168548a83e",
+    "marks": 3,
+    "time": 6,
+    "difficulty": 5,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "SA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "81d1af15-56f9-453b-adff-276d2c72afa4",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "83a9c7fc-c602-4d2b-8ec5-2b6dd242a58b",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "84079c0d-20d0-4a82-a03f-e181bfb84055",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "8409bca7-d78d-414c-9bae-fd80fc35b20c",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "841c0731-a5e5-4980-95bb-0a3d2c058af6",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "8560665e-e1f8-4447-8373-8ab85fb70e59",
+    "marks": 3,
+    "time": 6,
+    "difficulty": 5,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "SA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "85855ffa-443f-4ec1-a9f4-f786dee1fbf4",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "GEOMETRY",
+      "assertion_reasoning_mcq_23233",
+      "Evaluating"
+    ]
+  },
+  {
+    "id": "85c2faa3-7432-457c-80b0-c9dad8e5ffa5",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "863b5559-2f08-48a8-96aa-e7b80386b4c9",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "8735f464-9e8e-48e6-be22-87135c0b9885",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "875b025a-b569-4065-874c-5bb8089d58bf",
+    "marks": 2,
+    "time": 4,
+    "difficulty": 4,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "VSA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "87d6eca2-e117-44da-9fd3-b7d04ee9e1ff",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "87d71bad-0681-4f86-8758-f4d7ca3a259e",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "87f4dd32-dd9b-419f-9edc-9687b7cca1ab",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 5,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "884262b7-dafc-4327-98de-bba042516136",
+    "marks": 3,
+    "time": 5,
+    "difficulty": 3,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "SA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "88e60145-b97e-4218-a0dd-b9c9edf2a907",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "8956c4f1-dd2a-4784-8f5e-f0ba45c66aab",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "89c14154-7996-4694-bf21-f5a593aa08ea",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "8a55b499-ec91-446f-91f6-4b4f24515ec9",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "8aa7445d-2658-4d8d-8940-3bcb0bbbb4b1",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "assertion_reasoning_mcq_23233",
+      "Evaluating"
+    ]
+  },
+  {
+    "id": "8ac7a632-98c8-4c64-a140-0f258b6ae525",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "8af8f9b9-526e-4931-be84-8db6418c4dbe",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 6,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "8bcc5273-bd58-4dd0-8ab9-974c00b19cb5",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "8bzq7ykv",
+    "marks": 4,
+    "time": 8,
+    "difficulty": 4,
+    "tags": [
+      "ALGEBRA",
+      "case_study_58089",
+      "Applying"
+    ]
+  },
+  {
+    "id": "8ce56083-2f49-4daa-908f-e92486dd1935",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "8d64ef4f-8133-468f-8b37-e1c81b17edd8",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "8f67928d-97ef-47c0-8d38-69610ea461a2",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "9036714a-4015-42da-b2b6-f7d2793d4dbe",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "9077ee45-d343-487c-9c4d-9c9ab20c6882",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "9262e79d-4144-40b3-86af-216ee70d6281",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "92676002-ce09-4e7f-8fc5-b062bf051a79",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 3,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "VSA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "935ab2ff-4d35-4b31-b2d4-04326f82328b",
+    "marks": 3,
+    "time": 5,
+    "difficulty": 3,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "SA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "9360f491-aa38-4df9-add7-e1b53e4d9498",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "9374a442-4302-4c3d-8b39-fc22e58e12cf",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "SQP24-25",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "939ab893-9986-4fbd-9ecb-b390cb9b8b39",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "SQP23-24",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "943af3b2-08c1-413e-b4af-beca39c3982d",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 4,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "943ba494-8d45-4f9d-ba15-138a7df9112f",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "94686237-1a0b-48ec-8c02-9e7d585fe2f2",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "94e933fe-9d3e-4da2-a0d4-4cd18ab8eef2",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "94ea2980-015d-43dc-a511-413abbdb5490",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "95799cf5-1f54-400c-a7f9-9670ad450a65",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "9619a756-f6d8-49e8-8580-0db9672105c9",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "97de047e-be72-4821-8aa9-24f8707f2b04",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "97e943bb-3a4c-4c37-a0d9-d7bff8107673",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "97fea4c0-92ef-423f-b894-e86e31a3918b",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "98444b63-1ab8-4aa8-ad92-6d1ef06d77f5",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "9917c39b-dd98-417e-8be1-a43d99c82612",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "9993ad6d-4666-47c4-94a6-2ab94c12c1c0",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "9994f20d-64fc-4556-b976-22d1b1596389",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "MENSURATION",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "9a308ea3-2694-433c-bfaf-fdfad64d413f",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "9ae8bbb8-8313-4107-be66-8ebb3f2fd7be",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "TRIGONOMETRY",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "9b1f4d81-f29c-41ca-81a0-4203570cd7fd",
+    "marks": 3,
+    "time": 5,
+    "difficulty": 3,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "SA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "9c46dd1c-5119-4708-9fec-c1555971f649",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "9c58958d-2629-404c-853f-72e7fd28328f",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "9d04e7a0-067a-40e7-a61a-3c01ddd4e982",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "9d3aa9ab-dfc5-44db-ac90-3e376019caac",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "9kz5qqhm",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 5,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "a01da1d6-c268-4325-8a3c-29ab044a3419",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "a0205ab2-92fe-48cd-8999-d04056c7a415",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "a07e2415-43fa-4242-9968-d968f8485f1d",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "a0debce4-bd62-4756-a50c-27125b344d64",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "a15b461f-7f15-4622-9e59-ac92b4146155",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "a1b84744-327b-4e9a-8a08-b2e6e029b546",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "a1be4893-e49e-4787-90d9-9deb8a61fd53",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "a2c22ef1-6947-45df-b280-77b6820fdcbf",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "SQP24-25",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "a35f01df-9358-428a-a359-02d4bd45f725",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "a5bb29a2-0047-4e29-a234-4282902224ce",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "a5e2b71c-1ac3-4063-ad56-f49f1e5a7787",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "a76c571b-67fe-4fae-a88c-a557bfe78ad7",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "a773ab7b-7de0-469b-93f6-43b166262515",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "a7fdd0ed-4292-4bd5-bb08-e168df7f30b1",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "a7ff9da6-4567-49e9-9672-f29912631430",
+    "marks": 3,
+    "time": 6,
+    "difficulty": 5,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "SA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "a89f3008-d9ee-44c7-91e7-b428c0ce9ef4",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "a8b8bae5-9117-49b8-ade7-5c288ab769a3",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "a9747532-ec84-47e7-a4cd-7bf3793d63bc",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "a9e4f612-cfde-4649-ae45-7882134f7393",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "aa2d6f76-9d55-41c4-a754-a60ba5411c71",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "ac4bdda1-7f3f-46ea-82d4-4a7a946aa49d",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "ad1d98e1-5242-46d0-93e4-dde4cb6e2fd8",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 2,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "VSA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "ad7ef800-d79e-41f7-a877-4df475c2ee72",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 6,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "ad860cde-66db-4497-8aa5-5c54fbc94885",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "ae8e289a-1180-4f00-8a8b-3521ebe37660",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "aeac31d0-a43d-4ee1-9353-37857bedecf3",
+    "marks": 5,
+    "time": 5,
+    "difficulty": 4,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "LA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "aeb5cd54-0a53-4d7b-8c6c-e46e8189ea94",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "aedc0c2f-301b-420f-a468-fb79c0a4ff0d",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "af47cdad-7ab2-42da-88cb-1013fc16489f",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "aff5cc3c-5ed5-431e-8019-615e54699e23",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "b0252261-a46d-4ad1-895c-0d67631e76d4",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "b0e6ab05-076a-4004-bea8-990d74912851",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "b1d40918-1f35-4f1b-9376-ff815774fb49",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "b33e27c2-84c4-4b13-a5bc-4f3bcd2c5119",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "b3d77817-c199-498c-9598-c3cc51038102",
+    "marks": 2,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "VSA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "b4656354-61c2-4dea-b6ed-4cae2094322a",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "assertion_reasoning_mcq_23233",
+      "Evaluating"
+    ]
+  },
+  {
+    "id": "b47aae32-3ad1-4039-b613-0276b1fcaaad",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "b484ad79-9469-42f2-8686-e06ff43d9f01",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "b4c8f9b9-fdd0-4514-8ee9-4c779e998f7f",
+    "marks": 2,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "GEOMETRY",
+      "Analysing",
+      "CBSE2025",
+      "VSA"
+    ]
+  },
+  {
+    "id": "b6491e67-a810-4ac8-b3a7-b65772244b31",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "b65ae13c-6b56-466f-9fb1-0f564489975c",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "b6616a21-c1ff-4036-a12f-191f279c38fd",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "GEOMETRY",
+      "assertion_reasoning_mcq_23233",
+      "Evaluating"
+    ]
+  },
+  {
+    "id": "b722da40-f920-4976-b5a8-b5f1d80edfbe",
+    "marks": 2,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Understanding"
+    ]
+  },
+  {
+    "id": "b7436b19-2cbd-434e-a4b3-859e80f53b97",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "VSA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "b77e3273-8bf2-45ea-bfa3-428f8dfbf542",
+    "marks": 3,
+    "time": 5,
+    "difficulty": 3,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "SA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "b7aadf05-65ce-48be-8a4d-29426dc9db07",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "b8a0224e-0caa-4a3e-b218-267f80f7e746",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "b9471868-ccc1-42e2-a052-d1a753c9a9be",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "b973dc24-0691-45e4-9e39-306c38025741",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "b9c57387-7f49-4f2a-bf90-a2367f26854d",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 6,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "ba8d23fd-5e4f-4f9e-9bee-728d40158a11",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "ba97b29f-70b1-47fe-8608-0117789e6402",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "bac53e5a-b0ab-4d17-9bc0-4ff5aeb7efd8",
+    "marks": 3,
+    "time": 5,
+    "difficulty": 3,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "SA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "bb84bec0-16db-4baf-b6e9-03b974e16e1c",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "bbbba832-1c0b-414e-af37-6db3794c8eba",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "bc6b9f48-d82f-4e3b-a968-8250d0c98aa3",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 6,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "bc7bd832-333d-4114-b943-887093c07a3a",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "VSA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "bcaf3da9-dc3a-4512-b447-2f8b4bf5f98b",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "bce697a3-a196-4c13-8af4-11e308e2d6f5",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "bce6cb6b-ede7-4c52-9c23-30288ddc1778",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "VSA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "bd5ab2fb-fac5-48be-9d56-6cfadf0ea9ab",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 6,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "bd5bf225-89a7-440a-836a-572fb86c89ad",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "bdffc3cc-c5fa-4df5-a9be-51d3a0928e41",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "be09cffb-be7a-4955-b95c-087767c8c070",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "befa2cf0-36fd-4391-b315-05f3b607a894",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "bf35975e-4bb2-4608-923a-2c4002578543",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "SQP24-25",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "bf878aa8-ce47-4fa9-8d02-2061e2e1e9d5",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 2,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "VSA",
+      "Understanding"
+    ]
+  },
+  {
+    "id": "c05e7886-8368-4500-801a-9282613a3e03",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "c0904486-a984-43b0-b0c8-27980d156dbe",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "VSA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "c0a5be21-5876-4ae7-a218-59b1cf6cac4d",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "GEOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "c10ad288-21ff-4bf6-a816-bee63018fa1b",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "SQP24-25",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "c12ca210-6f6d-409d-b8b1-8db26a7169c8",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "c14a5e8e-a7ef-41c8-89ec-4b695ff5847c",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "ALGEBRA",
+      "SQP23-24",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "c179c28b-63fe-4b89-85c6-d9b58da78de7",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "c2b50bac-2161-44c8-b1eb-5e16327599dd",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 3,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "VSA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "c2f6b5a7-71d8-471f-a0ad-19edfef0bbc6",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "c3118696-76cd-40d0-bb8e-ec5f3650814f",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "c33eeb47-e39d-48fa-9a88-cf4f797206ac",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "c3be7e3b-d04f-4fa0-b993-e6ead9176e70",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "assertion_reasoning_mcq_23233",
+      "Evaluating"
+    ]
+  },
+  {
+    "id": "c47741b3-f9bb-47f6-823b-006a41f7cf92",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "c4fccb2b-8c6d-43f3-b55f-3f2a62eb68fb",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "MENSURATION",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "c526ec6e-9045-4c44-bf93-70d43a4585d9",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "c569054b-1a84-440c-ac63-d3696046e475",
+    "marks": 2,
+    "time": 4,
+    "difficulty": 4,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "VSA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "c58295ef-09ca-4154-84cc-9c7b8555e419",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "c61e80a8-bf8b-4744-b862-032e4b38c220",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "c64111ca-67af-449b-a188-49274e77ea05",
+    "marks": 3,
+    "time": 6,
+    "difficulty": 5,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "SA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "c7679b20-96e6-4ed3-90fa-40c0af0200fa",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "c7a22abc-cb25-4fae-ac3c-556b56f0b4ae",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "c7a2e8da-54a2-4708-8b2e-40d75ba4be81",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "c8b994af-8085-49b0-b194-b80da06bca87",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "ca16dbc3-5f7c-431d-bd1e-0c3eb5449724",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "SQP24-25",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "ca1a874c-174d-4229-b0cd-f81aef1df245",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "ca5cb1bf-a60b-4367-97e5-c4255a138b29",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "ca5d59a0-dc76-454c-9aee-4f09d5dee266",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "caa48f09-d97b-4792-a73e-6b2edc2819b3",
+    "marks": 2,
+    "time": 4,
+    "difficulty": 4,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "VSA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "cb1dd1e0-462e-46bf-9873-f8a73c530bc2",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "cb2f4675-987f-44af-a0b4-4b42713f4c83",
+    "marks": 3,
+    "time": 5,
+    "difficulty": 3,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "SA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "cb5e4aq7",
+    "marks": 4,
+    "time": 4,
+    "difficulty": 3,
+    "tags": [
+      "case_study_58089",
+      "Applying",
+      "COORDINATE_GEOMETRY"
+    ]
+  },
+  {
+    "id": "ccf117de-1b9a-4891-8ab8-d85e4b962f52",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "cd4acb94-61f1-4400-bbf9-706ba996332f",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "SQP24-25",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "cd4d589a-01b3-4fc6-89d7-ff1d01e9dc1a",
+    "marks": 3,
+    "time": 6,
+    "difficulty": 5,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "SA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "cd5f0a6c-daf4-45e9-8930-908010e6678a",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "cdb166eb-a775-403c-8f56-618ba37e4e52",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "cdffefc8-8a21-4a83-a941-4a163f68c424",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "ceb110a3-8c4e-4c53-87e6-4c15bc1895ff",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "cebe2f07-a6ff-49a9-978f-4bd025d7ba25",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "ceff49f3-240d-4439-9a12-128dd8c1eacf",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 6,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "d0a326ca-47cb-487d-b014-76ed266fe492",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "d19f0ab4-1724-4287-851a-adcbc448c86e",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "d1c1f791-87f8-41db-a8b3-d5e54bb68d6d",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "d1dbdea8-c924-46af-a0c2-acb8aa17d551",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "d259fc8e-fb6b-4262-a13d-c7a24e2e68b9",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "d274968b-fe7c-4b20-bf04-00b6525b75d9",
+    "marks": 3,
+    "time": 5,
+    "difficulty": 3,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "SA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "d36bab13-7622-44d6-9302-5a4c218927a1",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "d3e6009a-c55a-4971-b4a8-62d80a1ad99b",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "d40a2e5e-b94e-49ec-87ee-17d904d32570",
+    "marks": 3,
+    "time": 6,
+    "difficulty": 5,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "SA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "d4722aad-8c86-47e6-a1e8-68754f79a451",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "SQP24-25",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "d47a7b7a-2aed-411f-b721-9e5a45a8a5b4",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "d4db5388-2622-4706-8d97-6c32c17637de",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "d4fd7485-3de3-4019-92a6-18cff183463e",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "d51fe37d-1254-4f66-8ff5-750fe73174cb",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "SQP24-25",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "d536e3b5-9022-4719-b207-ae54c44c51d0",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "d5ab3d0d-b36a-4f18-a072-ffcb76371156",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "d631247b-7467-4caa-aea3-36fb08f72b53",
+    "marks": 3,
+    "time": 6,
+    "difficulty": 4,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "SA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "d6cc4e5b-a061-4870-9316-87adb8daea70",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 5,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "d7a3323a-4acb-42be-bc18-977629c78815",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "d7e0bf68-ac8e-4b52-96a9-094bfb73f49f",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "GEOMETRY",
+      "SQP23-24",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "da2fd797-ecba-4edf-9f47-6c5413255917",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "db241f7d-a072-4c28-8b0c-f7ecc56a73e9",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 6,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "dc6767ee-823b-44b0-b162-9047e5b65b26",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "dd07e09a-fd01-4213-a52f-279b50cfba72",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "VSA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "dd215ed9-44dd-4746-9eeb-58a677f9e94a",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "dd241004-0496-4df8-b90d-b56178381648",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "dd3477f5-296c-4527-93a5-bf3a933ee376",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "ALGEBRA",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "dd9fb345-b577-43c3-a462-d73be34ff476",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "GEOMETRY",
+      "SQP24-25",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "dfe3f8a2-bddf-45a7-b0c6-79c8ffdf46d4",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 5,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "e07ec112-b97e-4954-af3b-9ab184ef51bb",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "VSA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "e1203061-a993-4e6c-9281-c0c81703065d",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "e1331372-5f49-4eca-91e6-650d14dff8df",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "e18e1464-9fa1-401a-a2c5-bb292baccd1c",
+    "marks": 3,
+    "time": 5,
+    "difficulty": 3,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "SA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "e28e5626-5393-491b-9474-8bb4c53f85a7",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "e4bda850-47a2-43dd-a464-ac56ca1cba96",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "e4eccbdc-49e1-46d0-94d0-2ba610344b4f",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "VSA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "e4ee9712-805a-48ef-9663-5e043c692030",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "e7042913-e9b0-49f4-b4da-97a7a5f48afc",
+    "marks": 3,
+    "time": 5,
+    "difficulty": 3,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "SA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "e890b140-fee9-40c0-9aa1-6d8116ffc1a3",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "e8a288b9-8031-4152-bdd5-865e6a0cba0a",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 6,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "e9171489-9acc-478b-98e0-3a99f6a8d593",
+    "marks": 3,
+    "time": 6,
+    "difficulty": 5,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "SA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "e95eff2a-61e1-493d-b91f-33fc1d455953",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "ebd323a8-577d-4377-83b5-56e07f0c6411",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "VSA",
+      "Understanding"
+    ]
+  },
+  {
+    "id": "ecb4de0e-4c05-4b0e-9138-b7bb4a0d6588",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "ALGEBRA",
+      "assertion_reasoning_mcq_23233",
+      "Evaluating"
+    ]
+  },
+  {
+    "id": "ee1cb7fc-c469-477a-ad7d-f9b6f630671e",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "ef416516-10eb-4520-9794-9f4ed5a38c5a",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "ef9b1139-d283-4286-9469-31ea05676126",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "efec7d48-523c-4ac5-a984-eb976633d6fc",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "f07c1344-4812-4ed8-9b1f-ec3a9f2ad1de",
+    "marks": 3,
+    "time": 5,
+    "difficulty": 3,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "CBSE2025",
+      "SA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "f09281e6-6439-4a97-9d48-de5c98bc94fe",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "f0fb175b-a5a5-43ff-82e3-1e88318b4a80",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "f136d011-1ccb-4840-a134-33d2fc6ba859",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "f1d34c4c-a4b8-467f-aafd-29b7b314cdbb",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "SQP23-24",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "f31dcf46-77f6-4d42-84ad-82753349df78",
+    "marks": 2,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "VSA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "f3e91b00-7629-491e-9a4f-ae8637462c84",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "f42e9be5-19ec-4bb5-a00b-1d01ca471023",
+    "marks": 5,
+    "time": 10,
+    "difficulty": 6,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "LA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "f478e7d9-bebb-4746-82b5-fa6888e228fe",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "CBSE2025",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "f55409da-00c7-4cdf-9f4b-6a4a15655a45",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "f59811fc-1f54-4662-86b0-c3a10b36e860",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "SQP24-25",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "f66d6ca3-6795-45db-a17b-dac27bad0202",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "f7e2841e-448a-4915-8e85-e6ec6fbba98e",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "f83ad88b-b286-4973-a431-d10761910b13",
+    "marks": 2,
+    "time": 3,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "VSA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "f90a9f50-c547-4785-ab2c-ce90f1648205",
+    "marks": 3,
+    "time": 6,
+    "difficulty": 5,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "SA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "f9c7b109-c0a9-4f60-b66f-2c793a016dbb",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "f9dc1644-13be-4b19-822a-d74b35f3f93a",
+    "marks": 3,
+    "time": 3,
+    "difficulty": 6,
+    "tags": [
+      "GEOMETRY",
+      "CBSE2025",
+      "SA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "f9e9f053-9965-4d43-9b1d-f3cddfc2771e",
+    "marks": 3,
+    "time": 6,
+    "difficulty": 5,
+    "tags": [
+      "TRIGONOMETRY",
+      "SA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "fa7c3aa8-f181-47d8-9952-36d60b69d348",
+    "marks": 3,
+    "time": 5,
+    "difficulty": 3,
+    "tags": [
+      "ALGEBRA",
+      "CBSE2025",
+      "SA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "fb43c8ca-9ec7-48ba-a3aa-2220542a5f4c",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "SQP24-25",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "fb8ec9d6-2785-4587-954e-4da3902d1653",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "fc5ed367-5c68-4efb-9395-31479b0a6640",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "TRIGONOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "fd0eeae7-4d26-45f0-b86c-d4c386b752a1",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "fd5a5e81-d866-46b2-87fc-d78f2284f890",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "fd9d5f65-a7f1-4e7b-ba5e-1af043fcd11b",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "ALGEBRA",
+      "SQP23-24",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "fdb49619-e712-4f3a-9790-6bd9c0fd102a",
+    "marks": 2,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "ALGEBRA",
+      "MCQ",
+      "Understanding"
+    ]
+  },
+  {
+    "id": "fe635b7f-ecdd-4ab6-854a-88d8950b640e",
+    "marks": 3,
+    "time": 5,
+    "difficulty": 3,
+    "tags": [
+      "MENSURATION",
+      "CBSE2025",
+      "SA",
+      "Applying"
+    ]
+  },
+  {
+    "id": "ff4ed2c3-9dbb-4c2a-ad96-f179aa9c5eea",
+    "marks": 1,
+    "time": 1,
+    "difficulty": 1,
+    "tags": [
+      "STATISTICS_PROBABILTY",
+      "MCQ",
+      "Remembering"
+    ]
+  },
+  {
+    "id": "ffa78ced-d48e-4ed6-890b-a45abcbb2b1e",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 2,
+    "tags": [
+      "MENSURATION",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "ffcf7a93-31ab-4771-a6da-af0a4339e083",
+    "marks": 1,
+    "time": 2,
+    "difficulty": 3,
+    "tags": [
+      "COORDINATE_GEOMETRY",
+      "MCQ",
+      "Applying"
+    ]
+  },
+  {
+    "id": "lwdj54ra",
+    "marks": 4,
+    "time": 5,
+    "difficulty": 4,
+    "tags": [
+      "GEOMETRY",
+      "Analysing",
+      "case_study_58089"
+    ]
+  },
+  {
+    "id": "m3f3gqcw",
+    "marks": 4,
+    "time": 6,
+    "difficulty": 4,
+    "tags": [
+      "ALGEBRA",
+      "case_study_58089",
+      "Applying"
+    ]
+  },
+  {
+    "id": "sw5n5121",
+    "marks": 4,
+    "time": 8,
+    "difficulty": 4,
+    "tags": [
+      "NUMBER_SYSTEMS",
+      "case_study_58089",
+      "Applying"
+    ]
+  },
+  {
+    "id": "vkuqknyg",
+    "marks": 3,
+    "time": 6,
+    "difficulty": 5,
+    "tags": [
+      "TRIGONOMETRY",
+      "CBSE2025",
+      "SA",
+      "Analysing"
+    ]
+  },
+  {
+    "id": "z1fctzy9",
+    "marks": 4,
+    "time": 8,
+    "difficulty": 4,
+    "tags": [
+      "MENSURATION",
+      "case_study_58089",
+      "Applying"
+    ]
+  }
+]

@@ -2,7 +2,7 @@
 
 Public repository: [https://github.com/papudg/Research](https://github.com/papudg/Research) (branch **`reproducibility-public`**).
 
-This document supports Section 4.4 (*Reproducibility*) of the ICAA paper. It describes the public artifact only; controlled-review copies may additionally include full question text.
+This document supports Section 4.4 (*Reproducibility*) of `updatedICAA_lookahead_12_revised.tex`. It describes the public artifact: metadata-only item records, no question text.
 
 ## Artifact contents
 
@@ -10,7 +10,7 @@ This document supports Section 4.4 (*Reproducibility*) of the ICAA paper. It des
 |-----------|----------|
 | Runnable harness | `experiments/*.py` |
 | Library source | `src/icaa/` |
-| 475-item CBSE Class X Mathematics fixture | `docs/qbank_audit/cbse_class_x_maths_questions_full_updated.json` |
+| Metadata-only 475-item fixture | `docs/qbank_audit/cbse_class_x_maths_questions_full_updated.json` |
 | Fixed blueprint manifests (seeds 42–46) | `data/manifests/manifest_seed{seed}_80.json` |
 | Recorded results | `experiments/results_*.{json,txt}` |
 | Environment snapshot | `experiments/results_environment.json` |
@@ -57,7 +57,7 @@ Blueprint generation follows `icaa.multipolicy_benchmark.build_manifest()`:
 - Difficulty targets: seven uniforms scaled by `(4,5,4,3,2,1,0.3)`, floored, remainder allocated cyclically.
 - Bloom targets: rounded 54/24/22 split per section.
 
-Export manifests once after placing the fixture:
+Export manifests once (already committed under `data/manifests/`):
 
 ```powershell
 $env:PYTHONHASHSEED='0'
@@ -96,7 +96,8 @@ $py = ".\.venv-icaa\Scripts\python.exe"
 & $py experiments\weight_sweep.py | Tee-Object experiments\results_weight_sweep.txt
 & $py experiments\weight_sensitivity.py | Tee-Object experiments\results_weight_sensitivity.txt
 & $py experiments\policy_frontier.py | Tee-Object experiments\results_policy_frontier.txt
-& $py experiments\detector.py | Tee-Object experiments\results_detector.txt
+# detector.py needs question text (not in the public fixture); use recorded results_detector.json
+# & $py experiments\detector.py | Tee-Object experiments\results_detector.txt
 
 # Sanity check
 & $py experiments\generate.py
@@ -134,4 +135,4 @@ $env:PYTHONHASHSEED='0'
 
 ## Access boundary
 
-The **public** branch ships a metadata-only fixture (ids, marks, time, difficulty, tags) sufficient to rerun all reported solver experiments. Question text is omitted from the public repository. Controlled-review copies may include the complete static fixture for independent verification; that distribution is not a blanket public-release authorization for question text.
+The public branch ships a metadata-only fixture (ids, marks, time, difficulty, tags) sufficient to rerun all reported **solver** experiments. Question text is omitted, as stated in Section 4.4 of the submission paper. The duplicate-detector stress test cannot be regenerated from this snapshot; `experiments/results_detector.json` is the recorded public artifact for that run.

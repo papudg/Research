@@ -6,7 +6,7 @@ Public branch **`reproducibility-public`**: [github.com/papudg/Research](https:/
 
 **Library source:** `src/icaa/` (install with `pip install -e .` from the repository root).
 
-**Quick sanity check** (from repository root, after placing the fixture):
+**Quick sanity check** (from repository root):
 
 ```powershell
 $env:PYTHONHASHSEED='0'

@@ -17,5 +17,4 @@ build/
 experiments/multiseed_rerun.out
 experiments/multiseed_rerun2.out
 
-# Full-text fixture — public branch uses metadata-only JSON committed explicitly
-# docs/qbank_audit/cbse_class_x_maths_questions_full_updated.json
+# Do not add full-text item banks. The committed fixture is metadata-only.

@@ -1,14 +1,14 @@
 # Item bank fixture
 
-Place the public metadata snapshot here:
+**File:** `cbse_class_x_maths_questions_full_updated.json` (475 records)
 
-**File:** `cbse_class_x_maths_questions_full_updated.json`
+This is the public snapshot cited in Section 4.4 of `updatedICAA_lookahead_12_revised.tex`.
 
 ## Public release (this branch)
 
-The public repository contains **metadata only** — sufficient for all CP-SAT experiments in the paper:
+The committed file is **metadata only** — sufficient to regenerate all CP-SAT tables and solver experiments:
 
 - `id`, `marks`, `time`, `difficulty`, chapter/Bloom `tags`
 - No question stem, options, or solution text
 
-Controlled-review distributions may include full question text under separate confidentiality terms; that content must not be committed to `reproducibility-public`.
+The duplicate-detector stress test (`experiments/detector.py`) needs question text and **cannot** be regenerated from this snapshot; use the recorded `experiments/results_detector.json`.

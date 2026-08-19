@@ -2,7 +2,7 @@
 
 Public release branch: **`reproducibility-public`** at [github.com/papudg/Research](https://github.com/papudg/Research/tree/reproducibility-public).
 
-This branch contains only the artifact cited in Section 4.4 of the paper (`updatedICAA_lookahead_12_revised.tex`). The `main` branch may hold additional internal research material not intended for public redistribution.
+This branch contains only the artifact cited in Section 4.4 of `updatedICAA_lookahead_12_revised.tex` (the submission paper). Internal working files live in the private repository `papudg/Research-private`.
 
 ## Repository layout
 
@@ -15,7 +15,7 @@ research/
 ├── docs/
 │   ├── updatedICAA_lookahead_12_revised.tex
 │   └── qbank_audit/
-│       └── cbse_class_x_maths_questions_full_updated.json   # 475-item fixture (place here)
+│       └── cbse_class_x_maths_questions_full_updated.json   # metadata-only 475-item fixture
 ├── data/
 │   └── manifests/              # Exported seed-42..46 blueprint manifests
 ├── src/
@@ -30,7 +30,7 @@ research/
 
 ## Quick start
 
-1. Place the 475-record item bank at `docs/qbank_audit/cbse_class_x_maths_questions_full_updated.json` (see that directory's README).
+1. The metadata-only 475-record fixture is already at `docs/qbank_audit/cbse_class_x_maths_questions_full_updated.json`.
 2. Create a virtual environment and install dependencies:
 
 ```powershell
@@ -40,7 +40,7 @@ python -m venv .venv-icaa
 .\.venv-icaa\Scripts\python.exe -m spacy download en_core_web_sm
 ```
 
-3. Export fixed manifests (optional but recommended for byte-identical manifest files):
+3. Fixed manifests for seeds 42–46 are already under `data/manifests/`. Re-export if needed:
 
 ```powershell
 $env:PYTHONHASHSEED='0'
@@ -71,4 +71,4 @@ $env:PYTHONHASHSEED='0'
 
 ## Access boundary
 
-The controlled-review artifact includes the complete static fixture so reviewers can regenerate reported results. It is not a blanket public-release authorization for question text. A public release must replace question text with metadata-only records unless licensing permits full-text redistribution.
+The public fixture is metadata-only (no question text), matching Section 4.4 of the submission paper. Solver experiments can be regenerated from this snapshot. Question text is not part of the public release.
